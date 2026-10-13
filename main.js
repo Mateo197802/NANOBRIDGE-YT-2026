@@ -253,9 +253,9 @@ const I18N_DICTIONARY = {
     'pillar-4-desc': 'Del laboratorio académico a la spin-off: La experiencia de Nanostine escalando patentes hacia soluciones industriales reales.',
 
     // Speakers Section
-    'speakers-eyebrow': 'Comité Científico & Expositores',
-    'speakers-title': 'Ponentes Destacados',
-    'speakers-lead': 'Un panel interdisciplinario que une científicos del CSIC en España, investigadores del MIT Critical Data y docentes-investigadores de Yachay Tech e instituciones aliadas.',
+    'speakers-eyebrow': 'Liderazgo Científico & Conferencias',
+    'speakers-title': 'Conferencistas & Comité Científico',
+    'speakers-lead': 'Científicos e innovadores de referencia internacional reunidos en Yachay Tech para conectar la investigación de frontera en materiales avanzados, inteligencia artificial biomédica y transferencia tecnológica con la primera generación de ingenieros en nanotecnología.',
     'speaker-abstract-btn': 'Ver Abstract de Charla',
     'badge-in-person': 'Presencial',
     'badge-virtual': 'Virtual',
@@ -351,9 +351,9 @@ const I18N_DICTIONARY = {
     'pillar-4-desc': 'From academic labs to commercial spin-offs: Nanostine’s journey translating scientific patents into industrial market solutions.',
 
     // Speakers Section
-    'speakers-eyebrow': 'Scientific Committee & Lecturers',
-    'speakers-title': 'Featured Speakers',
-    'speakers-lead': 'An interdisciplinary lineup connecting CSIC scientists from Spain, researchers from MIT Critical Data, and distinguished faculty members from Yachay Tech and partner institutions.',
+    'speakers-eyebrow': 'Scientific Leadership & Keynotes',
+    'speakers-title': 'Distinguished Speakers & Committee',
+    'speakers-lead': 'International scientific leaders gathered at Yachay Tech to bridge frontier research in advanced materials, biomedical AI, and technology transfer with the region’s pioneer generation of nano-engineers.',
     'speaker-abstract-btn': 'View Talk Abstract',
     'badge-in-person': 'In-Person',
     'badge-virtual': 'Virtual',
