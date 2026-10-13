@@ -282,6 +282,10 @@ const I18N_DICTIONARY = {
     'venue-eyebrow': 'Sede del Evento',
     'venue-title': 'Universidad Yachay Tech',
     'venue-lead': 'Ubicada en la Ciudad del Conocimiento en Urcuquí, Imbabura. Primera universidad de investigación intensiva del Ecuador con laboratorios de vanguardia.',
+    'venue-map-eyebrow': 'Localización Satelital & Georreferencia',
+    'venue-map-title': 'Mapa Interactivo del Campus Yachay Tech',
+    'venue-map-sub': 'San Miguel de Urcuquí, Imbabura, Ecuador · Coordenadas: 0°25\'19.9"N 78°11\'19.3"W',
+    'btn-gmaps-link': 'Abrir en Google Maps',
 
     // Registration Box
     'reg-eyebrow': 'Inscripciones Abiertas',
@@ -373,6 +377,10 @@ const I18N_DICTIONARY = {
     'venue-eyebrow': 'Official Venue',
     'venue-title': 'Yachay Tech University',
     'venue-lead': 'Located within the Knowledge City in Urcuquí, Imbabura. Ecuador’s premier research-intensive experimental university equipped with advanced cleanroom laboratories.',
+    'venue-map-eyebrow': 'Satellite Location & Georeference',
+    'venue-map-title': 'Interactive Yachay Tech Campus Map',
+    'venue-map-sub': 'San Miguel de Urcuquí, Imbabura, Ecuador · Coordinates: 0°25\'19.9"N 78°11\'19.3"W',
+    'btn-gmaps-link': 'Open in Google Maps',
 
     // Registration Box
     'reg-eyebrow': 'Registration Open',

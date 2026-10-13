@@ -1498,6 +1498,67 @@ button {
   line-height: 1.6;
 }
 
+/* Venue Interactive Map Container */
+.venue-map-container {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-2xl);
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  box-shadow: var(--shadow-lg);
+  margin-top: 40px;
+}
+
+.venue-map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.venue-map-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 700;
+  color: var(--color-cream);
+  line-height: 1.2;
+}
+
+.venue-map-sub {
+  font-size: 13px;
+  color: var(--color-sage);
+  margin-top: 4px;
+}
+
+.btn-gmaps-link {
+  background-color: var(--color-amber);
+  color: var(--color-teal-dark);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(246, 164, 58, 0.25);
+  white-space: nowrap;
+}
+
+.btn-gmaps-link:hover {
+  background-color: #ffb44d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(246, 164, 58, 0.4);
+}
+
+.venue-map-frame-wrapper {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
 /* ==========================================================================
    REGISTRATION CTA & CERTIFICATION SECTION
    ========================================================================== */
