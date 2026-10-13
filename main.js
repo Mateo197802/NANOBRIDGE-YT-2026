@@ -65,8 +65,8 @@ function initInteractiveMesh() {
       this.y = Math.random() * height;
       this.vx = (Math.random() - 0.5) * 0.7;
       this.vy = (Math.random() - 0.5) * 0.7;
-      this.radius = Math.random() * 2 + 1.2;
-      this.baseColor = Math.random() > 0.4 ? 'rgba(23, 61, 69, 0.45)' : 'rgba(246, 164, 58, 0.6)';
+      this.radius = Math.random() * 1.6 + 1.0;
+      this.baseColor = Math.random() > 0.5 ? 'rgba(2, 132, 199, 0.22)' : 'rgba(148, 163, 184, 0.25)';
     }
 
     update() {
@@ -117,12 +117,12 @@ function initInteractiveMesh() {
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < 135) {
-          const opacity = (1 - distance / 135) * 0.28;
+          const opacity = (1 - distance / 135) * 0.08;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(23, 61, 69, ${opacity})`;
-          ctx.lineWidth = 0.85;
+          ctx.strokeStyle = `rgba(148, 163, 184, ${opacity})`;
+          ctx.lineWidth = 0.5;
           ctx.stroke();
         }
       }
@@ -135,12 +135,12 @@ function initInteractiveMesh() {
         const dy = mouse.y - particles[i].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < 140) {
-          const opacity = (1 - distance / 140) * 0.45;
+          const opacity = (1 - distance / 140) * 0.16;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(246, 164, 58, ${opacity})`;
-          ctx.lineWidth = 1;
+          ctx.strokeStyle = `rgba(2, 132, 199, ${opacity})`;
+          ctx.lineWidth = 0.7;
           ctx.stroke();
         }
       }
