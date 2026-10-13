@@ -425,7 +425,7 @@ button {
     radial-gradient(at 20% 80%, rgba(79, 70, 229, 0.12) 0px, transparent 55%);
   color: #ffffff;
   overflow: hidden;
-  padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(4rem, 9vw, 7.5rem);
+  padding: clamp(2rem, 3.5vw, 3.2rem) 0 clamp(2.5rem, 4vw, 3.6rem);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -474,26 +474,26 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: start;
+  grid-template-columns: minmax(0, 1.4fr) minmax(310px, 0.85fr);
+  gap: clamp(1.5rem, 3.5vw, 3rem);
+  align-items: center;
 }
 
 .hero-eyebrow-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 11px;
+  gap: 10px;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #38bdf8;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 
 .eyebrow-pill {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: #38bdf8;
   border-radius: 50%;
   box-shadow: 0 0 10px #38bdf8;
@@ -501,43 +501,48 @@ button {
 
 .hero-main-title {
   font-family: var(--font-heading);
-  font-size: clamp(3.2rem, 6.2vw, 6.4rem);
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
   font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: -0.06em;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .hero-main-title .highlight-accent {
+  display: block;
+  font-size: clamp(1.15rem, 1.85vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
   background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
 }
 
 .hero-tagline {
   font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 2.3vw, 2.2rem);
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
   font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.035em;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
   color: #cbd5e1;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .hero-description {
-  font-size: clamp(1rem, 1.2vw, 1.15rem);
-  line-height: 1.7;
+  font-size: clamp(0.86rem, 1.02vw, 0.95rem);
+  line-height: 1.55;
   color: #94a3b8;
-  max-width: 620px;
-  margin-bottom: 32px;
+  max-width: 580px;
+  margin-bottom: 22px;
 }
 
 .hero-cta-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -545,12 +550,12 @@ button {
   background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
   font-weight: 700;
-  font-size: 14px;
-  padding: 14px 28px;
+  font-size: 13.5px;
+  padding: 12px 24px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   transition: all var(--transition-normal);
   box-shadow: 0 4px 16px rgba(2, 132, 199, 0.4);
 }
@@ -565,12 +570,12 @@ button {
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   color: var(--color-cream);
   font-weight: 600;
-  font-size: 14px;
-  padding: 13px 26px;
+  font-size: 13.5px;
+  padding: 11px 22px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   transition: all var(--transition-normal);
 }
 
@@ -592,7 +597,7 @@ button {
 }
 
 .meta-box {
-  padding: 24px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(56, 189, 248, 0.12);
 }
 
@@ -601,31 +606,31 @@ button {
 }
 
 .meta-label {
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #38bdf8;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .meta-value {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .meta-subtext {
-  font-size: 12px;
+  font-size: 11.5px;
   color: #94a3b8;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 /* Countdown Block inside Hero */
 .countdown-block {
-  padding: 26px 24px;
+  padding: 18px 20px;
   background: rgba(7, 13, 24, 0.85);
   border-top: 1px solid rgba(56, 189, 248, 0.15);
 }
@@ -634,11 +639,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .countdown-title {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -648,30 +653,30 @@ button {
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 6px;
 }
 
 .countdown-unit-box {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: var(--radius-md);
-  padding: 12px 6px;
+  padding: 8px 4px;
   text-align: center;
   box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.05);
 }
 
 .countdown-number {
   font-family: var(--font-heading);
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 800;
   color: #ffffff;
   line-height: 1;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .countdown-label {
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2085,5 +2090,20 @@ button {
   }
   .partners-grid {
     grid-template-columns: 1fr;
+  }
+  .hero-main-title {
+    font-size: 2rem;
+  }
+  .hero-main-title .highlight-accent {
+    font-size: 1.12rem;
+  }
+  .hero-tagline {
+    font-size: 0.92rem;
+  }
+  .hero-description {
+    font-size: 0.88rem;
+  }
+  .hero-section {
+    padding: 2.2rem 0 2.8rem;
   }
 }
