@@ -216,14 +216,33 @@ button {
 .brand-badge {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand-logo-badge {
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.brand-badge:hover .brand-logo-badge {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.38);
 }
 
 .brand-logo-img {
-  height: 44px;
+  height: 40px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+  display: block;
 }
 
 .brand-text-block {
@@ -715,8 +734,98 @@ button {
   color: var(--color-sage-muted);
 }
 
-.section-teal-dark .section-lead-text {
+/* ==========================================================================
+   INSTITUTIONAL PARTNERS / ALLIES RIBBON
+   ========================================================================== */
+.partners-ribbon-section {
+  background: linear-gradient(180deg, rgba(13, 36, 41, 0.98) 0%, rgba(10, 28, 32, 1) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 36px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.partners-ribbon-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.partners-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.partners-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-amber);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-amber);
+  animation: pulse-dot 2.5s infinite ease-in-out;
+}
+
+.partners-eyebrow-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.partner-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform var(--transition-normal), border-color var(--transition-normal), background-color var(--transition-normal);
+}
+
+.partner-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(246, 164, 58, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.partner-card.partner-highlight {
+  background: rgba(246, 164, 58, 0.08);
+  border-color: rgba(246, 164, 58, 0.35);
+}
+
+.partner-org-tag {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  margin-bottom: 6px;
+}
+
+.partner-name {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-cream);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.partner-role {
+  font-size: 12px;
   color: var(--color-sage);
+  line-height: 1.4;
 }
 
 /* ==========================================================================
@@ -1695,6 +1804,25 @@ button {
   margin-bottom: 40px;
 }
 
+.footer-logo-badge {
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .footer-brand-title {
   font-family: var(--font-heading);
   font-size: 20px;
@@ -1888,5 +2016,18 @@ button {
   }
   .countdown-number {
     font-size: 20px;
+  }
+  .brand-logo-badge {
+    padding: 4px 10px;
+    border-radius: 10px;
+  }
+  .brand-logo-img {
+    height: 32px;
+  }
+  .footer-logo-img {
+    height: 36px;
+  }
+  .partners-grid {
+    grid-template-columns: 1fr;
   }
 }

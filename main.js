@@ -236,6 +236,9 @@ const I18N_DICTIONARY = {
     'count-unit-mins': 'Min',
     'count-unit-secs': 'Seg',
 
+    // Allies & Partners
+    'partners-eyebrow': 'Instituciones Convocantes & Alianzas Académicas Internacionales',
+
     // About & Pillars
     'about-eyebrow': 'Misión & Fundamentos',
     'about-title': 'Ciencia de frontera construida desde los cimientos.',
@@ -330,6 +333,9 @@ const I18N_DICTIONARY = {
     'count-unit-hours': 'Hours',
     'count-unit-mins': 'Mins',
     'count-unit-secs': 'Secs',
+
+    // Allies & Partners
+    'partners-eyebrow': 'Convening Institutions & Global Academic Alliances',
 
     // About & Pillars
     'about-eyebrow': 'Mission & Fundamentals',

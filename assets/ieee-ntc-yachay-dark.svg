@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 54" width="320" height="54" fill="none">
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A3E0"/>
+      <stop offset="100%" stop-color="#00629B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Hexagon Badge with NTC -->
+  <g transform="translate(4, 2)">
+    <!-- Outer Cyan Hexagon with gradient -->
+    <polygon points="24,2 48,14 48,40 24,52 0,40 0,14" fill="url(#hexGrad)" stroke="#38BDF8" stroke-width="1.8"/>
+    <!-- Inner White dashed Hexagon border -->
+    <polygon points="24,5 44,15 44,38 24,48 4,38 4,15" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="3,2" stroke-opacity="0.85"/>
+    <!-- NTC letters -->
+    <text x="24" y="32" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NTC</text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="59" y1="6" x2="59" y2="48" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.2"/>
+
+  <!-- IEEE NANO Title & Subtitle Text (High-contrast for dark background) -->
+  <g transform="translate(68, 2)">
+    <text x="0" y="20" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" letter-spacing="0.8">IEEE NANO</text>
+    <text x="0" y="33" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="8.5" fill="#38BDF8" letter-spacing="1.5">NANOTECHNOLOGY COUNCIL</text>
+    <text x="0" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="8" fill="#D6E5E3" letter-spacing="0.4">Yachay Tech University · Student Branch</text>
+  </g>
+</svg>
