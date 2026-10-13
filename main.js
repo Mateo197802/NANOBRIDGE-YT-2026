@@ -66,7 +66,7 @@ function initInteractiveMesh() {
       this.vx = (Math.random() - 0.5) * 0.7;
       this.vy = (Math.random() - 0.5) * 0.7;
       this.radius = Math.random() * 1.6 + 1.0;
-      this.baseColor = Math.random() > 0.5 ? 'rgba(2, 132, 199, 0.22)' : 'rgba(148, 163, 184, 0.25)';
+      this.baseColor = Math.random() > 0.5 ? 'rgba(56, 189, 248, 0.35)' : 'rgba(129, 140, 248, 0.28)';
     }
 
     update() {
@@ -135,12 +135,12 @@ function initInteractiveMesh() {
         const dy = mouse.y - particles[i].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < 140) {
-          const opacity = (1 - distance / 140) * 0.16;
+          const opacity = (1 - distance / 140) * 0.22;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(2, 132, 199, ${opacity})`;
-          ctx.lineWidth = 0.7;
+          ctx.strokeStyle = `rgba(56, 189, 248, ${opacity})`;
+          ctx.lineWidth = 0.8;
           ctx.stroke();
         }
       }
@@ -625,18 +625,18 @@ function initAbstractModal() {
 
       let talksHtml = `
         <div style="margin-bottom: 18px;">
-          <span style="font-size: 11px; font-weight: 700; color: #f6a43a; text-transform: uppercase;">${data.talk1.day}</span>
-          <h4 style="font-family: var(--font-heading); font-size: 17px; font-weight: 700; color: #173d45; margin: 4px 0 8px;">${data.talk1.title}</h4>
-          <p style="font-size: 13.5px; line-height: 1.65; color: #466562;">${data.talk1.abstract}</p>
+          <span style="font-size: 11px; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.1em;">${data.talk1.day}</span>
+          <h4 style="font-family: var(--font-heading); font-size: 17px; font-weight: 700; color: #0f172a; margin: 4px 0 8px;">${data.talk1.title}</h4>
+          <p style="font-size: 13.5px; line-height: 1.65; color: #475569;">${data.talk1.abstract}</p>
         </div>
       `;
 
       if (data.talk2) {
         talksHtml += `
-          <div style="border-top: 1px solid rgba(23,61,69,0.12); padding-top: 14px; margin-top: 14px;">
-            <span style="font-size: 11px; font-weight: 700; color: #f6a43a; text-transform: uppercase;">${data.talk2.day}</span>
-            <h4 style="font-family: var(--font-heading); font-size: 17px; font-weight: 700; color: #173d45; margin: 4px 0 8px;">${data.talk2.title}</h4>
-            <p style="font-size: 13.5px; line-height: 1.65; color: #466562;">${data.talk2.abstract}</p>
+          <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; margin-top: 14px;">
+            <span style="font-size: 11px; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.1em;">${data.talk2.day}</span>
+            <h4 style="font-family: var(--font-heading); font-size: 17px; font-weight: 700; color: #0f172a; margin: 4px 0 8px;">${data.talk2.title}</h4>
+            <p style="font-size: 13.5px; line-height: 1.65; color: #475569;">${data.talk2.abstract}</p>
           </div>
         `;
       }

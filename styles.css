@@ -7,30 +7,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Minimalist Scientific Color Palette - High-Legibility & Clean Editorial */
-  --color-teal-dark: #09131d;       /* Deep slate/navy for dark sections (hero, venue, footer) */
-  --color-teal-mid: #0f172a;        /* Primary dark typography */
-  --color-teal-deep: #050b11;       /* Deepest dark */
+  /* ========================================================================
+     NANOBRIDGE YT 2026 - UNIQUE IDENTITY: QUANTUM PLASMA & TITANIUM OBSIDIAN
+     Distinctive Palette: Deep Midnight Cobalt, Quantum Electric Cyan, Titanium White & Crisp Slate
+     ======================================================================== */
+  --color-teal-dark: #070b14;       /* Deep Cosmic Space / Vacuum Obsidian */
+  --color-teal-mid: #0a1322;        /* Midnight Space Navy */
+  --color-teal-deep: #03060c;       /* Deepest obsidian black */
   
   --color-cream: #ffffff;           /* Clean pure white background */
-  --color-cream-light: #f8fafc;     /* Subtle slate background for alternate sections */
+  --color-cream-light: #f8fafc;     /* Subtle ice-slate background for alternate sections */
   --color-cream-card: #ffffff;      /* Pure white cards */
   
-  --color-apricot: #e2e8f0;         /* Neutral hairline borders */
+  --color-apricot: #cbd5e1;         /* Titanium silver text & accents */
   --color-apricot-light: #f1f5f9;   /* Neutral soft pills */
   
-  --color-amber: #0284c7;           /* Singular primary brand accent: IEEE Blue */
+  --color-amber: #0284c7;           /* IEEE Master Technology Blue */
   --color-amber-hover: #0369a1;     /* Hover blue */
   
-  --color-sage: #f8fafc;            /* Clean light grey background */
+  --color-plasma-cyan: #38bdf8;     /* Luminous Argon Plasma Cyan (Signature Glow) */
+  --color-plasma-violet: #818cf8;   /* Electric Quantum Violet */
+  
+  --color-sage: #94a3b8;            /* Slate light grey */
   --color-sage-light: #ffffff;      /* Pure white */
-  --color-sage-dark: #94a3b8;       /* Subtle text */
+  --color-sage-dark: #64748b;       /* Subtle text */
   --color-sage-muted: #64748b;      /* Slate body text */
   
-  --color-rust: #0284c7;            /* Blue accent (no bright coral/red) */
+  --color-rust: #0284c7;            /* Blue accent */
   --color-rust-light: #eff6ff;      /* Subtle blue tint */
   --color-white: #ffffff;
-  --color-black: #060d13;
+  --color-black: #03060c;
 
   /* Typography */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -179,10 +185,10 @@ button {
 .notice-dot {
   width: 7px;
   height: 7px;
-  background-color: var(--color-amber);
+  background-color: var(--color-plasma-cyan);
   border-radius: 50%;
   display: inline-block;
-  box-shadow: 0 0 8px var(--color-amber);
+  box-shadow: 0 0 10px var(--color-plasma-cyan);
   animation: pulse-dot 2s infinite ease-in-out;
 }
 
@@ -194,12 +200,12 @@ button {
 .main-header {
   position: sticky;
   top: 0;
-  background-color: rgba(16, 44, 50, 0.94);
+  background-color: rgba(7, 11, 20, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
   z-index: 50;
-  color: var(--color-cream);
+  color: #ffffff;
   transition: all var(--transition-normal);
 }
 
@@ -298,7 +304,8 @@ button {
   left: 0;
   width: 0%;
   height: 2px;
-  background: var(--color-amber);
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
   transition: width var(--transition-normal);
 }
 
@@ -334,28 +341,30 @@ button {
 }
 
 .lang-btn.active {
-  background-color: var(--color-amber);
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
 }
 
 /* Action Button */
 .btn-header-cta {
-  background-color: var(--color-amber);
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: var(--radius-pill);
   transition: all var(--transition-normal);
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
 }
 
 .btn-header-cta:hover {
-  background-color: var(--color-amber-hover);
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
 }
 
 .mobile-hamburger {
@@ -405,23 +414,26 @@ button {
 }
 
 /* ==========================================================================
-   HERO SECTION (MIT CRITICAL DATA INSPIRED)
-   Deep teal background with organic orbits and pastel accent typography
+   HERO SECTION (QUANTUM PLASMA & TITANIUM OBSIDIAN)
+   Deep Cosmic Navy with Luminous Argon Plasma Cyan & Quantum Cobalt Glow
    ========================================================================== */
 .hero-section {
   position: relative;
-  background-color: var(--color-teal-mid);
-  color: var(--color-cream);
+  background-color: #070d18;
+  background-image: 
+    radial-gradient(at 80% 20%, rgba(14, 165, 233, 0.16) 0px, transparent 55%),
+    radial-gradient(at 20% 80%, rgba(79, 70, 229, 0.12) 0px, transparent 55%);
+  color: #ffffff;
   overflow: hidden;
   padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(4rem, 9vw, 7.5rem);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero-background-aura {
   position: absolute;
   inset: -25%;
-  background: radial-gradient(ellipse at 75% 25%, rgba(2, 132, 199, 0.12) 0%, transparent 60%);
-  opacity: 0.6;
+  background: radial-gradient(ellipse at 75% 25%, rgba(14, 165, 233, 0.15) 0%, transparent 60%);
+  opacity: 0.7;
   filter: blur(80px);
   pointer-events: none;
 }
@@ -433,7 +445,7 @@ button {
   width: 460px;
   height: 460px;
   border-radius: 50%;
-  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border: 1px dashed rgba(56, 189, 248, 0.22);
   pointer-events: none;
   animation: orbit-spin 60s linear infinite;
 }
@@ -445,7 +457,7 @@ button {
   width: 480px;
   height: 480px;
   border-radius: 50%;
-  border: 1px solid rgba(2, 132, 199, 0.15);
+  border: 1px solid rgba(129, 140, 248, 0.2);
   pointer-events: none;
   animation: orbit-spin-rev 80s linear infinite;
 }
@@ -475,15 +487,16 @@ button {
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-apricot);
+  color: #38bdf8;
   margin-bottom: 22px;
 }
 
 .eyebrow-pill {
   width: 8px;
   height: 8px;
-  background-color: var(--color-amber);
+  background-color: #38bdf8;
   border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
 }
 
 .hero-main-title {
@@ -492,12 +505,14 @@ button {
   font-weight: 800;
   line-height: 0.92;
   letter-spacing: -0.06em;
-  color: var(--color-cream);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero-main-title .highlight-accent {
-  color: var(--color-amber);
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
 }
 
@@ -507,14 +522,14 @@ button {
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.035em;
-  color: var(--color-apricot);
+  color: #cbd5e1;
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: clamp(1rem, 1.2vw, 1.15rem);
   line-height: 1.7;
-  color: var(--color-sage);
+  color: #94a3b8;
   max-width: 620px;
   margin-bottom: 32px;
 }
@@ -527,7 +542,7 @@ button {
 }
 
 .btn-primary-pill {
-  background-color: var(--color-amber);
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -537,13 +552,13 @@ button {
   align-items: center;
   gap: 10px;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.4);
 }
 
 .btn-primary-pill:hover {
-  background-color: var(--color-amber-hover);
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.6);
 }
 
 .btn-outline-pill {
@@ -567,18 +582,18 @@ button {
 
 /* Hero Right Sidebar: Event Pillars & Countdown */
 .hero-meta-panel {
-  background: rgba(23, 61, 69, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(10, 19, 34, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 .meta-box {
   padding: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
 }
 
 .meta-box:last-child {
@@ -590,7 +605,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-sage-dark);
+  color: #38bdf8;
   margin-bottom: 6px;
 }
 
@@ -598,20 +613,21 @@ button {
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-cream);
+  color: #ffffff;
   line-height: 1.3;
 }
 
 .meta-subtext {
   font-size: 12px;
-  color: var(--color-sage);
+  color: #94a3b8;
   margin-top: 4px;
 }
 
 /* Countdown Block inside Hero */
 .countdown-block {
   padding: 26px 24px;
-  background: rgba(16, 44, 50, 0.7);
+  background: rgba(7, 13, 24, 0.85);
+  border-top: 1px solid rgba(56, 189, 248, 0.15);
 }
 
 .countdown-header {
@@ -626,7 +642,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-apricot);
+  color: #38bdf8;
 }
 
 .countdown-grid {
@@ -636,18 +652,19 @@ button {
 }
 
 .countdown-unit-box {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: var(--radius-md);
   padding: 12px 6px;
   text-align: center;
+  box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.05);
 }
 
 .countdown-number {
   font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 800;
-  color: var(--color-cream);
+  color: #ffffff;
   line-height: 1;
   display: block;
   margin-bottom: 4px;
@@ -658,7 +675,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-sage-dark);
+  color: #94a3b8;
 }
 
 /* ==========================================================================
@@ -686,7 +703,10 @@ button {
 }
 
 .section-teal-dark {
-  background-color: #09131d;
+  background-color: #070b14;
+  background-image: 
+    radial-gradient(at 15% 25%, rgba(14, 165, 233, 0.07) 0px, transparent 50%),
+    radial-gradient(at 85% 75%, rgba(99, 102, 241, 0.07) 0px, transparent 50%);
   color: #f8fafc;
 }
 
@@ -715,10 +735,18 @@ button {
   color: #0284c7;
 }
 
+.section-teal-dark .section-eyebrow {
+  color: #38bdf8;
+}
+
 .eyebrow-line {
   width: 28px;
   height: 2px;
   background-color: #0284c7;
+}
+
+.section-teal-dark .eyebrow-line {
+  background-color: #38bdf8;
 }
 
 .section-title-large {
@@ -748,9 +776,9 @@ button {
    INSTITUTIONAL PARTNERS / ALLIES RIBBON
    ========================================================================== */
 .partners-ribbon-section {
-  background: #09131d;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #060a12;
+  border-top: 1px solid rgba(56, 189, 248, 0.12);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
   padding: 36px 0;
   position: relative;
   z-index: 10;
@@ -771,9 +799,9 @@ button {
 .partners-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--color-amber);
+  background-color: #38bdf8;
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--color-amber);
+  box-shadow: 0 0 10px #38bdf8;
   animation: pulse-dot 2.5s infinite ease-in-out;
 }
 
@@ -782,7 +810,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-amber);
+  color: #38bdf8;
 }
 
 .partners-grid {
@@ -793,7 +821,7 @@ button {
 
 .partner-card {
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.12);
   border-radius: var(--radius-md);
   padding: 18px 20px;
   display: flex;
@@ -805,13 +833,13 @@ button {
 .partner-card:hover {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(2, 132, 199, 0.5);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .partner-card.partner-highlight {
-  background: rgba(2, 132, 199, 0.08);
-  border-color: rgba(2, 132, 199, 0.35);
+  background: rgba(14, 165, 233, 0.08);
+  border-color: rgba(56, 189, 248, 0.35);
 }
 
 .partner-org-tag {
@@ -819,7 +847,7 @@ button {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-amber);
+  color: #38bdf8;
   margin-bottom: 6px;
 }
 
@@ -1591,10 +1619,12 @@ button {
 }
 
 .venue-info-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(10, 19, 34, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: var(--radius-xl);
   padding: 32px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .venue-info-item {
@@ -1610,7 +1640,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-amber);
+  color: #38bdf8;
   margin-bottom: 4px;
 }
 
@@ -1618,24 +1648,26 @@ button {
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-cream);
+  color: #ffffff;
   margin-bottom: 4px;
 }
 
 .venue-info-desc {
   font-size: 13px;
-  color: var(--color-sage);
+  color: #94a3b8;
   line-height: 1.6;
 }
 
 /* Venue Interactive Map Container */
 .venue-map-container {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(10, 19, 34, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: var(--radius-2xl);
   padding: clamp(1.5rem, 3.5vw, 2.5rem);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
   margin-top: 40px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .venue-map-header {
@@ -1651,18 +1683,18 @@ button {
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 2.2vw, 2rem);
   font-weight: 700;
-  color: var(--color-cream);
+  color: #ffffff;
   line-height: 1.2;
 }
 
 .venue-map-sub {
   font-size: 13px;
-  color: var(--color-sage);
+  color: #94a3b8;
   margin-top: 4px;
 }
 
 .btn-gmaps-link {
-  background-color: var(--color-amber);
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
   font-weight: 700;
   font-size: 13px;
@@ -1672,20 +1704,21 @@ button {
   align-items: center;
   gap: 8px;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
   white-space: nowrap;
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
 .btn-gmaps-link:hover {
-  background-color: var(--color-amber-hover);
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.45);
 }
 
 .venue-map-frame-wrapper {
   overflow: hidden;
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
@@ -1693,25 +1726,26 @@ button {
    REGISTRATION CTA & CERTIFICATION SECTION
    ========================================================================== */
 .registration-box {
-  background: linear-gradient(135deg, var(--color-teal-mid) 0%, var(--color-teal-dark) 100%);
+  background: linear-gradient(135deg, #0a1322 0%, #070b14 100%);
   border-radius: var(--radius-2xl);
   padding: clamp(2.5rem, 6vw, 4.5rem);
-  color: var(--color-cream);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.22);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
 }
 
 .reg-aura-glow {
   position: absolute;
   top: -50px;
   right: -50px;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(2, 132, 199, 0.2) 0%, transparent 70%);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(99, 102, 241, 0.12) 50%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
+  filter: blur(40px);
 }
 
 .reg-content-grid {
@@ -1730,13 +1764,13 @@ button {
   letter-spacing: -0.05em;
   line-height: 1;
   margin-bottom: 16px;
-  color: var(--color-cream);
+  color: #ffffff;
 }
 
 .reg-desc {
   font-size: 15px;
   line-height: 1.7;
-  color: var(--color-sage);
+  color: #94a3b8;
   max-width: 580px;
   margin-bottom: 24px;
 }
@@ -1754,7 +1788,7 @@ button {
   gap: 10px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--color-apricot);
+  color: #cbd5e1;
 }
 
 .reg-actions {
@@ -1764,7 +1798,7 @@ button {
 }
 
 .btn-reg-main {
-  background-color: var(--color-amber);
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
   font-family: var(--font-heading);
   font-size: 16px;
@@ -1773,17 +1807,18 @@ button {
   border-radius: var(--radius-pill);
   text-align: center;
   transition: all var(--transition-normal);
-  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 6px 22px rgba(2, 132, 199, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
 .btn-reg-main:hover {
-  background-color: var(--color-amber-hover);
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(2, 132, 199, 0.45);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.5);
 }
 
 .btn-calendar-sync {
@@ -1811,10 +1846,10 @@ button {
    FOOTER
    ========================================================================== */
 .main-footer {
-  background-color: var(--color-black);
-  color: var(--color-sage);
+  background-color: #04070e;
+  color: #94a3b8;
   padding: 60px 0 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(56, 189, 248, 0.12);
   font-size: 13px;
 }
 
@@ -1848,7 +1883,7 @@ button {
   font-family: var(--font-heading);
   font-size: 20px;
   font-weight: 800;
-  color: var(--color-cream);
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -1864,7 +1899,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-cream);
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
@@ -1876,12 +1911,12 @@ button {
 }
 
 .footer-links-list a {
-  color: var(--color-sage);
+  color: #94a3b8;
   transition: color var(--transition-fast);
 }
 
 .footer-links-list a:hover {
-  color: var(--color-amber);
+  color: #38bdf8;
 }
 
 .footer-bottom {
@@ -1901,9 +1936,9 @@ button {
 .abstract-modal {
   position: fixed;
   inset: 0;
-  background-color: rgba(10, 31, 35, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(6, 10, 19, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   z-index: 100;
   display: none;
   align-items: center;
