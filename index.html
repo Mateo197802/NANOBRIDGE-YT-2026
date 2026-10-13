@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NANOBRIDGE YT 2026 | IEEE Nanotechnology Council Distinguished Lecturer Program</title>
+  <meta name="description" content="NANOBRIDGE YT 2026: Cumbre de Nanociencia, Implantes Biomédicos y Sociedades de IA con Dr. José Miguel García-Martín (CSIC) y Simon Heilles (MIT Critical Data) en Yachay Tech University.">
+  <meta name="keywords" content="IEEE, Nanotechnology Council, Yachay Tech, CSIC, MIT Critical Data, José Miguel García-Martín, Simon Heilles, thin films, biomédica, inteligencia artificial">
+  <meta name="author" content="IEEE Nanotechnology Council - Yachay Tech Student Branch">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="NANOBRIDGE YT 2026 | IEEE NTC Distinguished Lecturer Program">
+  <meta property="og:description" content="Frontier Nanoscience, Biomedical Implants & Societies of AI Agents. 26-27 de Octubre, 2026 · Yachay Tech University, Ecuador.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ieee-ntc-official-trimmed.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/ieee-ntc-official-trimmed.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Interactive Mesh & Pointer Aura -->
+  <canvas id="mesh-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-aura" aria-hidden="true"></div>
+
+  <!-- Top Notification Bar -->
+  <div class="top-notice-bar">
+    <div class="container notice-inner">
+      <div class="notice-left">
+        <span class="notice-dot"></span>
+        <span data-i18n="top-notice">IEEE Nanotechnology Council · Distinguished Lecturer Program & Frontier Summit · 26–27 Oct 2026</span>
+      </div>
+      <div class="notice-right">
+        <span>Urcuquí, Imbabura · Ecuador</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="main-header">
+    <div class="container nav-wrapper">
+      <div class="brand-group">
+        <a href="#hero" class="brand-badge">
+          <img src="assets/ieee-ntc-official-trimmed.png" alt="IEEE Nanotechnology Council Logo" class="brand-logo-img">
+          <div class="brand-text-block">
+            <span class="brand-tag">NANOBRIDGE YT</span>
+            <span class="brand-sub">IEEE NTC · Yachay Tech</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Menu Links -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a></li>
+          <li><a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a></li>
+          <li><a href="#schedule" class="nav-link" data-i18n="nav-schedule">Agenda</a></li>
+          <li><a href="#lodging" class="nav-link" data-i18n="nav-lodging">Hospedaje</a></li>
+          <li><a href="#venue" class="nav-link" data-i18n="nav-venue">Sede Yachay</a></li>
+          <li><a href="#registration" class="nav-link" data-i18n="nav-register">Inscribirse</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language & CTA Actions -->
+      <div class="nav-actions">
+        <div class="lang-toggle" aria-label="Seleccionar idioma">
+          <button type="button" class="lang-btn active" id="lang-btn-es">ES</button>
+          <button type="button" class="lang-btn" id="lang-btn-en">EN</button>
+        </div>
+        <a href="#registration" class="btn-header-cta" data-i18n="cta-register">
+          <span>Inscribirse Ahora</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button type="button" class="mobile-hamburger" id="mobile-hamburger" aria-label="Abrir Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a>
+    <a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a>
+    <a href="#schedule" class="nav-link" data-i18n="nav-schedule">Agenda</a>
+    <a href="#lodging" class="nav-link" data-i18n="nav-lodging">Hospedaje</a>
+    <a href="#venue" class="nav-link" data-i18n="nav-venue">Sede Yachay</a>
+    <a href="#registration" class="nav-link" data-i18n="nav-register">Inscribirse</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION (MIT CRITICAL DATA INSPIRED)
+         Deep Teal, Orbital Rings, Pastel Typography & Live Countdown
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-aura" aria-hidden="true"></div>
+      <div class="hero-orbit-ring-1" aria-hidden="true"></div>
+      <div class="hero-orbit-ring-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-left-col">
+          <div class="hero-eyebrow-wrapper">
+            <span class="eyebrow-pill"></span>
+            <span data-i18n="hero-eyebrow">IEEE NTC · DISTINGUISHED LECTURER PROGRAM & FRONTIER SUMMIT</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            <span data-i18n="hero-title-main">NANOBRIDGE YT 2026</span>
+            <span class="highlight-accent" data-i18n="hero-title-sub">De la Nanociencia a Implantes Biomédicos y Sociedades de IA.</span>
+          </h1>
+
+          <p class="hero-tagline" data-i18n="hero-tagline">
+            Películas delgadas en los Andes: La primera generación de nano-ingenieros conectando con la frontera científica mundial.
+          </p>
+
+          <p class="hero-description" data-i18n="hero-desc">
+            Dos jornadas presenciales e híbridas con el Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (MIT Critical Data / DENEM Labs) y destacados investigadores en la Universidad Yachay Tech.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#registration" class="btn-primary-pill">
+              <span data-i18n="hero-btn-register">Inscribirse al Evento</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="#schedule" class="btn-outline-pill">
+              <span data-i18n="hero-btn-schedule">Ver Cronograma Completo</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Panel: Summit Metadata & Countdown -->
+        <div class="hero-right-col">
+          <div class="hero-meta-panel">
+            <div class="meta-box">
+              <p class="meta-label" data-i18n="hero-meta-dates-label">Fechas Oficiales</p>
+              <p class="meta-value" data-i18n="hero-meta-dates-val">26 y 27 de Octubre, 2026</p>
+              <p class="meta-subtext" data-i18n="hero-meta-dates-sub">Lunes y Martes · Horario Completo</p>
+            </div>
+
+            <div class="meta-box">
+              <p class="meta-label" data-i18n="hero-meta-venue-label">Sede Presencial</p>
+              <p class="meta-value" data-i18n="hero-meta-venue-val">Universidad Yachay Tech</p>
+              <p class="meta-subtext" data-i18n="hero-meta-venue-sub">Urcuquí, Imbabura, Ecuador</p>
+            </div>
+
+            <div class="meta-box">
+              <p class="meta-label" data-i18n="hero-meta-mode-label">Modalidad</p>
+              <p class="meta-value" data-i18n="hero-meta-mode-val">Híbrida (Presencial & Streaming)</p>
+              <p class="meta-subtext" data-i18n="hero-meta-mode-sub">Certificación Oficial IEEE NTC</p>
+            </div>
+
+            <!-- Live Real-Time Countdown -->
+            <div class="countdown-block">
+              <div class="countdown-header">
+                <span class="countdown-title" data-i18n="countdown-title">La cumbre inicia en</span>
+              </div>
+              <div class="countdown-grid">
+                <div class="countdown-unit-box">
+                  <span class="countdown-number" id="count-days">00</span>
+                  <span class="countdown-label" data-i18n="count-unit-days">Días</span>
+                </div>
+                <div class="countdown-unit-box">
+                  <span class="countdown-number" id="count-hours">00</span>
+                  <span class="countdown-label" data-i18n="count-unit-hours">Horas</span>
+                </div>
+                <div class="countdown-unit-box">
+                  <span class="countdown-number" id="count-minutes">00</span>
+                  <span class="countdown-label" data-i18n="count-unit-mins">Min</span>
+                </div>
+                <div class="countdown-unit-box">
+                  <span class="countdown-number" id="count-seconds">00</span>
+                  <span class="countdown-label" data-i18n="count-unit-secs">Seg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT & PILLARS SECTION (WARM CREAM & PASTEL SAGE)
+         Rounded Cards with 01, 02, 03, 04 Indices
+         ============================================================ -->
+    <section class="section section-cream" id="about">
+      <div class="container">
+        <div class="section-header-grid">
+          <div>
+            <div class="section-eyebrow eyebrow-rust">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="about-eyebrow">Misión & Fundamentos</span>
+            </div>
+            <h2 class="section-title-large" data-i18n="about-title">
+              Ciencia de frontera construida desde los cimientos.
+            </h2>
+          </div>
+          <div>
+            <p class="section-lead-text" data-i18n="about-lead">
+              El IEEE Nanotechnology Council Student Branch Chapter de Yachay Tech organiza este encuentro para consolidar la primera generación de ingenieros en nanotecnología del Ecuador con la vanguardia internacional en materiales avanzados, inteligencia artificial y biotecnología.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <article class="pillar-card card-teal">
+            <div class="pillar-card-top">
+              <span class="pillar-index">01</span>
+              <span class="pillar-category">Materiales Avanzados</span>
+            </div>
+            <div>
+              <h3 class="pillar-card-title" data-i18n="pillar-1-title">Películas Delgadas y Sputtering</h3>
+              <p class="pillar-card-desc" data-i18n="pillar-1-desc">
+                Física fundamental de deposición por magnetron sputtering en ángulo oblicuo (OAD/GLAD) y crecimiento de nanoestructuras columnares.
+              </p>
+            </div>
+            <div class="pillar-card-footer">
+              <span>IMN-CSIC · Madrid</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="pillar-card card-sage">
+            <div class="pillar-card-top">
+              <span class="pillar-index">02</span>
+              <span class="pillar-category">Salud & Biomedicina</span>
+            </div>
+            <div>
+              <h3 class="pillar-card-title" data-i18n="pillar-2-title">Superficies Antibacterianas</h3>
+              <p class="pillar-card-desc" data-i18n="pillar-2-desc">
+                Prevención pasiva de biopelículas en implantes ortopédicos de titanio grado médico sin uso de agentes antibióticos.
+              </p>
+            </div>
+            <div class="pillar-card-footer">
+              <span>Biomateriales</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="pillar-card card-cream">
+            <div class="pillar-card-top">
+              <span class="pillar-index">03</span>
+              <span class="pillar-category">Inteligencia Artificial</span>
+            </div>
+            <div>
+              <h3 class="pillar-card-title" data-i18n="pillar-3-title">Laboratorios Autónomos de IA</h3>
+              <p class="pillar-card-desc" data-i18n="pillar-3-desc">
+                Sistemas multi-agente para experimentación física en bucle cerrado (closed-loop) y dinámicas sociales de agentes de IA en ciencia biomédica.
+              </p>
+            </div>
+            <div class="pillar-card-footer">
+              <span>MIT Critical Data</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="pillar-card card-rust">
+            <div class="pillar-card-top">
+              <span class="pillar-index">04</span>
+              <span class="pillar-category">Innovación & Spin-Offs</span>
+            </div>
+            <div>
+              <h3 class="pillar-card-title" data-i18n="pillar-4-title">Deep-Tech & Transferencia</h3>
+              <p class="pillar-card-desc" data-i18n="pillar-4-desc">
+                Del laboratorio académico a la spin-off: La experiencia de Nanostine escalando patentes hacia soluciones industriales reales.
+              </p>
+            </div>
+            <div class="pillar-card-footer">
+              <span>Nanostine S.L.</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED SPEAKERS SECTION: UNIFORM GRID WITH PHOTO FRAMES
+         User requirement: Cuadrícula uniforme donde todos los ponentes tengan
+         el mismo tamaño de tarjeta y diseño, con marcos de fotos listos.
+         ============================================================ -->
+    <section class="section section-sage" id="speakers">
+      <div class="container">
+        <div class="section-header-grid">
+          <div>
+            <div class="section-eyebrow eyebrow-rust">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="speakers-eyebrow">Comité Científico & Expositores</span>
+            </div>
+            <h2 class="section-title-large" data-i18n="speakers-title">
+              Ponentes Destacados
+            </h2>
+          </div>
+          <div>
+            <p class="section-lead-text" data-i18n="speakers-lead">
+              Un panel interdisciplinario que une científicos del CSIC en España, investigadores del MIT Critical Data y docentes-investigadores de Yachay Tech e instituciones aliadas.
+            </p>
+          </div>
+        </div>
+
+        <div class="speakers-grid">
+
+          <!-- 01. Dr. José Miguel García-Martín -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">01 · KEYNOTE</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Dr. José Miguel García-Martín">
+                  <span class="speaker-initials">JM</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">CSIC · Nanostine</span>
+                  <span class="speaker-affiliation-sub">IEEE NTC Distinguished Lecturer</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Dr. José Miguel García-Martín</h3>
+              <p class="speaker-bio">
+                Investigador Científico en el Instituto de Micro y Nanotecnología (IMN-CNM, CSIC, Madrid). Co-fundador de Nanostine S.L. Pionero en recubrimientos nanoestructurados columnares de titanio con propiedades antibacterianas pasivas.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 1 (26 Oct) · Plenaria</span>
+                  <p class="speaker-talk-title">Nanostructured Columnar Thin Films & Antibacterial Surfaces</p>
+                </div>
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · Plenaria</span>
+                  <p class="speaker-talk-title">From the Academic Laboratory to Deep-Tech Spin-Offs: Nanostine</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="garcia-martin" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <a href="https://scholar.google.es/citations?user=2smVeaEAAAAJ" target="_blank" rel="noopener" class="speaker-scholar-link">
+                <span>Google Scholar</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 02. Simon Heilles -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">02 · KEYNOTE</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Simon Heilles">
+                  <span class="speaker-initials">SH</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">MIT Critical Data</span>
+                  <span class="speaker-affiliation-sub">Lead AI Architect · DENEM Labs</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Simon Heilles</h3>
+              <p class="speaker-bio">
+                Ingeniero de aprendizaje automático y arquitecto de sistemas de IA, colaborador de investigación en MIT Critical Data y fundador de DENEM Labs. Especialista en laboratorios autónomos de experimentación física y sociedades de agentes.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 1 (26 Oct) · Plenaria</span>
+                  <p class="speaker-talk-title">Autonomous Nanotechnology Laboratory: Closed-Loop AI</p>
+                </div>
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · Plenaria</span>
+                  <p class="speaker-talk-title">Societies of AI Agents: Influence, Reputation & Emergence</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="simon-heilles" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">MIT Affiliation</span>
+            </div>
+          </article>
+
+          <!-- 03. Dr. Edwin Valarezo Añazco -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">03 · INVITADO</span>
+                <span class="speaker-modality-badge badge-virtual" data-i18n="badge-virtual">Virtual</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Dr. Edwin Valarezo">
+                  <span class="speaker-initials">EV</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">IEEE EMBS Ecuador</span>
+                  <span class="speaker-affiliation-sub">Presidente de Sección</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Dr. Edwin Valarezo Añazco</h3>
+              <p class="speaker-bio">
+                Líder en ingeniería biomédica y presidente de la sociedad IEEE EMBS en Ecuador. Impulsor de la integración de biosensores y tecnologías de instrumentación en el sistema de salud ecuatoriano.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 1 (26 Oct) · 15:30</span>
+                  <p class="speaker-talk-title">Fronteras en Ingeniería Biomédica y Ecosistema de Salud en Ecuador</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="edwin-valarezo" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">IEEE EMBS</span>
+            </div>
+          </article>
+
+          <!-- 04. Dr. José Torres -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">04 · INVITADO</span>
+                <span class="speaker-modality-badge badge-virtual" data-i18n="badge-virtual">Virtual</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Dr. José Torres">
+                  <span class="speaker-initials">JT</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Nanotecnología Aplicada</span>
+                  <span class="speaker-affiliation-sub">Universidad Alemana</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Dr. José Torres</h3>
+              <p class="speaker-bio">
+                Investigador postdoctoral especializado en métodos avanzados de caracterización en nanociencia, microscopía electrónica y análisis estructural en centros de investigación en Alemania.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · 12:00</span>
+                  <p class="speaker-talk-title">Avances Internacionales en Caracterización y Métodos en Nanociencia</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="jose-torres" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">Investigación Int.</span>
+            </div>
+          </article>
+
+          <!-- 05. Prof. Carlos Reinoso -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">05 · FACULTAD</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Prof. Carlos Reinoso">
+                  <span class="speaker-initials">CR</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Yachay Tech</span>
+                  <span class="speaker-affiliation-sub">Ciencias Físicas y Nanotecnología</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Prof. Carlos Reinoso</h3>
+              <p class="speaker-bio">
+                Docente-Investigador en la Escuela de Ciencias Físicas y Nanotecnología de Yachay Tech. Responsable de líneas estratégicas en desarrollo de nanomateriales y prototipado local.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 1 (26 Oct) · 10:00</span>
+                  <p class="speaker-talk-title">Líneas de Investigación en Nanomateriales y Fabricación Local</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="carlos-reinoso" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">Yachay Faculty</span>
+            </div>
+          </article>
+
+          <!-- 06. Edwin Chimborazo -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">06 · INVESTIGADOR</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Edwin Chimborazo">
+                  <span class="speaker-initials">EC</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Nanociencia Aplicada</span>
+                  <span class="speaker-affiliation-sub">Investigación Regional</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Edwin Chimborazo</h3>
+              <p class="speaker-bio">
+                Investigador centrado en síntesis física y química de nanoestructuras, caracterización estructural y desarrollo de proyectos de transferencia tecnológica en el país.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 1 (26 Oct) · 16:30</span>
+                  <p class="speaker-talk-title">Desarrollo de Nanotecnología y Aplicaciones Regionales</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="edwin-chimborazo" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">Investigación</span>
+            </div>
+          </article>
+
+          <!-- 07. Prof. Andrey Mereshchenko -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">07 · FACULTAD</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Prof. Andrey Mereshchenko">
+                  <span class="speaker-initials">AM</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Fotoquímica & Fotofísica</span>
+                  <span class="speaker-affiliation-sub">1940+ Citas · Índice h: 24</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Prof. Andrey Mereshchenko</h3>
+              <p class="speaker-bio">
+                Docente e investigador en la Escuela de Ciencias Físicas y Nanotecnología de Yachay Tech. Especialista internacional en fotoquímica ultrarrápida, luminiscencia, tierras raras y nanocompuestos coloidales (Nano Letters, ACS Nano).
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · 15:30</span>
+                  <p class="speaker-talk-title">Fotoquímica, Luminiscencia y Dinámica de Nanomateriales</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="andrei-mereshchenko" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <a href="https://scholar.google.com/citations?user=tMjOsAUAAAAJ" target="_blank" rel="noopener" class="speaker-scholar-link">
+                <span>Google Scholar</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 08. Benjamín Pusay -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">08 · INVESTIGADOR</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: Benjamín Pusay">
+                  <span class="speaker-initials">BP</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Yachay Tech</span>
+                  <span class="speaker-affiliation-sub">Materiales Nanoestructurados</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">Benjamín Pusay</h3>
+              <p class="speaker-bio">
+                Investigador en nanotecnología centrado en caracterización de nuevos materiales, aplicaciones en almacenamiento y optimización de dispositivos electroquímicos.
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · 16:30</span>
+                  <p class="speaker-talk-title">Innovación en Materiales Nanoestructurados</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="benjamin-pusay" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <span class="speaker-scholar-link">Investigación</span>
+            </div>
+          </article>
+
+          <!-- 09. MSc. María Fernanda Bósquez-Cáceres -->
+          <article class="speaker-card">
+            <div>
+              <div class="speaker-card-header">
+                <span class="speaker-index-tag">09 · FACULTAD</span>
+                <span class="speaker-modality-badge badge-in-person" data-i18n="badge-in-person">Presencial</span>
+              </div>
+              <div class="speaker-photo-frame-wrapper">
+                <div class="speaker-avatar-frame" aria-label="Marco de foto: María Fernanda Bósquez">
+                  <span class="speaker-initials">MB</span>
+                </div>
+                <div class="speaker-avatar-meta">
+                  <span class="speaker-role-pill">Baterías & Polímeros</span>
+                  <span class="speaker-affiliation-sub">Yachay Tech · 115+ Citas</span>
+                </div>
+              </div>
+              <h3 class="speaker-name">MSc. María Fernanda Bósquez-Cáceres</h3>
+              <p class="speaker-bio">
+                Química y técnica de laboratorio en la Escuela de Ciencias Físicas y Nanotecnología de Yachay Tech. Investigadora en electrolitos poliméricos nanocompuestos, hidrogeles de quitosano y baterías de zinc-aire sostenibles (Batteries, Polymers, J. Electrochem. Soc.).
+              </p>
+              <div class="speaker-talks-container">
+                <div class="speaker-talk-item">
+                  <span class="speaker-talk-day-tag">Día 2 (27 Oct) · 17:30</span>
+                  <p class="speaker-talk-title">Electrolitos Nanocompuestos para Baterías de Zinc-Aire</p>
+                </div>
+              </div>
+            </div>
+            <div class="speaker-card-actions">
+              <button type="button" class="btn-speaker-abstract" data-speaker="maria-fernanda-bosquez" data-i18n="speaker-abstract-btn">
+                <span>Ver Abstract de Charla</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <a href="https://scholar.google.es/citations?user=xcDtJ7wAAAAJ" target="_blank" rel="noopener" class="speaker-scholar-link">
+                <span>Google Scholar</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCHEDULE & AGENDA SECTION: INTERACTIVE TABS & HARMONIZED TIMELINE
+         Day 1: 10:00 Local -> 11:00 Danza -> 11:30 José Miguel -> Simon Heilles etc.
+         Day 2: 10:00 José Miguel -> 11:30 Pianista -> 12:00 Virtual -> Simon Heilles etc.
+         ============================================================ -->
+    <section class="section section-cream" id="schedule">
+      <div class="container">
+        <div class="section-header-grid">
+          <div>
+            <div class="section-eyebrow eyebrow-rust">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="schedule-eyebrow">Programa Cronológico</span>
+            </div>
+            <h2 class="section-title-large" data-i18n="schedule-title">
+              Agenda de 2 Días
+            </h2>
+          </div>
+          <div>
+            <p class="section-lead-text" data-i18n="schedule-lead">
+              Sesiones técnicas, conferencias plenarias, intermedios artísticos y talleres prácticos estructurados para estudiantes e investigadores.
+            </p>
+          </div>
+        </div>
+
+        <!-- Day Selector Tabs -->
+        <div class="schedule-nav-tabs">
+          <button type="button" class="schedule-tab-btn active" data-day="1">
+            <span data-i18n="tab-day-1">Día 1 · Lunes 26 Oct</span>
+            <span class="schedule-tab-date">09:30 - 19:00</span>
+          </button>
+          <button type="button" class="schedule-tab-btn" data-day="2">
+            <span data-i18n="tab-day-2">Día 2 · Martes 27 Oct</span>
+            <span class="schedule-tab-date">09:45 - 19:00</span>
+          </button>
+        </div>
+
+        <!-- DAY 1 TIMELINE -->
+        <div class="schedule-content-panel active" id="schedule-day-1">
+          <div class="timeline-flow">
+
+            <!-- Day 1: 09:30 Registration -->
+            <div class="timeline-entry entry-break">
+              <div class="timeline-time-col">
+                <span class="timeline-time">09:30 - 10:00</span>
+                <span class="timeline-duration">30 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-break">Apertura</span>
+                  <span class="timeline-tag tag-invited">Presencial</span>
+                </div>
+                <h3 class="timeline-title">Acreditación, Registro & Bienvenida Institucional</h3>
+                <p class="timeline-speaker-sub">Capítulo Estudiantil IEEE NTC & Autoridades de Yachay Tech</p>
+              </div>
+            </div>
+
+            <!-- Day 1: 10:00 Local Speaker: Prof. Carlos Reinoso -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">10:00 - 11:00</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia Local</span>
+                  <span class="timeline-tag tag-break">Presencial</span>
+                </div>
+                <h3 class="timeline-title">Líneas de Investigación en Nanomateriales y Fabricación Local</h3>
+                <p class="timeline-speaker-sub">Prof. Carlos Reinoso · Escuela de Ciencias Físicas y Nanotecnología</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Presentación de los proyectos pioneros en formulación y síntesis de nanomateriales llevados a cabo en los laboratorios de Yachay Tech, explorando su aplicabilidad industrial y ambiental en Ecuador.
+              </div>
+            </div>
+
+            <!-- Day 1: 11:00 DANZA TRADICIONAL (User explicit requirement) -->
+            <div class="timeline-entry entry-cultural">
+              <div class="timeline-time-col">
+                <span class="timeline-time">11:00 - 11:30</span>
+                <span class="timeline-duration">30 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-cultural">Acto Cultural</span>
+                  <span class="timeline-tag tag-break">Auditorio</span>
+                </div>
+                <h3 class="timeline-title">Presentación Especial del Club de Danza Tradicional</h3>
+                <p class="timeline-speaker-sub">Club de Danza Universitaria · Expresión Cultural de Imbabura</p>
+              </div>
+              <div class="timeline-action-col">
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-rust); text-transform: uppercase;">En Vivo</span>
+              </div>
+            </div>
+
+            <!-- Day 1: 11:30 Plenary: Dr. José Miguel García-Martín -->
+            <div class="timeline-entry entry-keynote">
+              <div class="timeline-time-col">
+                <span class="timeline-time">11:30 - 13:00</span>
+                <span class="timeline-duration">90 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-plenary">Plenaria Inaugural</span>
+                  <span class="timeline-tag tag-break">IEEE DL</span>
+                </div>
+                <h3 class="timeline-title">Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants</h3>
+                <p class="timeline-speaker-sub">Dr. José Miguel García-Martín · Instituto de Micro y Nanotecnología (CSIC, Madrid)</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Fundamentos físicos de magnetron sputtering bajo ángulo oblicuo (OAD/GLAD) para el crecimiento de películas columnares. Análisis de propiedades antibacterianas pasivas en titanio de grado médico para implantes ortopédicos, evitando infecciones sin antibióticos.
+              </div>
+            </div>
+
+            <!-- Day 1: 13:00 Coffee Break & Networking -->
+            <div class="timeline-entry entry-break">
+              <div class="timeline-time-col">
+                <span class="timeline-time">13:00 - 14:00</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-break">Receso & Almuerzo</span>
+                  <span class="timeline-tag tag-invited">Networking</span>
+                </div>
+                <h3 class="timeline-title">Coffee Break & Sesión de Networking Académico</h3>
+                <p class="timeline-speaker-sub">Punto de encuentro para estudiantes, ponentes y profesores</p>
+              </div>
+            </div>
+
+            <!-- Day 1: 14:00 Plenary: Simon Heilles -->
+            <div class="timeline-entry entry-keynote">
+              <div class="timeline-time-col">
+                <span class="timeline-time">14:00 - 15:30</span>
+                <span class="timeline-duration">90 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-plenary">Plenaria AI</span>
+                  <span class="timeline-tag tag-break">MIT Critical Data</span>
+                </div>
+                <h3 class="timeline-title">Autonomous Nanotechnology Laboratory: AI agents for closed-loop physical experimentation</h3>
+                <p class="timeline-speaker-sub">Simon Heilles · MIT Critical Data / Lead AI Architect en DENEM Labs</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Arquitecturas multi-agente de IA aplicadas a experimentación en bucle cerrado: formulación de hipótesis, diseño de ensayos, simulación con gemelos digitales y control de instrumentos de caracterización nanotecnológica bajo supervisión humana.
+              </div>
+            </div>
+
+            <!-- Day 1: 15:30 Virtual: Dr. Edwin Valarezo -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">15:30 - 16:30</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia Virtual</span>
+                  <span class="timeline-tag tag-break">IEEE EMBS</span>
+                </div>
+                <h3 class="timeline-title">Fronteras en Ingeniería Biomédica y Ecosistema de Salud en Ecuador</h3>
+                <p class="timeline-speaker-sub">Dr. Edwin Valarezo Añazco · Presidente de IEEE EMBS Sección Ecuador</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Desafíos y oportunidades en el diseño de dispositivos médicos locales, sensores basados en nanotecnología y articulación entre la academia y el sistema nacional de salud.
+              </div>
+            </div>
+
+            <!-- Day 1: 16:30 Local: Edwin Chimborazo -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">16:30 - 17:30</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia</span>
+                  <span class="timeline-tag tag-break">Presencial</span>
+                </div>
+                <h3 class="timeline-title">Desarrollo de Nanotecnología y Aplicaciones Regionales</h3>
+                <p class="timeline-speaker-sub">Edwin Chimborazo · Investigador en Nanociencia</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Revisión de proyectos de síntesis nanométrica aplicados a problemáticas locales en agricultura, remediación ambiental y producción de materiales.
+              </div>
+            </div>
+
+            <!-- Day 1: 17:30 Workshop Práctico -->
+            <div class="timeline-entry" style="border-left: 6px solid #5d3ebc;">
+              <div class="timeline-time-col">
+                <span class="timeline-time">17:30 - 19:00</span>
+                <span class="timeline-duration">90 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-workshop">NanoSkills Workshop</span>
+                  <span class="timeline-tag tag-break">Certificado</span>
+                </div>
+                <h3 class="timeline-title">Workshop Práctico de Formación Especializada en Nanociencia</h3>
+                <p class="timeline-speaker-sub">Sesión técnica interactiva para el desarrollo de competencias de posgrado e investigación</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DAY 2 TIMELINE -->
+        <div class="schedule-content-panel" id="schedule-day-2">
+          <div class="timeline-flow">
+
+            <!-- Day 2: 09:45 Opening -->
+            <div class="timeline-entry entry-break">
+              <div class="timeline-time-col">
+                <span class="timeline-time">09:45 - 10:00</span>
+                <span class="timeline-duration">15 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-break">Apertura</span>
+                  <span class="timeline-tag tag-invited">Día 2</span>
+                </div>
+                <h3 class="timeline-title">Apertura de la Segunda Jornada & Recapitulación Técnica</h3>
+                <p class="timeline-speaker-sub">Directiva del Capítulo Estudiantil IEEE NTC Yachay Tech</p>
+              </div>
+            </div>
+
+            <!-- Day 2: 10:00 Plenary: Dr. José Miguel García-Martín -->
+            <div class="timeline-entry entry-keynote">
+              <div class="timeline-time-col">
+                <span class="timeline-time">10:00 - 11:30</span>
+                <span class="timeline-duration">90 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-plenary">Plenaria Traslacional</span>
+                  <span class="timeline-tag tag-break">Deep-Tech</span>
+                </div>
+                <h3 class="timeline-title">From the Academic Laboratory to Deep-Tech Spin-Offs: The Nanostine Journey</h3>
+                <p class="timeline-speaker-sub">Dr. José Miguel García-Martín · Co-Fundador de Nanostine & CSIC</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                El viaje de valorización de patentes y transferencia tecnológica desde el Instituto de Micro y Nanotecnología hasta la creación de Nanostine S.L. Claves para que jóvenes científicos conviertan ideas en empresas de alta tecnología.
+              </div>
+            </div>
+
+            <!-- Day 2: 11:30 RECITAL DE PIANO EN VIVO (User explicit requirement) -->
+            <div class="timeline-entry entry-cultural">
+              <div class="timeline-time-col">
+                <span class="timeline-time">11:30 - 12:00</span>
+                <span class="timeline-duration">30 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-cultural">Intermedio Artístico</span>
+                  <span class="timeline-tag tag-break">Auditorio</span>
+                </div>
+                <h3 class="timeline-title">Recital de Piano en Vivo (Música Clásica y Contemporánea)</h3>
+                <p class="timeline-speaker-sub">Pianista Invitado · Presentación Artística Exclusiva</p>
+              </div>
+              <div class="timeline-action-col">
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-rust); text-transform: uppercase;">En Vivo</span>
+              </div>
+            </div>
+
+            <!-- Day 2: 12:00 Virtual: Dr. José Torres -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">12:00 - 13:00</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia Virtual</span>
+                  <span class="timeline-tag tag-break">Alemania</span>
+                </div>
+                <h3 class="timeline-title">Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia</h3>
+                <p class="timeline-speaker-sub">Dr. José Torres · Investigador en Nanotecnología Aplicada</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Metodologías de vanguardia en microscopía electrónica de transmisión, difracción y nanocaracterización física utilizadas en centros de excelencia en Alemania.
+              </div>
+            </div>
+
+            <!-- Day 2: 13:00 Coffee Break & Almuerzo -->
+            <div class="timeline-entry entry-break">
+              <div class="timeline-time-col">
+                <span class="timeline-time">13:00 - 14:00</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-break">Receso & Almuerzo</span>
+                  <span class="timeline-tag tag-invited">Networking</span>
+                </div>
+                <h3 class="timeline-title">Coffee Break & Diálogo Abierto con Expositores</h3>
+                <p class="timeline-speaker-sub">Encuentro de preguntas y respuestas informales en el hall del auditorio</p>
+              </div>
+            </div>
+
+            <!-- Day 2: 14:00 Plenary: Simon Heilles -->
+            <div class="timeline-entry entry-keynote">
+              <div class="timeline-time-col">
+                <span class="timeline-time">14:00 - 15:30</span>
+                <span class="timeline-duration">90 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-plenary">Plenaria AI</span>
+                  <span class="timeline-tag tag-break">MIT Critical Data</span>
+                </div>
+                <h3 class="timeline-title">Societies of AI Agents: Measuring influence, reputation, and emergent social behavior</h3>
+                <p class="timeline-speaker-sub">Simon Heilles · Lead AI Architect (DENEM Labs) & MIT Critical Data</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Dinámicas sociales de agentes artificiales: mecanismos que generan confianza, reputación, conformidad y cascadas de información cuando los modelos de lenguaje interactúan entre sí en tareas complejas.
+              </div>
+            </div>
+
+            <!-- Day 2: 15:30 Faculty: Prof. Andrey Mereshchenko -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">15:30 - 16:30</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia Magistral</span>
+                  <span class="timeline-tag tag-break">Yachay Tech</span>
+                </div>
+                <h3 class="timeline-title">Fotoquímica, Luminiscencia y Dinámica Ultrarrápida en Nanomateriales</h3>
+                <p class="timeline-speaker-sub">Prof. Andrey Mereshchenko · Escuela de Ciencias Físicas y Nanotecnología</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Investigaciones sobre la separación de cargas en hetero-nanocristales coloidales, dopaje con iones de lantánidos y espectroscopía de absorción transitoria femtosegundo.
+              </div>
+            </div>
+
+            <!-- Day 2: 16:30 Speaker: Benjamín Pusay -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">16:30 - 17:30</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia</span>
+                  <span class="timeline-tag tag-break">Presencial</span>
+                </div>
+                <h3 class="timeline-title">Innovación en Materiales Nanoestructurados para Aplicaciones Energéticas</h3>
+                <p class="timeline-speaker-sub">Benjamín Pusay · Investigador en Materiales Avanzados</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Nuevas rutas de síntesis de nanomateriales para almacenamiento energético y dispositivos electroquímicos de nueva generación.
+              </div>
+            </div>
+
+            <!-- Day 2: 17:30 Faculty: MSc. María Fernanda Bósquez -->
+            <div class="timeline-entry">
+              <div class="timeline-time-col">
+                <span class="timeline-time">17:30 - 18:30</span>
+                <span class="timeline-duration">60 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-invited">Conferencia Magistral</span>
+                  <span class="timeline-tag tag-break">Yachay Tech</span>
+                </div>
+                <h3 class="timeline-title">Electrolitos Nanocompuestos e Hidrogeles para Baterías de Zinc-Aire Sostenibles</h3>
+                <p class="timeline-speaker-sub">MSc. María Fernanda Bósquez-Cáceres · Escuela de Ciencias Físicas y Nanotecnología</p>
+              </div>
+              <div class="timeline-action-col">
+                <button type="button" class="btn-toggle-abstract">Ver Resumen</button>
+              </div>
+              <div class="timeline-expandable-abstract">
+                Hidrogeles de quitosano y almidón de semilla de aguacate dopados con nanodiamantes como electrolitos seguros y biodegradables para baterías de zinc-aire.
+              </div>
+            </div>
+
+            <!-- Day 2: 18:30 Clausura y Certificados -->
+            <div class="timeline-entry entry-keynote">
+              <div class="timeline-time-col">
+                <span class="timeline-time">18:30 - 19:00</span>
+                <span class="timeline-duration">30 MIN</span>
+              </div>
+              <div class="timeline-info-col">
+                <div class="timeline-badge-row">
+                  <span class="timeline-tag tag-plenary">Clausura Oficial</span>
+                  <span class="timeline-tag tag-break">Certificados</span>
+                </div>
+                <h3 class="timeline-title">Ceremonia de Clausura Oficial, Reconocimientos & Entrega de Certificados</h3>
+                <p class="timeline-speaker-sub">IEEE Nanotechnology Council Student Branch Chapter & Invitados de Honor</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LODGING SECTION: FINANCIAL COMPARISON TABLE
+         Full official breakdown for Kampak Wasi, Strega, and Sueños de Primavera
+         ============================================================ -->
+    <section class="section section-sage" id="lodging">
+      <div class="container">
+        <div class="section-header-grid">
+          <div>
+            <div class="section-eyebrow eyebrow-rust">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="lodging-eyebrow">Logística & Alojamiento</span>
+            </div>
+            <h2 class="section-title-large" data-i18n="lodging-title">
+              Comparativo Financiero de Hospedaje en Urcuquí
+            </h2>
+          </div>
+          <div>
+            <p class="section-lead-text" data-i18n="lodging-lead">
+              Informe oficial consolidado de tarifas, capacidad hotelera y paquetes de referencia para asistentes y delegaciones durante NANOBRIDGE YT 2026.
+            </p>
+          </div>
+        </div>
+
+        <!-- Master Comparison Table -->
+        <div class="table-responsive-wrapper">
+          <table class="lodging-table">
+            <thead>
+              <tr>
+                <th data-i18n="lodging-th-hotel">Hotel / Hostal</th>
+                <th data-i18n="lodging-th-rooms">Habitaciones</th>
+                <th data-i18n="lodging-th-beds">Plazas</th>
+                <th data-i18n="lodging-th-rate">Tarifa / Noche</th>
+                <th data-i18n="lodging-th-cost-night">Costo Hotel/Noche</th>
+                <th data-i18n="lodging-th-cost-2">Costo 2 Noches</th>
+                <th data-i18n="lodging-th-cost-3">Costo 3 Noches</th>
+                <th data-i18n="lodging-th-status">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="hotel-name-cell">Kampak Wasi</td>
+                <td>6</td>
+                <td>21 plazas</td>
+                <td class="price-cell">$12 / persona</td>
+                <td>$252</td>
+                <td class="price-cell">$504</td>
+                <td>$756</td>
+                <td><span class="status-confirmed">Confirmado (Proformas)</span></td>
+              </tr>
+              <tr>
+                <td class="hotel-name-cell">Strega</td>
+                <td>7</td>
+                <td>15 adultos</td>
+                <td class="price-cell">$15 / persona (grupo)</td>
+                <td>$225</td>
+                <td class="price-cell">$450</td>
+                <td>$675</td>
+                <td><span class="status-confirmed">Confirmado (WhatsApp)</span></td>
+              </tr>
+              <tr>
+                <td class="hotel-name-cell">Sueños de Primavera</td>
+                <td>15</td>
+                <td>36 calculadas</td>
+                <td class="price-cell">$12 indiv. / $20 pareja</td>
+                <td>$384</td>
+                <td class="price-cell">$768</td>
+                <td>$1,152</td>
+                <td><span class="status-confirmed">Desglose Enviado</span></td>
+              </tr>
+              <tr style="background: rgba(23,61,69,0.06); font-weight: 700;">
+                <td class="hotel-name-cell">TOTAL CAPACIDAD COMPLETA</td>
+                <td>28</td>
+                <td>72 plazas</td>
+                <td>Tarifa combinada</td>
+                <td>$861 / noche</td>
+                <td class="price-cell">$1,722</td>
+                <td class="price-cell">$2,583</td>
+                <td><span>Capacidad Total</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Reference Package Cards -->
+        <div class="packages-grid">
+          <!-- Package 1: Economic -->
+          <article class="package-card">
+            <div>
+              <p class="package-tier-label">Paquete Económico</p>
+              <h3 class="package-name">Sueños de Primavera</h3>
+              <div class="package-price-row">
+                <span class="package-cost">$10</span>
+                <span class="package-unit">USD / persona / noche</span>
+              </div>
+              <p style="font-size: 13px; color: var(--color-teal-mid);">Modalidad matrimonial compartida (2 personas por cama, $20/pareja/noche).</p>
+            </div>
+            <div class="package-notes">
+              <strong>Estadía 2 noches:</strong> $20 USD / persona<br>
+              <strong>Estadía 3 noches:</strong> $30 USD / persona
+            </div>
+          </article>
+
+          <!-- Package 2: Standard A -->
+          <article class="package-card">
+            <div>
+              <p class="package-tier-label">Paquete Estándar A</p>
+              <h3 class="package-name">Kampak Wasi</h3>
+              <div class="package-price-row">
+                <span class="package-cost">$12</span>
+                <span class="package-unit">USD / persona / noche</span>
+              </div>
+              <p style="font-size: 13px; color: var(--color-teal-mid);">Plaza individual por persona según distribución oficial de habitaciones (101-202).</p>
+            </div>
+            <div class="package-notes">
+              <strong>Estadía 2 noches:</strong> $24 USD / persona<br>
+              <strong>Estadía 3 noches:</strong> $36 USD / persona
+            </div>
+          </article>
+
+          <!-- Package 3: Standard B -->
+          <article class="package-card">
+            <div>
+              <p class="package-tier-label">Paquete Estándar B</p>
+              <h3 class="package-name">Sueños de Primavera</h3>
+              <div class="package-price-row">
+                <span class="package-cost">$12</span>
+                <span class="package-unit">USD / persona / noche</span>
+              </div>
+              <p style="font-size: 13px; color: var(--color-teal-mid);">Cama individual (1½ plaza) o cama matrimonial usada individualmente por $12.</p>
+            </div>
+            <div class="package-notes">
+              <strong>Estadía 2 noches:</strong> $24 USD / persona<br>
+              <strong>Estadía 3 noches:</strong> $36 USD / persona
+            </div>
+          </article>
+
+          <!-- Package 4: Superior por precio -->
+          <article class="package-card">
+            <div>
+              <p class="package-tier-label">Superior por Precio</p>
+              <h3 class="package-name">Strega</h3>
+              <div class="package-price-row">
+                <span class="package-cost">$15</span>
+                <span class="package-unit">USD / persona / noche</span>
+              </div>
+              <p style="font-size: 13px; color: var(--color-teal-mid);">Tarifa grupal de hotel completo para 15 adultos con suite, habitaciones dobles y triple.</p>
+            </div>
+            <div class="package-notes">
+              <strong>Estadía 2 noches:</strong> $30 USD / persona<br>
+              <strong>Estadía 3 noches:</strong> $45 USD / persona
+            </div>
+          </article>
+        </div>
+
+        <!-- Room-by-Room Breakdown Accordion -->
+        <div class="room-accordion-wrapper">
+          <button type="button" class="room-accordion-toggle" id="toggle-room-breakdown" aria-expanded="false">
+            <span data-i18n="lodging-accordion-btn">Ver Desglose Completo Habitación por Habitación</span>
+            <svg class="accordion-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="room-accordion-content" id="room-breakdown-content">
+            <div class="table-responsive-wrapper" style="margin-bottom: 0;">
+              <table class="lodging-table" style="font-size: 13px;">
+                <thead>
+                  <tr>
+                    <th>Hotel</th>
+                    <th>Habitación</th>
+                    <th>Matrimoniales</th>
+                    <th>Individuales</th>
+                    <th>Plazas Máx.</th>
+                    <th>Tarifa Individual</th>
+                    <th>Tarifa Pareja</th>
+                    <th>Costo/Noche</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Kampak Wasi</td><td>101</td><td>1</td><td>1</td><td>3</td><td>$12</td><td>$24</td><td>$36</td></tr>
+                  <tr><td>Kampak Wasi</td><td>102</td><td>0</td><td>3</td><td>3</td><td>$12</td><td>-</td><td>$36</td></tr>
+                  <tr><td>Kampak Wasi</td><td>103</td><td>0</td><td>3</td><td>3</td><td>$12</td><td>-</td><td>$36</td></tr>
+                  <tr><td>Kampak Wasi</td><td>104</td><td>1</td><td>1</td><td>3</td><td>$12</td><td>$24</td><td>$36</td></tr>
+                  <tr><td>Kampak Wasi</td><td>201</td><td>1</td><td>2</td><td>4</td><td>$12</td><td>$24</td><td>$48</td></tr>
+                  <tr><td>Kampak Wasi</td><td>202</td><td>1</td><td>3</td><td>5</td><td>$12</td><td>$24</td><td>$60</td></tr>
+                  <tr><td>Strega</td><td>Triple</td><td>-</td><td>-</td><td>3</td><td>$15</td><td>-</td><td>$45</td></tr>
+                  <tr><td>Strega</td><td>Doble</td><td>-</td><td>-</td><td>2</td><td>$15</td><td>-</td><td>$30</td></tr>
+                  <tr><td>Strega</td><td>Gemelas 1 y 2</td><td>-</td><td>-</td><td>4</td><td>$15</td><td>-</td><td>$60</td></tr>
+                  <tr><td>Strega</td><td>Suite / Frente / Cedro</td><td>-</td><td>-</td><td>6</td><td>$15</td><td>-</td><td>$90</td></tr>
+                  <tr><td>Sueños de Primavera</td><td>101</td><td>0</td><td>1</td><td>1</td><td>$12</td><td>-</td><td>$12</td></tr>
+                  <tr><td>Sueños de Primavera</td><td>102</td><td>1</td><td>0</td><td>2</td><td>$12</td><td>$20</td><td>$20</td></tr>
+                  <tr><td>Sueños de Primavera</td><td>103</td><td>1</td><td>2</td><td>4</td><td>$12</td><td>$20</td><td>$44</td></tr>
+                  <tr><td>Sueños de Primavera</td><td>105</td><td>0</td><td>4</td><td>4</td><td>$12</td><td>-</td><td>$48</td></tr>
+                  <tr><td>Sueños de Primavera</td><td>106 - 301</td><td>10 hab.</td><td>10 hab.</td><td>25</td><td>$12</td><td>$20</td><td>$260</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OFFICIAL VENUE SECTION: YACHAY TECH CAMPUS
+         Clean focus on Campus Yachay Tech (Auditorium & Laboratories)
+         ============================================================ -->
+    <section class="section section-teal-dark" id="venue">
+      <div class="container">
+        <div class="section-header-grid">
+          <div>
+            <div class="section-eyebrow eyebrow-amber">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="venue-eyebrow">Sede del Evento</span>
+            </div>
+            <h2 class="section-title-large" data-i18n="venue-title">
+              Universidad Yachay Tech
+            </h2>
+          </div>
+          <div>
+            <p class="section-lead-text" data-i18n="venue-lead">
+              Ubicada en la Ciudad del Conocimiento en Urcuquí, Imbabura. Primera universidad de investigación intensiva del Ecuador con laboratorios de vanguardia.
+            </p>
+          </div>
+        </div>
+
+        <div class="venue-grid">
+          <div class="venue-card-visual">
+            <img src="assets/campus/yachay_modern_research_complex.png" alt="Complejo Moderno de Investigación Yachay Tech" class="venue-img">
+          </div>
+
+          <div class="venue-info-card">
+            <div class="venue-info-item">
+              <p class="venue-info-label">Auditorio Principal</p>
+              <h3 class="venue-info-title">Auditorio de la Escuela de Ciencias Físicas</h3>
+              <p class="venue-info-desc">Instalaciones acústicas y audiovisuales de alta fidelidad para conferencias magistrales internacionales y transmisiones híbridas en directo.</p>
+            </div>
+
+            <div class="venue-info-item">
+              <p class="venue-info-label">Laboratorios Experimentales</p>
+              <h3 class="venue-info-title">Cleanroom & Salas de Caracterización</h3>
+              <p class="venue-info-desc">Entorno de trabajo para el taller NanoSkills con equipamiento de deposición física, microscopías y preparación de muestras.</p>
+            </div>
+
+            <div class="venue-info-item">
+              <p class="venue-info-label">Ubicación Geográfica</p>
+              <h3 class="venue-info-title">Cantón San Miguel de Urcuquí, Imbabura</h3>
+              <p class="venue-info-desc">A 2,000 msnm en los Andes ecuatorianos. Clima primaveral templado (15°C - 24°C).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REGISTRATION & CERTIFICATION SECTION (CTA BOX)
+         ============================================================ -->
+    <section class="section section-cream" id="registration">
+      <div class="container">
+        <div class="registration-box">
+          <div class="reg-aura-glow" aria-hidden="true"></div>
+
+          <div class="reg-content-grid">
+            <div>
+              <div class="section-eyebrow eyebrow-amber" style="margin-bottom: 12px;">
+                <span class="eyebrow-line"></span>
+                <span data-i18n="reg-eyebrow">Inscripciones Abiertas</span>
+              </div>
+              <h2 class="reg-title" data-i18n="reg-title">
+                Asegura tu lugar en NANOBRIDGE YT 2026
+              </h2>
+              <p class="reg-desc" data-i18n="reg-desc">
+                Participa de manera presencial en el campus de Yachay Tech o conéctate virtualmente a las transmisiones internacionales vía IEEE vTools. Se emitirá certificado con aval de IEEE Nanotechnology Council.
+              </p>
+
+              <div class="reg-perks-list">
+                <div class="reg-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="reg-perk-1">Acceso a todas las plenarias técnicas y conferencias magistrales</span>
+                </div>
+                <div class="reg-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="reg-perk-2">Participación en el NanoSkills Workshop práctico</span>
+                </div>
+                <div class="reg-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="reg-perk-3">Certificado oficial avalado por IEEE NTC Student Branch y ponentes internacionales</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reg-actions">
+              <a href="https://forms.gle/KQwn8YBgBX9i1F6HA" target="_blank" rel="noopener" class="btn-reg-main" data-i18n="reg-btn-main">
+                <span>Completar Registro Oficial</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+
+              <button type="button" class="btn-calendar-sync" id="btn-gcal-sync" data-i18n="reg-btn-cal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                <span>Agregar a Google Calendar</span>
+              </button>
+
+              <button type="button" class="btn-calendar-sync" id="btn-ics-sync">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+                <span>Descargar Archivo iCal (.ics)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">NANOBRIDGE YT 2026</h3>
+          <p class="footer-brand-desc">
+            Organizado por el Capítulo Estudiantil del IEEE Nanotechnology Council (NTC) en la Universidad Yachay Tech, Urcuquí, Ecuador. Conectando la investigación de materiales y la inteligencia artificial desde los Andes hacia el mundo.
+          </p>
+          <div style="display: flex; gap: 14px; margin-top: 14px;">
+            <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" style="color: var(--color-amber); font-weight: 700; font-size: 13px;">Instagram @ntc.yachaytech</a>
+            <a href="https://ieeenano.org" target="_blank" rel="noopener" style="color: var(--color-amber); font-weight: 700; font-size: 13px;">IEEE Nanotechnology Council Global</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navegación Rápida</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about">Acerca del Evento</a></li>
+            <li><a href="#speakers">Ponentes y Keynotes</a></li>
+            <li><a href="#schedule">Cronograma de 2 Días</a></li>
+            <li><a href="#lodging">Comparativo de Hospedaje</a></li>
+            <li><a href="#venue">Sede Universitaria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Entidades Organizadoras</h4>
+          <ul class="footer-links-list">
+            <li><span>IEEE Nanotechnology Council</span></li>
+            <li><span>Universidad Yachay Tech</span></li>
+            <li><span>IEEE EMBS Ecuador Section</span></li>
+            <li><span>IMN-CNM, CSIC (España)</span></li>
+            <li><span>MIT Critical Data (USA)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 IEEE Nanotechnology Council Yachay Tech Student Branch Chapter. Todos los derechos reservados.</p>
+        <p>Inspirado en los estándares de MIT Critical Data & IEEE Conferences.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       ABSTRACT MODAL DIALOG
+       ============================================================ -->
+  <div class="abstract-modal" id="abstract-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="abstract-modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <div class="modal-eyebrow">Abstract de Conferencia Oficial</div>
+      <h3 class="modal-speaker-name" id="modal-speaker-name">Nombre del Ponente</h3>
+      <p class="modal-affiliation" id="modal-affiliation">Institución y Afiliación</p>
+      <div id="modal-talk-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>

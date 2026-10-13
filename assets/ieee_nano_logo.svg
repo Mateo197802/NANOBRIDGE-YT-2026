@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 56" width="310" height="56" fill="none">
+  <!-- Left Hexagon Badge with NTC -->
+  <g transform="translate(4, 3)">
+    <!-- Outer Cyan Hexagon -->
+    <polygon points="24,2 48,15 48,43 24,56 0,43 0,15" fill="#04608E" stroke="#0587BD" stroke-width="2"/>
+    <!-- Inner White Hexagon dashed border -->
+    <polygon points="24,6 43,16 43,41 24,51 5,41 5,16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- NTC letters -->
+    <text x="24" y="34" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NTC</text>
+  </g>
+
+  <!-- IEEE NANO Title & Subtitle Text -->
+  <g transform="translate(60, 4)">
+    <text x="0" y="22" font-family="'Anton', 'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#1F3E65" letter-spacing="1.2">IEEE NANO</text>
+    <text x="0" y="35" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="8.5" fill="#04608E" letter-spacing="1.6">NANOTECHNOLOGY COUNCIL</text>
+    <text x="0" y="47" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="7.5" fill="#465D64" letter-spacing="0.3">Yachay Tech University | IEEE Student Branch</text>
+  </g>
+</svg>
