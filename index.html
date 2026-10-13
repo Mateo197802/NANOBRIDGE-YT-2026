@@ -1114,55 +1114,45 @@
             <thead>
               <tr>
                 <th data-i18n="lodging-th-hotel">Hotel / Hostal</th>
-                <th data-i18n="lodging-th-rooms">Habitaciones</th>
-                <th data-i18n="lodging-th-beds">Plazas</th>
+                <th data-i18n="lodging-th-modality">Modalidad de Habitación</th>
                 <th data-i18n="lodging-th-rate">Tarifa / Noche</th>
-                <th data-i18n="lodging-th-cost-night">Costo Hotel/Noche</th>
-                <th data-i18n="lodging-th-cost-2">Costo 2 Noches</th>
-                <th data-i18n="lodging-th-cost-3">Costo 3 Noches</th>
+                <th data-i18n="lodging-th-cost-2">Estadía 2 Noches</th>
+                <th data-i18n="lodging-th-cost-3">Estadía 3 Noches</th>
                 <th data-i18n="lodging-th-status">Ubicación & Referencia</th>
               </tr>
             </thead>
-            <tbody>
+                        <tbody>
+              <tr>
+                <td class="hotel-name-cell">Sueños de Primavera</td>
+                <td><strong>Económico Compartido:</strong> Matrimonial para 2 personas</td>
+                <td class="price-cell">$10 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$20 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$30 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td><span class="lodging-info-badge">Urcuquí Centro · Tarifa Más Económica</span></td>
+              </tr>
               <tr>
                 <td class="hotel-name-cell">Kampak Wasi</td>
-                <td>6</td>
-                <td>21 plazas</td>
-                <td class="price-cell">$12 / persona</td>
-                <td>$252</td>
-                <td class="price-cell">$504</td>
-                <td>$756</td>
+                <td><strong>Estándar Delegación:</strong> Plaza indiv. en hab. compartida</td>
+                <td class="price-cell">$12 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$24 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$36 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td><span class="lodging-info-badge">Urcuquí Centro · Ideal Delegaciones</span></td>
               </tr>
               <tr>
-                <td class="hotel-name-cell">Strega</td>
-                <td>7</td>
-                <td>15 adultos</td>
-                <td class="price-cell">$15 / persona (grupo)</td>
-                <td>$225</td>
-                <td class="price-cell">$450</td>
-                <td>$675</td>
-                <td><span class="lodging-info-badge">Zona Campestre · Ideal Grupos</span></td>
-              </tr>
-              <tr>
                 <td class="hotel-name-cell">Sueños de Primavera</td>
-                <td>15</td>
-                <td>36 calculadas</td>
-                <td class="price-cell">$12 indiv. / $20 pareja</td>
-                <td>$384</td>
-                <td class="price-cell">$768</td>
-                <td>$1,152</td>
+                <td><strong>Estándar Individual:</strong> Cama 1½ plaza / Matrimonial individual</td>
+                <td class="price-cell">$12 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$24 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$36 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td><span class="lodging-info-badge">Urcuquí Centro · Mayor Disponibilidad</span></td>
               </tr>
-              <tr style="background: #f8fafc; font-weight: 700;">
-                <td class="hotel-name-cell">TOTAL CAPACIDAD COMPLETA</td>
-                <td>28</td>
-                <td>72 plazas</td>
-                <td>Tarifa combinada</td>
-                <td>$861 / noche</td>
-                <td class="price-cell">$1,722</td>
-                <td class="price-cell">$2,583</td>
-                <td><span class="lodging-info-badge">Capacidad Global Urcuquí</span></td>
+              <tr>
+                <td class="hotel-name-cell">Strega</td>
+                <td><strong>Superior Grupal:</strong> Suite, doble y triple campestre</td>
+                <td class="price-cell">$15 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$30 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell">$45 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td><span class="lodging-info-badge">Zona Campestre · Entorno Natural</span></td>
               </tr>
             </tbody>
           </table>
@@ -1238,50 +1228,6 @@
             </div>
           </article>
         </div>
-
-        <!-- Room-by-Room Breakdown Accordion -->
-        <div class="room-accordion-wrapper">
-          <button type="button" class="room-accordion-toggle" id="toggle-room-breakdown" aria-expanded="false">
-            <span data-i18n="lodging-accordion-btn">Ver Desglose Completo Habitación por Habitación</span>
-            <svg class="accordion-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="room-accordion-content" id="room-breakdown-content">
-            <div class="table-responsive-wrapper" style="margin-bottom: 0;">
-              <table class="lodging-table" style="font-size: 13px;">
-                <thead>
-                  <tr>
-                    <th>Hotel</th>
-                    <th>Habitación</th>
-                    <th>Matrimoniales</th>
-                    <th>Individuales</th>
-                    <th>Plazas Máx.</th>
-                    <th>Tarifa Individual</th>
-                    <th>Tarifa Pareja</th>
-                    <th>Costo/Noche</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Kampak Wasi</td><td>101</td><td>1</td><td>1</td><td>3</td><td>$12</td><td>$24</td><td>$36</td></tr>
-                  <tr><td>Kampak Wasi</td><td>102</td><td>0</td><td>3</td><td>3</td><td>$12</td><td>-</td><td>$36</td></tr>
-                  <tr><td>Kampak Wasi</td><td>103</td><td>0</td><td>3</td><td>3</td><td>$12</td><td>-</td><td>$36</td></tr>
-                  <tr><td>Kampak Wasi</td><td>104</td><td>1</td><td>1</td><td>3</td><td>$12</td><td>$24</td><td>$36</td></tr>
-                  <tr><td>Kampak Wasi</td><td>201</td><td>1</td><td>2</td><td>4</td><td>$12</td><td>$24</td><td>$48</td></tr>
-                  <tr><td>Kampak Wasi</td><td>202</td><td>1</td><td>3</td><td>5</td><td>$12</td><td>$24</td><td>$60</td></tr>
-                  <tr><td>Strega</td><td>Triple</td><td>-</td><td>-</td><td>3</td><td>$15</td><td>-</td><td>$45</td></tr>
-                  <tr><td>Strega</td><td>Doble</td><td>-</td><td>-</td><td>2</td><td>$15</td><td>-</td><td>$30</td></tr>
-                  <tr><td>Strega</td><td>Gemelas 1 y 2</td><td>-</td><td>-</td><td>4</td><td>$15</td><td>-</td><td>$60</td></tr>
-                  <tr><td>Strega</td><td>Suite / Frente / Cedro</td><td>-</td><td>-</td><td>6</td><td>$15</td><td>-</td><td>$90</td></tr>
-                  <tr><td>Sueños de Primavera</td><td>101</td><td>0</td><td>1</td><td>1</td><td>$12</td><td>-</td><td>$12</td></tr>
-                  <tr><td>Sueños de Primavera</td><td>102</td><td>1</td><td>0</td><td>2</td><td>$12</td><td>$20</td><td>$20</td></tr>
-                  <tr><td>Sueños de Primavera</td><td>103</td><td>1</td><td>2</td><td>4</td><td>$12</td><td>$20</td><td>$44</td></tr>
-                  <tr><td>Sueños de Primavera</td><td>105</td><td>0</td><td>4</td><td>4</td><td>$12</td><td>-</td><td>$48</td></tr>
-                  <tr><td>Sueños de Primavera</td><td>106 - 301</td><td>10 hab.</td><td>10 hab.</td><td>25</td><td>$12</td><td>$20</td><td>$260</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 

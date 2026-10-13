@@ -269,17 +269,14 @@ const I18N_DICTIONARY = {
 
     // Lodging Section
     'lodging-eyebrow': 'Logística & Alojamiento',
-    'lodging-title': 'Comparativo Financiero de Hospedaje en Urcuquí',
-    'lodging-lead': 'Informe oficial consolidado de tarifas, capacidad hotelera y paquetes de referencia para asistentes y delegaciones durante NANOBRIDGE YT 2026.',
+    'lodging-title': 'Tarifas y Opciones de Hospedaje en Urcuquí',
+    'lodging-lead': 'Tarifas oficiales por persona y paquetes sugeridos de alojamiento para asistentes y delegaciones durante NANOBRIDGE YT 2026.',
     'lodging-th-hotel': 'Hotel / Hostal',
-    'lodging-th-rooms': 'Habitaciones',
-    'lodging-th-beds': 'Plazas',
-    'lodging-th-rate': 'Tarifa / Noche',
-    'lodging-th-cost-night': 'Costo Hotel/Noche',
-    'lodging-th-cost-2': 'Costo 2 Noches',
-    'lodging-th-cost-3': 'Costo 3 Noches',
+    'lodging-th-modality': 'Modalidad de Habitación',
+    'lodging-th-rate': 'Tarifa / Noche (por pers.)',
+    'lodging-th-cost-2': 'Estadía 2 Noches (por pers.)',
+    'lodging-th-cost-3': 'Estadía 3 Noches (por pers.)',
     'lodging-th-status': 'Ubicación & Referencia',
-    'lodging-accordion-btn': 'Ver Desglose Completo Habitación por Habitación',
 
     // Venue Section
     'venue-eyebrow': 'Sede del Evento',
@@ -366,18 +363,15 @@ const I18N_DICTIONARY = {
     'tab-day-2': 'Day 2 · Tue Oct 27',
 
     // Lodging Section
-    'lodging-eyebrow': 'Logistics & Lodging',
-    'lodging-title': 'Financial Lodging Comparison in Urcuquí',
-    'lodging-lead': 'Consolidated official report covering room inventories, occupancy capacities, and benchmark packages for delegations during NANOBRIDGE YT 2026.',
+    'lodging-eyebrow': 'Logistics & Accommodation',
+    'lodging-title': 'Lodging Rates and Options in Urcuquí',
+    'lodging-lead': 'Official per-person rates and suggested accommodation packages for attendees and delegations during NANOBRIDGE YT 2026.',
     'lodging-th-hotel': 'Hotel / Inn',
-    'lodging-th-rooms': 'Rooms',
-    'lodging-th-beds': 'Capacity',
-    'lodging-th-rate': 'Rate / Night',
-    'lodging-th-cost-night': 'Hotel Cost / Night',
-    'lodging-th-cost-2': '2 Nights Total',
-    'lodging-th-cost-3': '3 Nights Total',
+    'lodging-th-modality': 'Room Modality',
+    'lodging-th-rate': 'Rate / Night (per person)',
+    'lodging-th-cost-2': '2 Nights Total (per person)',
+    'lodging-th-cost-3': '3 Nights Total (per person)',
     'lodging-th-status': 'Location & Reference',
-    'lodging-accordion-btn': 'View Full Room-by-Room Breakdown',
 
     // Venue Section
     'venue-eyebrow': 'Official Venue',
