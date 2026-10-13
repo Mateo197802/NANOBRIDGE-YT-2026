@@ -278,7 +278,7 @@ const I18N_DICTIONARY = {
     'lodging-th-cost-night': 'Costo Hotel/Noche',
     'lodging-th-cost-2': 'Costo 2 Noches',
     'lodging-th-cost-3': 'Costo 3 Noches',
-    'lodging-th-status': 'Estado',
+    'lodging-th-status': 'Ubicación & Referencia',
     'lodging-accordion-btn': 'Ver Desglose Completo Habitación por Habitación',
 
     // Venue Section
@@ -376,7 +376,7 @@ const I18N_DICTIONARY = {
     'lodging-th-cost-night': 'Hotel Cost / Night',
     'lodging-th-cost-2': '2 Nights Total',
     'lodging-th-cost-3': '3 Nights Total',
-    'lodging-th-status': 'Status',
+    'lodging-th-status': 'Location & Reference',
     'lodging-accordion-btn': 'View Full Room-by-Room Breakdown',
 
     // Venue Section
