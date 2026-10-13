@@ -38,12 +38,12 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing & Radii */
-  --radius-xs: 8px;
-  --radius-sm: 12px;
-  --radius-md: 18px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
-  --radius-2xl: 40px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-2xl: 18px;
   --radius-pill: 9999px;
 
   /* Shadows */
@@ -983,29 +983,29 @@ button {
 
 .speaker-index-tag {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
   color: #0284c7;
   background: #eff6ff;
   border: 1px solid #dbeafe;
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .speaker-modality-badge {
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
 .badge-in-person {
   background-color: #f1f5f9;
-  color: #334155;
+  color: #475569;
   border: 1px solid #e2e8f0;
 }
 
@@ -1024,9 +1024,9 @@ button {
 }
 
 .speaker-avatar-frame {
-  width: 80px;
-  height: 80px;
-  border-radius: 22px;
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
   background-color: #0f172a;
   display: flex;
   align-items: center;
@@ -1040,7 +1040,7 @@ button {
 
 .speaker-card:hover .speaker-avatar-frame {
   border-color: #0284c7;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.2);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
 }
 
 .speaker-initials {
@@ -1141,8 +1141,8 @@ button {
 
 .btn-speaker-abstract {
   font-size: 12px;
-  font-weight: 700;
-  color: #0f172a;
+  font-weight: 600;
+  color: #0284c7;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1150,7 +1150,7 @@ button {
 }
 
 .btn-speaker-abstract:hover {
-  color: #0284c7;
+  color: #0369a1;
 }
 
 .speaker-scholar-link {
@@ -1174,41 +1174,50 @@ button {
    Day 2: 10:00 José Miguel -> 11:30 Pianista -> 12:00 Virtual -> Simon Heilles etc.
    ========================================================================== */
 .schedule-nav-tabs {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 36px;
+  gap: 4px;
+  margin-bottom: 28px;
   background: #f1f5f9;
-  padding: 5px;
-  border-radius: var(--radius-pill);
-  width: fit-content;
+  padding: 3px;
+  border-radius: 8px;
   border: 1px solid #e2e8f0;
 }
 
 .schedule-tab-btn {
-  padding: 10px 24px;
-  border-radius: var(--radius-pill);
+  padding: 7px 18px;
+  border-radius: 6px;
   font-family: var(--font-heading);
-  font-size: 13.5px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   color: #64748b;
-  transition: all var(--transition-normal);
+  transition: all var(--transition-fast);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  background: transparent;
+}
+
+.schedule-tab-btn:hover {
+  color: #0f172a;
 }
 
 .schedule-tab-btn.active {
-  background-color: #0f172a;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+  background-color: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .schedule-tab-date {
   font-size: 11px;
-  font-weight: 600;
-  opacity: 0.8;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.schedule-tab-btn.active .schedule-tab-date {
+  color: #64748b;
 }
 
 .schedule-content-panel {
@@ -1222,41 +1231,32 @@ button {
 .timeline-flow {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .timeline-entry {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: var(--radius-xl);
-  padding: 22px 26px;
+  border-radius: 12px;
+  padding: 18px 22px;
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr) auto;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
-  transition: all var(--transition-normal);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
 }
 
 .timeline-entry:hover {
-  transform: translateY(-2px);
-  background-color: #ffffff;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
   border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
 }
 
-.timeline-entry.entry-cultural {
-  background-color: #ffffff;
-  border-color: #e2e8f0;
-}
-
-.timeline-entry.entry-break {
-  background-color: #f8fafc;
-  border-color: #e2e8f0;
-}
-
+.timeline-entry.entry-cultural,
+.timeline-entry.entry-break,
 .timeline-entry.entry-keynote {
-  border-left: 4px solid #0284c7;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
 }
 
 .timeline-time-col {
@@ -1266,16 +1266,18 @@ button {
 
 .timeline-time {
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: #0f172a;
+  letter-spacing: -0.01em;
 }
 
 .timeline-duration {
   font-size: 11px;
-  font-weight: 600;
-  color: #0284c7;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: #64748b;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
 }
 
 .timeline-info-col {
@@ -1286,18 +1288,22 @@ button {
 .timeline-badge-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
+  gap: 6px;
+  margin-bottom: 5px;
   flex-wrap: wrap;
 }
 
+/* Unified clean monochromatic tags - No rainbow buttons */
 .timeline-tag {
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: var(--radius-pill);
+  padding: 2px 7px;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
 }
 
 .tag-plenary {
@@ -1306,79 +1312,66 @@ button {
   border: 1px solid #dbeafe;
 }
 
-.tag-cultural {
-  background-color: #f8fafc;
+.tag-cultural,
+.tag-invited,
+.tag-break,
+.tag-workshop,
+.tag-live {
+  background-color: #f1f5f9;
   color: #475569;
   border: 1px solid #e2e8f0;
 }
 
-.tag-invited {
-  background-color: #f1f5f9;
-  color: #334155;
-  border: 1px solid #e2e8f0;
-}
-
-.tag-break {
-  background-color: #f8fafc;
-  color: #64748b;
-  border: 1px solid #e2e8f0;
-}
-
-.tag-workshop {
-  background-color: #eff6ff;
-  color: #0284c7;
-  border: 1px solid #dbeafe;
-}
-
 .timeline-title {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   color: #0f172a;
-  line-height: 1.3;
-  margin-bottom: 4px;
+  line-height: 1.35;
+  margin-bottom: 2px;
 }
 
 .timeline-speaker-sub {
   font-size: 13px;
   color: #64748b;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .timeline-action-col {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
+/* Minimal outline button - no cartoon capsule */
 .btn-toggle-abstract {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  padding: 8px 16px;
-  border-radius: var(--radius-pill);
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 6px 14px;
+  border-radius: 6px;
   font-size: 12px;
-  font-weight: 700;
-  color: #0f172a;
+  font-weight: 600;
+  color: #1e293b;
   transition: all var(--transition-fast);
   white-space: nowrap;
 }
 
 .btn-toggle-abstract:hover {
-  background-color: #0f172a;
-  color: #ffffff;
-  border-color: #0f172a;
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
 }
 
 .timeline-expandable-abstract {
   grid-column: 1 / -1;
   background: #f8fafc;
-  border-radius: var(--radius-lg);
-  padding: 16px 20px;
-  font-size: 13.5px;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 13px;
   line-height: 1.65;
   color: #334155;
-  margin-top: 10px;
+  margin-top: 8px;
   display: none;
   border: 1px solid #e2e8f0;
 }
