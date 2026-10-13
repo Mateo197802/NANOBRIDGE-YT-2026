@@ -23,138 +23,355 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. INTERACTIVE MESH CANVAS (MALLA INTERACTIVA)
-   Generates a living nanotech / molecular node network that responds to cursor
+   1. INTERACTIVE MESH CANVAS (MALLA INTERACTIVA ESTILO MIT FELLOWSHIP)
+   Concentric orbital rings, harmonic drift kinetic physics, and reactive
+   pointer illumination with scene-adaptive color interpolation (ink / paper).
+   Ported directly from MIT Critical Data FellowshipMeshField architecture.
    ========================================================================== */
 function initInteractiveMesh() {
   const canvas = document.getElementById('mesh-canvas');
   if (!canvas) return;
-  const ctx = canvas.getContext('2d');
+  const context = canvas.getContext('2d');
+  if (!context) return;
 
-  let width = (canvas.width = window.innerWidth);
-  let height = (canvas.height = window.innerHeight);
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  let mouse = { x: width / 2, y: height / 2, radius: 180 };
-  let isMouseActive = false;
+  let width = 0;
+  let height = 0;
+  let frame = 0;
+  let lastTime = 0;
+  let pointerX = -1000;
+  let pointerY = -1000;
+  let pointerActive = false;
 
-  window.addEventListener('resize', () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-    initParticles();
-  });
+  // Scene Palettes (MIT Fellowship architecture)
+  // ink: Dark scene (Hero, Venue, Footer) - Luminous cyan/teal with warm coral hotspot
+  // paper: Light scene (About, Speakers, Schedule, Lodging, Registration) - Deep teal/slate with crimson/plasma hotspot
+  const palettes = {
+    ink: {
+      line: [116, 190, 193],
+      node: [157, 214, 214],
+      hot: [255, 151, 118],
+      glow: [255, 151, 118],
+    },
+    paper: {
+      line: [47, 114, 120],
+      node: [47, 114, 120],
+      hot: [163, 31, 52],
+      glow: [47, 114, 120],
+    },
+  };
 
-  window.addEventListener('mousemove', (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-    isMouseActive = true;
-    document.documentElement.style.setProperty('--pointer-x', `${e.clientX}px`);
-    document.documentElement.style.setProperty('--pointer-y', `${e.clientY}px`);
-  });
-
-  window.addEventListener('mouseleave', () => {
-    isMouseActive = false;
-  });
-
-  // Particle Node System
-  const particleCount = Math.min(Math.floor(window.innerWidth / 18), 75);
-  let particles = [];
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * width;
-      this.y = Math.random() * height;
-      this.vx = (Math.random() - 0.5) * 0.7;
-      this.vy = (Math.random() - 0.5) * 0.7;
-      this.radius = Math.random() * 1.6 + 1.0;
-      this.baseColor = Math.random() > 0.5 ? 'rgba(56, 189, 248, 0.35)' : 'rgba(129, 140, 248, 0.28)';
-    }
-
-    update() {
-      this.x += this.vx;
-      this.y += this.vy;
-
-      if (this.x < 0 || this.x > width) this.vx *= -1;
-      if (this.y < 0 || this.y > height) this.vy *= -1;
-
-      // Mouse gentle interaction
-      if (isMouseActive) {
-        const dx = mouse.x - this.x;
-        const dy = mouse.y - this.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < mouse.radius) {
-          const force = (mouse.radius - distance) / mouse.radius;
-          this.x -= (dx / distance) * force * 1.5;
-          this.y -= (dy / distance) * force * 1.5;
-        }
-      }
-    }
-
-    draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.baseColor;
-      ctx.fill();
-    }
+  function clonePalette(palette) {
+    return {
+      line: [...palette.line],
+      node: [...palette.node],
+      hot: [...palette.hot],
+      glow: [...palette.glow],
+    };
   }
 
-  function initParticles() {
-    particles = [];
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
-    }
+  function seeded(index) {
+    const value = Math.sin(index * 127.1 + 311.7) * 43758.5453123;
+    return value - Math.floor(value);
   }
 
-  initParticles();
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
 
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
+  function mixColor(from, to, amount) {
+    return [
+      from[0] + (to[0] - from[0]) * amount,
+      from[1] + (to[1] - from[1]) * amount,
+      from[2] + (to[2] - from[2]) * amount,
+    ];
+  }
 
-    // Draw connecting mesh lines
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
+  function rgba(color, alpha) {
+    return `rgba(${Math.round(color[0])}, ${Math.round(color[1])}, ${Math.round(color[2])}, ${alpha})`;
+  }
 
-        if (distance < 135) {
-          const opacity = (1 - distance / 135) * 0.08;
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(148, 163, 184, ${opacity})`;
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
+  function approachColor(current, target, amount = 0.07) {
+    current[0] += (target[0] - current[0]) * amount;
+    current[1] += (target[1] - current[1]) * amount;
+    current[2] += (target[2] - current[2]) * amount;
+  }
+
+  function buildOrbitMesh(w, h) {
+    const centerX = w * 0.52;
+    const centerY = h * 0.48;
+    const span = Math.max(w, h);
+    const ringSpecs = [
+      { rx: Math.max(170, span * 0.18), ry: Math.max(140, span * 0.15), count: 8, rotation: -0.18 },
+      { rx: Math.max(320, span * 0.34), ry: Math.max(250, span * 0.28), count: 13, rotation: 0.12 },
+      { rx: Math.max(540, span * 0.58), ry: Math.max(410, span * 0.47), count: 18, rotation: -0.08 },
+    ];
+    const nodes = [];
+    const edges = [];
+    const rings = ringSpecs.map((spec, index) => ({
+      cx: centerX,
+      cy: centerY,
+      rx: spec.rx,
+      ry: spec.ry,
+      rotation: spec.rotation,
+      phase: index * 1.8,
+    }));
+    const ringOffsets = [];
+
+    // Ring nodes and circular edges
+    for (let ringIndex = 0; ringIndex < ringSpecs.length; ringIndex += 1) {
+      const spec = ringSpecs[ringIndex];
+      const offset = nodes.length;
+      ringOffsets.push(offset);
+
+      for (let index = 0; index < spec.count; index += 1) {
+        const angle = (index / spec.count) * Math.PI * 2 + spec.rotation;
+        const jitter = seeded(index + ringIndex * 31) - 0.5;
+        const anchorX = centerX + Math.cos(angle) * spec.rx + jitter * (ringIndex + 1) * 22;
+        const anchorY = centerY + Math.sin(angle) * spec.ry + jitter * (ringIndex + 1) * 18;
+        nodes.push({
+          x: anchorX,
+          y: anchorY,
+          anchorX,
+          anchorY,
+          vx: 0,
+          vy: 0,
+          phase: seeded(index + ringIndex * 47 + 8) * Math.PI * 2,
+          ring: ringIndex,
+          radius: 1.6 + seeded(index + ringIndex * 59 + 14) * 2.2,
+        });
+        edges.push({ a: offset + index, b: offset + ((index + 1) % spec.count) });
+      }
+    }
+
+    // Inter-ring lattice connections
+    for (let ringIndex = 1; ringIndex < ringSpecs.length; ringIndex += 1) {
+      const currentOffset = ringOffsets[ringIndex];
+      const previousOffset = ringOffsets[ringIndex - 1];
+      const currentCount = ringSpecs[ringIndex].count;
+      const previousCount = ringSpecs[ringIndex - 1].count;
+
+      for (let index = 0; index < currentCount; index += 1) {
+        const previousIndex = Math.floor((index / currentCount) * previousCount) % previousCount;
+        edges.push({ a: currentOffset + index, b: previousOffset + previousIndex });
+        if (index % 3 === 0) {
+          edges.push({ a: currentOffset + index, b: previousOffset + ((previousIndex + 1) % previousCount) });
         }
       }
     }
 
-    // Connect particles to mouse
-    if (isMouseActive) {
-      for (let i = 0; i < particles.length; i++) {
-        const dx = mouse.x - particles[i].x;
-        const dy = mouse.y - particles[i].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < 140) {
-          const opacity = (1 - distance / 140) * 0.22;
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(56, 189, 248, ${opacity})`;
-          ctx.lineWidth = 0.8;
-          ctx.stroke();
-        }
-      }
-    }
-
-    particles.forEach((p) => {
-      p.update();
-      p.draw();
+    // Central hub node
+    const centerIndex = nodes.length;
+    nodes.push({
+      x: centerX,
+      y: centerY,
+      anchorX: centerX,
+      anchorY: centerY,
+      vx: 0,
+      vy: 0,
+      phase: 0.4,
+      ring: -1,
+      radius: 3.8,
     });
 
-    requestAnimationFrame(animate);
+    for (let index = 0; index < ringSpecs[0].count; index += 2) {
+      edges.push({ a: centerIndex, b: ringOffsets[0] + index });
+    }
+
+    // Outer satellite nodes orbiting beyond the 3rd ring
+    const satelliteCount = Math.max(8, Math.round(w / 180));
+    for (let index = 0; index < satelliteCount; index += 1) {
+      const angle = (index / satelliteCount) * Math.PI * 2 + 0.22;
+      const anchorX = centerX + Math.cos(angle) * (span * 0.74);
+      const anchorY = centerY + Math.sin(angle) * (span * 0.62);
+      const satelliteIndex = nodes.length;
+      nodes.push({
+        x: anchorX,
+        y: anchorY,
+        anchorX,
+        anchorY,
+        vx: 0,
+        vy: 0,
+        phase: seeded(index + 117) * Math.PI * 2,
+        ring: 3,
+        radius: 1.4 + seeded(index + 149) * 1.5,
+      });
+      edges.push({
+        a: satelliteIndex,
+        b: ringOffsets[2] + Math.floor((index / satelliteCount) * ringSpecs[2].count) % ringSpecs[2].count,
+      });
+    }
+
+    return { nodes, edges, rings };
   }
 
-  animate();
+  let system = buildOrbitMesh(1, 1);
+  let activeScene = 'ink';
+  const currentPalette = clonePalette(palettes.ink);
+  let targetPalette = clonePalette(palettes.ink);
+
+  function updateScene() {
+    const viewportCenter = window.innerHeight * 0.48;
+    let nearestDistance = Number.POSITIVE_INFINITY;
+    let nearestScene = 'ink';
+
+    const sections = Array.from(document.querySelectorAll('[data-fellowship-scene]'));
+    for (const section of sections) {
+      const scene = section.dataset.fellowshipScene;
+      if (scene !== 'ink' && scene !== 'paper') continue;
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= viewportCenter && rect.bottom >= viewportCenter) {
+        nearestScene = scene;
+        break;
+      }
+      const distance = Math.min(Math.abs(rect.top - viewportCenter), Math.abs(rect.bottom - viewportCenter));
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestScene = scene;
+      }
+    }
+
+    if (nearestScene !== activeScene) {
+      activeScene = nearestScene;
+      targetPalette = clonePalette(palettes[activeScene]);
+    }
+  }
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.floor(width * pixelRatio);
+    canvas.height = Math.floor(height * pixelRatio);
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    system = buildOrbitMesh(width, height);
+    updateScene();
+  }
+
+  function onPointerMove(event) {
+    if (reduceMotion || event.pointerType === 'touch') return;
+    pointerX = event.clientX;
+    pointerY = event.clientY;
+    pointerActive = true;
+    document.documentElement.style.setProperty('--pointer-x', `${event.clientX}px`);
+    document.documentElement.style.setProperty('--pointer-y', `${event.clientY}px`);
+  }
+
+  function clearPointer() {
+    pointerActive = false;
+  }
+
+  function draw(time) {
+    const elapsed = time * 0.001;
+    const delta = lastTime ? clamp((time - lastTime) / 16.67, 0.5, 2) : 1;
+    lastTime = time;
+
+    approachColor(currentPalette.line, targetPalette.line);
+    approachColor(currentPalette.node, targetPalette.node);
+    approachColor(currentPalette.hot, targetPalette.hot);
+    approachColor(currentPalette.glow, targetPalette.glow);
+
+    context.clearRect(0, 0, width, height);
+    context.lineCap = 'round';
+
+    if (!reduceMotion) {
+      for (const node of system.nodes) {
+        const drift = 5 + Math.max(node.ring, 0) * 3;
+        const targetX = node.anchorX + Math.cos(elapsed * (0.22 + node.ring * 0.02) + node.phase) * drift;
+        const targetY = node.anchorY + Math.sin(elapsed * (0.18 + node.ring * 0.018) + node.phase) * drift;
+        node.vx += (targetX - node.x) * 0.006 * delta;
+        node.vy += (targetY - node.y) * 0.006 * delta;
+
+        if (pointerActive) {
+          const dx = node.x - pointerX;
+          const dy = node.y - pointerY;
+          const distance = Math.max(1, Math.hypot(dx, dy));
+          if (distance < 220) {
+            const force = (1 - distance / 220) * 0.72;
+            node.vx += (dx / distance) * force * delta;
+            node.vy += (dy / distance) * force * delta;
+          }
+        }
+
+        node.vx *= 0.91;
+        node.vy *= 0.91;
+        node.x += node.vx * delta;
+        node.y += node.vy * delta;
+      }
+    }
+
+    // Reactive Radial Spotlight on Pointer
+    if (pointerActive && !reduceMotion) {
+      const glow = context.createRadialGradient(pointerX, pointerY, 0, pointerX, pointerY, 240);
+      glow.addColorStop(0, rgba(currentPalette.glow, 0.2));
+      glow.addColorStop(0.38, rgba(currentPalette.glow, 0.07));
+      glow.addColorStop(1, rgba(currentPalette.glow, 0));
+      context.save();
+      context.globalCompositeOperation = 'screen';
+      context.fillStyle = glow;
+      context.fillRect(0, 0, width, height);
+      context.restore();
+    }
+
+    // Concentric Dashed Orbital Rings
+    for (const ring of system.rings) {
+      context.save();
+      context.beginPath();
+      context.ellipse(ring.cx, ring.cy, ring.rx, ring.ry, ring.rotation + Math.sin(elapsed * 0.12 + ring.phase) * 0.025, 0, Math.PI * 2);
+      context.setLineDash([2, 14]);
+      context.lineWidth = 0.7;
+      context.strokeStyle = rgba(currentPalette.line, 0.12);
+      context.stroke();
+      context.restore();
+    }
+
+    // Interconnecting Lattice Edges with Dynamic Proximity Heatmap
+    for (const edge of system.edges) {
+      const a = system.nodes[edge.a];
+      const b = system.nodes[edge.b];
+      const midpointX = (a.x + b.x) / 2;
+      const midpointY = (a.y + b.y) / 2;
+      const pointerDistance = pointerActive ? Math.hypot(midpointX - pointerX, midpointY - pointerY) : Number.POSITIVE_INFINITY;
+      const proximity = clamp(1 - pointerDistance / 220, 0, 1);
+      const lineColor = mixColor(currentPalette.line, currentPalette.hot, proximity * 0.9);
+      context.beginPath();
+      context.moveTo(a.x, a.y);
+      context.lineTo(b.x, b.y);
+      context.lineWidth = 0.6 + proximity * 1.2;
+      context.strokeStyle = rgba(lineColor, 0.12 + proximity * 0.32);
+      context.stroke();
+    }
+
+    // Orbital Nodes with Dynamic Halo Glow & Size Expansion
+    for (const node of system.nodes) {
+      const pointerDistance = pointerActive ? Math.hypot(node.x - pointerX, node.y - pointerY) : Number.POSITIVE_INFINITY;
+      const proximity = clamp(1 - pointerDistance / 220, 0, 1);
+      const nodeColor = mixColor(currentPalette.node, currentPalette.hot, proximity);
+      context.save();
+      if (proximity > 0) {
+        context.shadowColor = rgba(currentPalette.hot, proximity * 0.72);
+        context.shadowBlur = proximity * 14;
+      }
+      context.beginPath();
+      context.arc(node.x, node.y, node.radius + proximity * 3.2, 0, Math.PI * 2);
+      context.fillStyle = rgba(nodeColor, 0.35 + proximity * 0.55);
+      context.fill();
+      context.restore();
+    }
+
+    frame = window.requestAnimationFrame(draw);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  window.addEventListener('scroll', updateScene, { passive: true });
+  window.addEventListener('pointermove', onPointerMove, { passive: true });
+  window.addEventListener('pointerleave', clearPointer);
+  window.addEventListener('blur', clearPointer);
+  frame = window.requestAnimationFrame(draw);
 }
 
 /* ==========================================================================
