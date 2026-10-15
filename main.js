@@ -508,11 +508,14 @@ const I18N_DICTIONARY = {
     'reg-eyebrow': 'Inscripciones Abiertas',
     'reg-title': 'Asegura tu lugar en NANOBRIDGE YT 2026',
     'reg-desc': 'Participa de manera presencial en el campus de Yachay Tech o conéctate virtualmente a las transmisiones internacionales vía IEEE vTools. Se emitirá certificado con aval de IEEE Nanotechnology Council.',
+    'timeline-btn-workshop': 'Inscribirse al Workshop',
     'reg-perk-1': 'Acceso a todas las plenarias técnicas y conferencias magistrales',
-    'reg-perk-2': 'Participación en el NanoSkills Workshop práctico',
+    'reg-perk-2': 'Participación en el NanoSkills Workshop práctico y sesión de posters',
     'reg-perk-3': 'Certificado oficial avalado por IEEE NTC Student Branch y ponentes internacionales',
-    'reg-btn-main': 'Completar Registro Oficial',
-    'reg-btn-cal': 'Agregar a Google Calendar'
+    'reg-btn-main': 'Registro Oficial (Universidades & Externos)',
+    'reg-btn-workshop': 'Inscripción Workshop Práctico & Posters',
+    'reg-btn-cal': 'Google Calendar',
+    'reg-btn-ics': 'Descargar iCal (.ics)'
   },
   en: {
     // Nav & Top Bar
@@ -603,11 +606,14 @@ const I18N_DICTIONARY = {
     'reg-eyebrow': 'Registration Open',
     'reg-title': 'Secure your seat at NANOBRIDGE YT 2026',
     'reg-desc': 'Join us in-person at Yachay Tech campus or attend virtually via global IEEE vTools streams. Certified attendance granted by IEEE Nanotechnology Council.',
+    'timeline-btn-workshop': 'Register for Workshop',
     'reg-perk-1': 'Access to all keynote plenaries and technical sessions',
-    'reg-perk-2': 'Hands-on participation in the NanoSkills Workshop',
+    'reg-perk-2': 'Hands-on participation in the NanoSkills Workshop & Poster session',
     'reg-perk-3': 'Official certificate endorsed by IEEE NTC Student Branch and international keynote speakers',
-    'reg-btn-main': 'Complete Official Registration',
-    'reg-btn-cal': 'Add to Google Calendar'
+    'reg-btn-main': 'Official Registration (Universities & Attendees)',
+    'reg-btn-workshop': 'Register for Hands-on Workshop & Posters',
+    'reg-btn-cal': 'Google Calendar',
+    'reg-btn-ics': 'Download iCal (.ics)'
   }
 };
 

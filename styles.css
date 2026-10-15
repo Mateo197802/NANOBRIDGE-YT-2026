@@ -1734,6 +1734,44 @@ button {
   box-shadow: 0 10px 30px rgba(56, 189, 248, 0.5);
 }
 
+.btn-reg-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #7dd3fc;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px 28px;
+  border-radius: var(--radius-pill);
+  text-align: center;
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  text-decoration: none;
+}
+
+.btn-reg-secondary:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+}
+
+.reg-calendar-sync-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .reg-calendar-sync-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .btn-calendar-sync {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
