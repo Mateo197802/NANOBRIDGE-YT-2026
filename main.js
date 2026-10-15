@@ -379,7 +379,7 @@ function initInteractiveMesh() {
    Target: October 26, 2026, 10:00:00 (Ecuador UTC-5)
    ========================================================================== */
 function initCountdown() {
-  const targetDate = new Date('2026-10-26T10:00:00-05:00').getTime();
+  const targetDate = new Date('2026-10-26T09:00:00-05:00').getTime();
 
   const daysEl = document.getElementById('count-days');
   const hoursEl = document.getElementById('count-hours');
@@ -434,8 +434,8 @@ const I18N_DICTIONARY = {
     'hero-eyebrow': 'IEEE NTC · Distinguished Lecturer Program & Frontier Summit',
     'hero-title-main': 'NANOBRIDGE YT 2026',
     'hero-title-sub': 'De la Nanociencia a Implantes Biomédicos y Sociedades de IA.',
-    'hero-tagline': 'Películas delgadas en los Andes: La primera generación de nano-ingenieros conectando con la frontera científica mundial.',
-    'hero-desc': 'Dos jornadas presenciales e híbridas con el Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (MIT Critical Data / DENEM Labs) y destacados investigadores en la Universidad Yachay Tech.',
+    'hero-tagline': 'La primera cumbre internacional de nanotecnología e inteligencia artificial en la Ciudad del Conocimiento Yachay.',
+    'hero-desc': 'Dos jornadas presenciales e híbridas con el Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (Lead AI Architect en DENEM Labs) y destacados investigadores en la Universidad Yachay Tech.',
     'hero-btn-register': 'Inscribirse al Evento',
     'hero-btn-schedule': 'Ver Cronograma Completo',
     'hero-meta-dates-label': 'Fechas Oficiales',
@@ -529,8 +529,8 @@ const I18N_DICTIONARY = {
     'hero-eyebrow': 'IEEE NTC · Distinguished Lecturer Program & Frontier Summit',
     'hero-title-main': 'NANOBRIDGE YT 2026',
     'hero-title-sub': 'From Nanoscience to Biomedical Implants & Societies of AI Agents.',
-    'hero-tagline': 'Thin films in the Andes: The first generation of nano-engineers connecting with the global scientific frontier.',
-    'hero-desc': 'Two in-person and hybrid conference days featuring Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (MIT Critical Data / DENEM Labs), and prominent researchers at Yachay Tech University.',
+    'hero-tagline': 'The premier international summit bridging nanotechnology and artificial intelligence at Yachay City of Knowledge.',
+    'hero-desc': 'Two in-person and hybrid conference days featuring Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (Lead AI Architect at DENEM Labs), and prominent researchers at Yachay Tech University.',
     'hero-btn-register': 'Register for Summit',
     'hero-btn-schedule': 'View Full Schedule',
     'hero-meta-dates-label': 'Official Dates',
@@ -733,21 +733,21 @@ const SPEAKERS_DATA = {
       abstract: 'Revisión exhaustiva de los fundamentos de síntesis de películas delgadas columnares nanoestructuradas mediante pulverización catódica (magnetron sputtering) en incidencia oblicua (OAD/GLAD). Se analizan sus propiedades mecánicas, ópticas y su capacidad antibacteriana pasiva: reducción crítica de adhesión bacteriana y prevención de biopelículas en implantes de titanio grado médico sin uso de agentes químicos antibióticos.'
     },
     talk2: {
-      day: 'Día 2 (27 Oct) · 10:00 - 11:30',
+      day: 'Día 2 (27 Oct) · 09:30 - 11:00',
       title: 'From the Academic Laboratory to Deep-Tech Spin-Offs: The Nanostine Journey',
       abstract: 'Conferencia orientada a investigadores, posgraduados y estudiantes sobre transferencia tecnológica, valorización de propiedad intelectual y el camino de creación de empresas de base tecnológica (spin-offs) a partir de patentes científicas en nanociencia, detallando el modelo de negocio y escalamiento de Nanostine.'
     }
   },
   'simon-heilles': {
     name: 'Simon Heilles',
-    affiliation: 'MIT Critical Data (Cambridge, MA) · Lead AI Systems Architect en DENEM Labs',
+    affiliation: 'DENEM Labs · Lead AI Systems Architect & Machine Learning Researcher',
     talk1: {
-      day: 'Día 1 (26 Oct) · 14:00 - 15:30',
+      day: 'Día 1 (26 Oct) · 14:30 - 15:30',
       title: 'Autonomous Nanotechnology Laboratory: AI agents for closed-loop physical experimentation and scientific discovery',
       abstract: 'Exploración de arquitecturas de agentes de inteligencia artificial que trascienden el mero análisis de datos para transformarse en participantes activos de la experimentación científica. El laboratorio se concibe como un sistema en bucle cerrado: objetivo científico → hipótesis → diseño experimental → simulación digital twin → experimentación física → medición y caracterización → análisis → siguiente iteración.'
     },
     talk2: {
-      day: 'Día 2 (27 Oct) · 14:00 - 15:30',
+      day: 'Día 2 (27 Oct) · 14:00 - 15:00',
       title: 'Societies of AI Agents: Measuring influence, reputation, and emergent social behavior between autonomous agents',
       abstract: 'A medida que los agentes de IA se comunican, delegan, negocian y transfieren información, la unidad de estudio relevante pasa a ser la sociedad de agentes. Se propone una agenda de investigación empírica inspirada en la psicología social y la ciencia de redes para medir influencia, reputación, conformidad y cascadas de información.'
     }
@@ -887,7 +887,7 @@ function initCalendarSync() {
       e.preventDefault();
       const title = encodeURIComponent('NANOBRIDGE YT 2026: IEEE NTC Distinguished Lecturer Program & Summit');
       const details = encodeURIComponent(
-        'IEEE Nanotechnology Council Distinguished Lecturer Program & Frontier Summit con el Dr. José Miguel García-Martín (CSIC) y Simon Heilles (MIT Critical Data) en Yachay Tech University.'
+        'IEEE Nanotechnology Council Distinguished Lecturer Program & Frontier Summit con el Dr. José Miguel García-Martín (CSIC) y Simon Heilles (DENEM Labs) en Yachay Tech University.'
       );
       const location = encodeURIComponent('Universidad Yachay Tech, Urcuquí, Imbabura, Ecuador');
       // Starts 2026-10-26 10:00 ECT (15:00 UTC) to 2026-10-27 19:00 ECT (2026-10-28 00:00 UTC)
@@ -915,10 +915,10 @@ function downloadIcsFile() {
     'BEGIN:VEVENT',
     'UID:nanobridge-yt-2026@ieee-ntc-yachay',
     'DTSTAMP:20261012T200000Z',
-    'DTSTART:20261026T150000Z',
+    'DTSTART:20261026T140000Z',
     'DTEND:20261028T000000Z',
     'SUMMARY:NANOBRIDGE YT 2026 · IEEE NTC Distinguished Lecturer Program & Frontier Summit',
-    'DESCRIPTION:Cumbre científica con Dr. José Miguel García-Martín (CSIC / IEEE DL) y Simon Heilles (MIT Critical Data) en Yachay Tech.',
+    'DESCRIPTION:Cumbre científica con Dr. José Miguel García-Martín (CSIC / IEEE DL) y Simon Heilles (DENEM Labs) en Yachay Tech.',
     'LOCATION:Universidad Yachay Tech, Urcuquí, Imbabura, Ecuador',
     'STATUS:CONFIRMED',
     'END:VEVENT',
