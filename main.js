@@ -435,7 +435,7 @@ const I18N_DICTIONARY = {
     'hero-title-main': 'NANOBRIDGE YT 2026',
     'hero-title-sub': 'De la Nanociencia a Implantes Biomédicos y Sociedades de IA.',
     'hero-tagline': 'La primera cumbre internacional de nanotecnología e inteligencia artificial en la Ciudad del Conocimiento Yachay.',
-    'hero-desc': 'Dos jornadas presenciales e híbridas con el Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (Lead AI Architect en DENEM Labs) y destacados investigadores en la Universidad Yachay Tech.',
+    'hero-desc': 'Dos jornadas presenciales e híbridas con el Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), el MSc. Simon Heilles (Lead AI Architect en DENEM Labs) y destacados investigadores en la Universidad Yachay Tech.',
     'hero-btn-register': 'Inscribirse al Evento',
     'hero-btn-schedule': 'Ver Cronograma Completo',
     'hero-meta-dates-label': 'Fechas Oficiales',
@@ -533,7 +533,7 @@ const I18N_DICTIONARY = {
     'hero-title-main': 'NANOBRIDGE YT 2026',
     'hero-title-sub': 'From Nanoscience to Biomedical Implants & Societies of AI Agents.',
     'hero-tagline': 'The premier international summit bridging nanotechnology and artificial intelligence at Yachay City of Knowledge.',
-    'hero-desc': 'Two in-person and hybrid conference days featuring Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), Simon Heilles (Lead AI Architect at DENEM Labs), and prominent researchers at Yachay Tech University.',
+    'hero-desc': 'Two in-person and hybrid conference days featuring Dr. José Miguel García-Martín (CSIC, Nanostine, IEEE NTC Distinguished Lecturer), MSc. Simon Heilles (Lead AI Architect at DENEM Labs), and prominent researchers at Yachay Tech University.',
     'hero-btn-register': 'Register for Summit',
     'hero-btn-schedule': 'View Full Schedule',
     'hero-meta-dates-label': 'Official Dates',
@@ -734,89 +734,89 @@ const SPEAKERS_DATA = {
     name: 'Dr. José Miguel García-Martín',
     affiliation: 'IMN-CNM, CSIC (Madrid, España) · Co-Fundador de Nanostine S.L. · IEEE NTC Distinguished Lecturer',
     talk1: {
-      day: 'Día 1 (26 Oct) · 11:30 - 13:00',
+      day: 'Día 1 (26 Oct) · 09:00 - 10:30',
       title: 'Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants',
       abstract: 'Revisión exhaustiva de los fundamentos de síntesis de películas delgadas columnares nanoestructuradas mediante pulverización catódica (magnetron sputtering) en incidencia oblicua (OAD/GLAD). Se analizan sus propiedades mecánicas, ópticas y su capacidad antibacteriana pasiva: reducción crítica de adhesión bacteriana y prevención de biopelículas en implantes de titanio grado médico sin uso de agentes químicos antibióticos.'
     },
     talk2: {
-      day: 'Día 2 (27 Oct) · 09:30 - 11:00',
+      day: 'Día 2 (27 Oct) · 09:00 - 10:30',
       title: 'From the Academic Laboratory to Deep-Tech Spin-Offs: The Nanostine Journey',
       abstract: 'Conferencia orientada a investigadores, posgraduados y estudiantes sobre transferencia tecnológica, valorización de propiedad intelectual y el camino de creación de empresas de base tecnológica (spin-offs) a partir de patentes científicas en nanociencia, detallando el modelo de negocio y escalamiento de Nanostine.'
     }
   },
   'simon-heilles': {
-    name: 'Simon Heilles',
+    name: 'MSc. Simon Heilles',
     affiliation: 'DENEM Labs · Lead AI Systems Architect & Machine Learning Researcher',
     talk1: {
-      day: 'Día 1 (26 Oct) · 14:30 - 15:30',
+      day: 'Día 1 (26 Oct) · 11:30 - 13:00',
       title: 'Autonomous Nanotechnology Laboratory: AI agents for closed-loop physical experimentation and scientific discovery',
       abstract: 'Exploración de arquitecturas de agentes de inteligencia artificial que trascienden el mero análisis de datos para transformarse en participantes activos de la experimentación científica. El laboratorio se concibe como un sistema en bucle cerrado: objetivo científico → hipótesis → diseño experimental → simulación digital twin → experimentación física → medición y caracterización → análisis → siguiente iteración.'
     },
     talk2: {
-      day: 'Día 2 (27 Oct) · 14:00 - 15:00',
+      day: 'Día 2 (27 Oct) · 11:30 - 13:00',
       title: 'Societies of AI Agents: Measuring influence, reputation, and emergent social behavior between autonomous agents',
       abstract: 'A medida que los agentes de IA se comunican, delegan, negocian y transfieren información, la unidad de estudio relevante pasa a ser la sociedad de agentes. Se propone una agenda de investigación empírica inspirada en la psicología social y la ciencia de redes para medir influencia, reputación, conformidad y cascadas de información.'
     }
   },
   'edwin-valarezo': {
-    name: 'Dr. Edwin Valarezo Añazco',
+    name: 'Dr. Edwin Valarezo',
     affiliation: 'Presidente de IEEE EMBS (Engineering in Medicine and Biology Society) - Sección Ecuador',
     talk1: {
-      day: 'Día 1 (26 Oct) · 15:30 - 16:30 (Virtual)',
+      day: 'Día 2 (27 Oct) · 10:30 - 11:00 (Virtual)',
       title: 'Fronteras en Ingeniería Biomédica y Ecosistema de Salud en Ecuador',
       abstract: 'Panorama estratégico sobre la convergencia de dispositivos biomédicos, sensores nanotecnológicos y sistemas de salud pública en el contexto ecuatoriano y latinoamericano.'
     }
   },
   'jose-torres': {
     name: 'Dr. José Torres',
-    affiliation: 'Investigador en Nanotecnología Aplicada (Universidad Alemana)',
+    affiliation: 'Investigador Postdoctoral en Nanotecnología Aplicada (Alemania)',
     talk1: {
-      day: 'Día 2 (27 Oct) · 12:00 - 13:00 (Virtual)',
+      day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
       title: 'Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia',
       abstract: 'Técnicas avanzadas de caracterización a escala nanométrica en centros de investigación europeos y su articulación con proyectos experimentales de la región andina.'
     }
   },
   'carlos-reinoso': {
-    name: 'Prof. Carlos Reinoso',
+    name: 'Dr. Carlos Reinoso',
     affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
-      day: 'Día 1 (26 Oct) · 10:00 - 11:00 (Presencial)',
+      day: 'Día 1 (26 Oct) · 15:30 - 16:30 (Presencial)',
       title: 'Líneas de Investigación en Nanomateriales y Fabricación Local',
       abstract: 'Desarrollo de capacidades experimentales en Yachay Tech, líneas estratégicas de síntesis de nanomateriales y soluciones diseñadas para las problemáticas industriales y ambientales del Ecuador.'
     }
   },
   'edwin-chimborazo': {
-    name: 'Edwin Chimborazo',
+    name: 'Dr. Edwin Chimborazo',
     affiliation: 'Investigador en Nanociencia y Fabricación',
     talk1: {
-      day: 'Día 1 (26 Oct) · 16:30 - 17:30 (Presencial)',
+      day: 'Día 1 (26 Oct) · 14:30 - 15:30 (Presencial)',
       title: 'Desarrollo de Nanotecnología y Aplicaciones Regionales',
       abstract: 'Experiencias de modelado y aplicación práctica de nanotecnología en el sector productivo y académico regional.'
     }
   },
   'andrei-mereshchenko': {
-    name: 'Prof. Andrey Mereshchenko',
+    name: 'Dr. Andrei Mereshchenko',
     affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
-      day: 'Día 2 (27 Oct) · 15:30 - 16:30 (Presencial)',
+      day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
       title: 'Fotoquímica, Luminiscencia y Dinámica Ultrarrápida en Nanomateriales',
       abstract: 'Estudio de la dinámica de excitones en nanocompuestos coloidales, fotofísica de complejos metálicos y aplicaciones en sensores espectroscópicos avanzados, respaldado por más de 1900 citas y un índice h de 24.'
     }
   },
   'benjamin-pusay': {
-    name: 'Benjamín Pusay',
+    name: 'Ing. Benjamín Pusay',
     affiliation: 'Investigador en Materiales Avanzados, Yachay Tech',
     talk1: {
-      day: 'Día 2 (27 Oct) · 16:30 - 17:30 (Presencial)',
+      day: 'Día 2 (27 Oct) · 17:00 - 18:00 (Presencial)',
       title: 'Innovación en Materiales Nanoestructurados para Aplicaciones Energéticas',
       abstract: 'Avances recientes en síntesis y modelado de materiales avanzados con impacto en remediación y sustentabilidad.'
     }
   },
   'maria-fernanda-bosquez': {
-    name: 'MSc. María Fernanda Bósquez-Cáceres',
+    name: 'MSc. María Fernanda Bósquez',
     affiliation: 'Química & Investigadora, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
-      day: 'Día 2 (27 Oct) · 17:30 - 18:30 (Presencial)',
+      day: 'Día 2 (27 Oct) · 16:00 - 17:00 (Presencial)',
       title: 'Electrolitos Poliméricos Nanoestructurados e Hidrogeles para Baterías de Zinc-Aire y Almacenamiento Sostenible',
       abstract: 'Desarrollo de electrolitos biopoliméricos nanocompuestos (quitosano-almidón) e hidrogeles con nano-diamantes para sistemas de almacenamiento de energía renovable de alto rendimiento y bajo impacto ambiental.'
     }
@@ -893,11 +893,11 @@ function initCalendarSync() {
       e.preventDefault();
       const title = encodeURIComponent('NANOBRIDGE YT 2026: IEEE NTC Distinguished Lecturer Program & Summit');
       const details = encodeURIComponent(
-        'IEEE Nanotechnology Council Distinguished Lecturer Program & Frontier Summit con el Dr. José Miguel García-Martín (CSIC) y Simon Heilles (DENEM Labs) en Yachay Tech University.'
+        'IEEE Nanotechnology Council Distinguished Lecturer Program & Frontier Summit con el Dr. José Miguel García-Martín (CSIC) y el MSc. Simon Heilles (DENEM Labs) en Yachay Tech University.'
       );
       const location = encodeURIComponent('Universidad Yachay Tech, Urcuquí, Imbabura, Ecuador');
-      // Starts 2026-10-26 10:00 ECT (15:00 UTC) to 2026-10-27 19:00 ECT (2026-10-28 00:00 UTC)
-      const dates = '20261026T150000Z/20261028T000000Z';
+      // Starts 2026-10-26 09:00 ECT (14:00 UTC) to 2026-10-27 18:30 ECT (23:30 UTC)
+      const dates = '20261026T140000Z/20261027T233000Z';
       const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
       window.open(gcalUrl, '_blank');
     });
@@ -922,9 +922,9 @@ function downloadIcsFile() {
     'UID:nanobridge-yt-2026@ieee-ntc-yachay',
     'DTSTAMP:20261012T200000Z',
     'DTSTART:20261026T140000Z',
-    'DTEND:20261028T000000Z',
+    'DTEND:20261027T233000Z',
     'SUMMARY:NANOBRIDGE YT 2026 · IEEE NTC Distinguished Lecturer Program & Frontier Summit',
-    'DESCRIPTION:Cumbre científica con Dr. José Miguel García-Martín (CSIC / IEEE DL) y Simon Heilles (DENEM Labs) en Yachay Tech.',
+    'DESCRIPTION:Cumbre científica con Dr. José Miguel García-Martín (CSIC / IEEE DL) y MSc. Simon Heilles (DENEM Labs) en Yachay Tech.',
     'LOCATION:Universidad Yachay Tech, Urcuquí, Imbabura, Ecuador',
     'STATUS:CONFIRMED',
     'END:VEVENT',
