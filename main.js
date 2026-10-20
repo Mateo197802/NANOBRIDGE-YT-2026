@@ -787,7 +787,7 @@ const SPEAKERS_DATA = {
     name: 'Dr. Edwin Chimborazo',
     affiliation: 'Investigador en Nanociencia y Fabricación',
     talk1: {
-      day: 'Día 1 (26 Oct) · 14:30 - 15:30 (Presencial)',
+      day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
       title: 'Desarrollo de Nanotecnología y Aplicaciones Regionales',
       abstract: 'Experiencias de modelado y aplicación práctica de nanotecnología en el sector productivo y académico regional.'
     }
@@ -796,7 +796,7 @@ const SPEAKERS_DATA = {
     name: 'Dr. Andrei Mereshchenko',
     affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
-      day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
+      day: 'Día 1 (26 Oct) · 14:30 - 15:30 (Presencial)',
       title: 'Fotoquímica, Luminiscencia y Dinámica Ultrarrápida en Nanomateriales',
       abstract: 'Estudio de la dinámica de excitones en nanocompuestos coloidales, fotofísica de complejos metálicos y aplicaciones en sensores espectroscópicos avanzados, respaldado por más de 1900 citas y un índice h de 24.'
     }
