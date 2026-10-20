@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsors Oficiales · NANOBRIDGE YT 2026 | IEEE Nanotechnology Council</title>
+  <meta name="description" content="Patrocinadores y auspiciantes oficiales de NANOBRIDGE YT 2026. Alianzas locales y empresariales que apoyan la cumbre internacional de nanotecnología e IA en Yachay Tech.">
+  <link rel="icon" type="image/png" href="assets/ieee-ntc-official-trimmed.png">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Interactive Canvas & Pointer Tracking Aura -->
+  <canvas id="mesh-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-aura" aria-hidden="true"></div>
+
+  <!-- Top Notification Bar -->
+  <div class="top-notice-bar" role="banner">
+    <div class="container notice-inner">
+      <div class="notice-left">
+        <span class="notice-dot"></span>
+        <span data-i18n="top-notice">IEEE Nanotechnology Council · Distinguished Lecturer Program & Frontier Summit · 26–27 Oct 2026</span>
+      </div>
+      <div class="notice-right">
+        <span>Urcuquí, Imbabura · Ecuador</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-inner">
+      <!-- Brand Logo & Identity -->
+      <div class="brand-group">
+        <a href="index.html#hero" class="brand-badge" aria-label="NANOBRIDGE YT 2026 - Inicio">
+          <div class="brand-logo-badge">
+            <img src="assets/ieee-ntc-official-trimmed.png" alt="IEEE Nanotechnology Council · Yachay Tech Student Branch" class="brand-logo-img">
+          </div>
+          <div class="brand-text-block">
+            <span class="brand-tag">NANOBRIDGE YT</span>
+            <span class="brand-sub">IEEE NTC · Yachay Tech</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Menu Links -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-menu">
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav-about">Acerca de</a></li>
+          <li><a href="index.html#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a></li>
+          <li><a href="index.html#schedule" class="nav-link" data-i18n="nav-schedule">Agenda</a></li>
+          <li><a href="index.html#lodging" class="nav-link" data-i18n="nav-lodging">Hospedaje</a></li>
+          <li><a href="index.html#venue" class="nav-link" data-i18n="nav-venue">Sede Yachay</a></li>
+          <li><a href="sponsors.html" class="nav-link active" data-i18n="nav-sponsors">Sponsors</a></li>
+          <li><a href="index.html#registration" class="nav-link" data-i18n="nav-register">Inscribirse</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language & CTA Actions -->
+      <div class="nav-actions">
+        <div class="lang-toggle" aria-label="Seleccionar idioma">
+          <button type="button" class="lang-btn active lang-btn-es" id="lang-btn-es">ES</button>
+          <button type="button" class="lang-btn lang-btn-en" id="lang-btn-en">EN</button>
+        </div>
+        <a href="index.html#registration" class="btn-header-cta" data-i18n="cta-register">
+          <span>Inscribirse Ahora</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button type="button" class="mobile-hamburger" id="mobile-hamburger" aria-label="Abrir Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="lang-toggle" style="margin-bottom: 16px; align-self: flex-start;" aria-label="Seleccionar idioma">
+      <button type="button" class="lang-btn active lang-btn-es" id="lang-btn-es-mobile">ES</button>
+      <button type="button" class="lang-btn lang-btn-en" id="lang-btn-en-mobile">EN</button>
+    </div>
+    <a href="index.html#about" class="nav-link" data-i18n="nav-about">Acerca de</a>
+    <a href="index.html#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a>
+    <a href="index.html#schedule" class="nav-link" data-i18n="nav-schedule">Agenda</a>
+    <a href="index.html#lodging" class="nav-link" data-i18n="nav-lodging">Hospedaje</a>
+    <a href="index.html#venue" class="nav-link" data-i18n="nav-venue">Sede Yachay</a>
+    <a href="sponsors.html" class="nav-link active" data-i18n="nav-sponsors">Sponsors</a>
+    <a href="index.html#registration" class="nav-link" data-i18n="nav-register">Inscribirse</a>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         SPONSORS HERO SECTION
+         ============================================================ -->
+    <section class="sponsors-hero-section" data-fellowship-scene="ink">
+      <div class="hero-background-aura" aria-hidden="true"></div>
+      <div class="hero-orbit-ring-1" aria-hidden="true"></div>
+      <div class="hero-orbit-ring-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div style="max-width: 820px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
+            <span class="hero-eyebrow-pill" data-i18n="sponsors-eyebrow">IEEE NTC · Alianzas & Auspiciantes</span>
+            <span style="font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.12em; background: rgba(56, 189, 248, 0.12); padding: 4px 12px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.3);">Urcuquí · Imbabura · Ecuador</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            <span data-i18n="sponsors-title">Patrocinadores Oficiales</span>
+            <span class="highlight-accent">NANOBRIDGE YT 2026</span>
+          </h1>
+
+          <p class="sponsors-hero-lead" data-i18n="sponsors-lead">
+            Empresas, emprendimientos y aliados locales que impulsan la ciencia, la cultura y la innovación en NANOBRIDGE YT 2026. Agradecemos su valioso respaldo a la comunidad científica y estudiantil.
+          </p>
+
+          <a href="index.html" class="sponsors-back-link" data-i18n="sponsors-back-home">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            <span>← Volver al Inicio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPONSORS GRID SECTION (9 LOCAL SPONSORS)
+         ============================================================ -->
+    <section class="sponsors-grid-section" data-fellowship-scene="paper">
+      <div class="container">
+
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #0284c7; background: #eff6ff; padding: 4px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 8px;">Comercio & Comunidad Local</span>
+          <h2 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 2.5vw, 2.2rem); font-weight: 800; color: #0f172a; letter-spacing: -0.03em;">Alianzas Estratégicas de la Cumbre</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-top: 8px;">Conoce los establecimientos que hacen posible esta edición, ofreciendo beneficios, premios y experiencias exclusivas para todos los participantes.</p>
+        </div>
+
+        <div class="sponsors-grid">
+
+          <!-- 1. Épocas Liquor Store & Bar -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-epocas-cat">Coctelería & Vida Nocturna</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/epocas.png" alt="Épocas Liquor Store & Bar" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-epocas-title">Épocas Liquor Store & Bar</h3>
+              <p class="sponsor-desc" data-i18n="sp-epocas-desc">Espacio icónico de coctelería de autor, licores selectos y ambiente social distinguido en Urcuquí.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-epocas-benefit">Hidratación oficial y bebidas exclusivas para la Pasarela de Moda Científica y brindis del evento.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-epocas-loc">Urcuquí · WhatsApp: 0984526603</span>
+              <span style="font-weight: 700; color: #0284c7;">#01</span>
+            </div>
+          </article>
+
+          <!-- 2. Pizza's Isabella -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-isabella-cat">Gastronomía Artesanal</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/pizza_isabella.png" alt="Pizza's Isabella" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-isabella-title">Pizza's Isabella</h3>
+              <p class="sponsor-desc" data-i18n="sp-isabella-desc">Pizzería tradicional con masa artesanal crocante, ingredientes frescos y las mejores combinaciones de sabores.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-isabella-benefit">1 Pizza pequeña (sabor a elección) como premio oficial para sorteo entre los asistentes.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-isabella-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#02</span>
+            </div>
+          </article>
+
+          <!-- 3. Ragnarok Restobar -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-ragnarok-cat">Restobar & Gastronomía</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/ragnarok.png" alt="Ragnarok Restobar" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-ragnarok-title">Ragnarok Restobar</h3>
+              <p class="sponsor-desc" data-i18n="sp-ragnarok-desc">Concepto temático con gastronomía selecta, piqueos, hamburguesas gourmet y cervezas artesanales.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-ragnarok-benefit">1 Orden de consumo en el local como premio para participantes destacados de la cumbre.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-ragnarok-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#03</span>
+            </div>
+          </article>
+
+          <!-- 4. Cacao Riland -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-riland-cat">Chocolate Ancestral & Agroindustria</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/cacao_riland.png" alt="Cacao Riland" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-riland-title">Cacao Riland</h3>
+              <p class="sponsor-desc" data-i18n="sp-riland-desc">Elaboración de chocolate puro ancestral de fino aroma, promoviendo salud, sostenibilidad y patrimonio cacaotero.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-riland-benefit">Stand oficial de degustación durante la cumbre + 20 barras de chocolate ancestral saludable para los asistentes.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-riland-loc">Ecuador</span>
+              <span style="font-weight: 700; color: #0284c7;">#04</span>
+            </div>
+          </article>
+
+          <!-- 5. Andrés Tattoo Studio -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-andres-cat">Arte Corporal Profesional</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/andres_tattoo.png" alt="Andrés Tattoo Studio" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-andres-title">Andrés Tattoo Studio</h3>
+              <p class="sponsor-desc" data-i18n="sp-andres-desc">Estudio profesional de tatuaje artístico con altos estándares de esterilización, diseño personalizado y trazos finos.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-andres-benefit">1 Tatuaje artístico gratis como premio oficial para sorteo especial entre los asistentes.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-andres-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#05</span>
+            </div>
+          </article>
+
+          <!-- 6. Discoteca Coctiki -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-coctiki-cat">Entretenimiento & Vida Nocturna</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/coctiki.png" alt="Discoteca Coctiki" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-coctiki-title">Discoteca Coctiki</h3>
+              <p class="sponsor-desc" data-i18n="sp-coctiki-desc">El centro de diversión nocturna de referencia en Urcuquí, con sonido envolvente, luces inteligentes y barra de cócteles.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-coctiki-benefit">Canasta con productos y cócteles exclusivos para premiación oficial y confraternidad del evento.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-coctiki-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#06</span>
+            </div>
+          </article>
+
+          <!-- 7. Raíces -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-raices-cat">Diseño Textil & Moda</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/raices.png" alt="Raíces" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-raices-title">Raíces</h3>
+              <p class="sponsor-desc" data-i18n="sp-raices-desc">Taller creativo de diseño de vestuario y confección textil que fusiona identidad andina, estética contemporánea y vanguardia.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-raices-benefit">Diseños de vestuario exclusivos confeccionados para la Pasarela de Moda Científica de NANOBRIDGE YT.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-raices-loc">Urcuquí / Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#07</span>
+            </div>
+          </article>
+
+          <!-- 8. Pato Mar -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-patomar-cat">Bar, Gastronomía & Confraternidad</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/patomar.png" alt="Pato Mar" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-patomar-title">Pato Mar</h3>
+              <p class="sponsor-desc" data-i18n="sp-patomar-desc">Espacio acogedor de integración social, bebidas, coctelería y gastronomía casual para la comunidad universitaria.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-patomar-benefit">Lugar de libre acceso y punto de encuentro oficial para la integración y celebración post-cumbre.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-patomar-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#08</span>
+            </div>
+          </article>
+
+          <!-- 9. Nathaly Buchely Beauty Studio -->
+          <article class="sponsor-card">
+            <div class="sponsor-card-header">
+              <span class="sponsor-cat-badge" data-i18n="sp-nathaly-cat">Belleza, Maquillaje & Estilismo</span>
+              <span class="sponsor-local-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="sponsors-badge-local">Aliado Local</span>
+              </span>
+            </div>
+
+            <div class="sponsor-logo-box">
+              <img src="assets/sponsors/nathaly_buchely.png" alt="Nathaly Buchely Beauty Studio" class="sponsor-logo-img" loading="lazy">
+            </div>
+
+            <div class="sponsor-card-body">
+              <h3 class="sponsor-name" data-i18n="sp-nathaly-title">Nathaly Buchely Beauty Studio</h3>
+              <p class="sponsor-desc" data-i18n="sp-nathaly-desc">Estudio integral de imagen, maquillaje profesional de pasarela, estilismo y cuidado estético de alta definición.</p>
+
+              <div class="sponsor-benefit-box">
+                <div class="sponsor-benefit-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  <span data-i18n="sponsors-badge-benefit">Aporte & Sorteos Cumbre</span>
+                </div>
+                <p class="sponsor-benefit-text" data-i18n="sp-nathaly-benefit">Backstage oficial: Maquillaje y peinado profesional gratuito para todas las modelos de la Pasarela Científica.</p>
+              </div>
+            </div>
+
+            <div class="sponsor-card-footer">
+              <span class="sponsor-loc-pill" data-i18n="sp-nathaly-loc">Urcuquí, Imbabura</span>
+              <span style="font-weight: 700; color: #0284c7;">#09</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Partnership CTA Banner -->
+        <div class="sponsor-cta-banner">
+          <div class="sponsor-cta-text">
+            <h3 data-i18n="sponsors-cta-title">¿Deseas vincular tu empresa o marca a NANOBRIDGE YT?</h3>
+            <p data-i18n="sponsors-cta-desc">Conéctate con más de 200 futuros científicos, investigadores internacionales y líderes de la industria tecnológica en Ecuador.</p>
+          </div>
+          <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" class="btn-primary-pill">
+            <span data-i18n="sponsors-cta-btn">Contáctanos vía IEEE NTC</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="main-footer" data-fellowship-scene="ink">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-badge">
+            <img src="assets/ieee-ntc-official-trimmed.png" alt="IEEE Nanotechnology Council · Yachay Tech Student Branch" class="footer-logo-img">
+          </div>
+          <h3 class="footer-brand-title">NANOBRIDGE YT 2026</h3>
+          <p class="footer-brand-desc" data-i18n="footer-brand-desc">
+            Organizado por el Capítulo Estudiantil del IEEE Nanotechnology Council (NTC) en la Universidad Yachay Tech, Urcuquí, Ecuador. Conectando la investigación de materiales y la inteligencia artificial desde los Andes hacia el mundo.
+          </p>
+          <div style="display: flex; gap: 14px; margin-top: 14px; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" style="color: #38bdf8; font-weight: 700; font-size: 13px;">Instagram @ntc.yachaytech</a>
+            <a href="https://ieeenano.org" target="_blank" rel="noopener" style="color: #38bdf8; font-weight: 700; font-size: 13px;">IEEE Nanotechnology Council Global</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer-quick-nav">Navegación Rápida</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#about" data-i18n="footer-nav-about">Acerca del Evento</a></li>
+            <li><a href="index.html#speakers" data-i18n="footer-nav-speakers">Ponentes y Keynotes</a></li>
+            <li><a href="index.html#schedule" data-i18n="footer-nav-schedule">Cronograma de 2 Días</a></li>
+            <li><a href="index.html#lodging" data-i18n="footer-nav-lodging">Comparativo de Hospedaje</a></li>
+            <li><a href="index.html#venue" data-i18n="footer-nav-venue">Sede Universitaria</a></li>
+            <li><a href="sponsors.html" data-i18n="footer-nav-sponsors">Sponsors Oficiales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer-org-entities">Entidades Organizadoras</h4>
+          <ul class="footer-links-list">
+            <li><span>IEEE Nanotechnology Council</span></li>
+            <li><span>Universidad Yachay Tech</span></li>
+            <li><span>IEEE EMBS Ecuador Section</span></li>
+            <li><span>IMN-CNM, CSIC (España)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer-copy-1">© 2026 IEEE Nanotechnology Council Yachay Tech Student Branch Chapter. Todos los derechos reservados.</p>
+        <p data-i18n="footer-copy-2">Cumbre científica oficial organizada por IEEE Nanotechnology Council Yachay Tech Student Branch.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>

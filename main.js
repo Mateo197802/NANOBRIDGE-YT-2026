@@ -679,7 +679,63 @@ const I18N_DICTIONARY = {
     "footer-org-entities": "Entidades Organizadoras",
     "footer-copy-1": "© 2026 IEEE Nanotechnology Council Yachay Tech Student Branch Chapter. Todos los derechos reservados.",
     "footer-copy-2": "Cumbre científica oficial organizada por IEEE Nanotechnology Council Yachay Tech Student Branch.",
-    "modal-eyebrow": "Abstract de Conferencia Oficial"
+    "modal-eyebrow": "Abstract de Conferencia Oficial",
+    "nav-sponsors": "Sponsors",
+    "footer-nav-sponsors": "Sponsors Oficiales",
+    "sponsors-eyebrow": "IEEE NTC · Alianzas & Auspiciantes",
+    "sponsors-title": "Patrocinadores Oficiales",
+    "sponsors-lead": "Empresas, emprendimientos y aliados locales que impulsan la ciencia, la cultura y la innovación en NANOBRIDGE YT 2026. Agradecemos su valioso respaldo a la comunidad científica y estudiantil.",
+    "sponsors-back-home": "← Volver al Inicio",
+    "sponsors-badge-local": "Aliado Local",
+    "sponsors-badge-benefit": "Aporte & Sorteos Cumbre",
+    "sp-epocas-title": "Épocas Liquor Store & Bar",
+    "sp-epocas-cat": "Coctelería & Vida Nocturna",
+    "sp-epocas-desc": "Espacio icónico de coctelería de autor, licores selectos y ambiente social distinguido en Urcuquí.",
+    "sp-epocas-benefit": "Hidratación oficial y bebidas exclusivas para la Pasarela de Moda Científica y brindis del evento.",
+    "sp-epocas-loc": "Urcuquí · WhatsApp: 0984526603",
+    "sp-isabella-title": "Pizza's Isabella",
+    "sp-isabella-cat": "Gastronomía Artesanal",
+    "sp-isabella-desc": "Pizzería tradicional con masa artesanal crocante, ingredientes frescos y las mejores combinaciones de sabores.",
+    "sp-isabella-benefit": "1 Pizza pequeña (sabor a elección) como premio oficial para sorteo entre los asistentes.",
+    "sp-isabella-loc": "Urcuquí, Imbabura",
+    "sp-ragnarok-title": "Ragnarok Restobar",
+    "sp-ragnarok-cat": "Restobar & Gastronomía",
+    "sp-ragnarok-desc": "Concepto temático con gastronomía selecta, piqueos, hamburguesas gourmet y cervezas artesanales.",
+    "sp-ragnarok-benefit": "1 Orden de consumo en el local como premio para participantes destacados de la cumbre.",
+    "sp-ragnarok-loc": "Urcuquí, Imbabura",
+    "sp-riland-title": "Cacao Riland",
+    "sp-riland-cat": "Chocolate Ancestral & Agroindustria",
+    "sp-riland-desc": "Elaboración de chocolate puro ancestral de fino aroma, promoviendo salud, sostenibilidad y patrimonio cacaotero.",
+    "sp-riland-benefit": "Stand oficial de degustación durante la cumbre + 20 barras de chocolate ancestral saludable para los asistentes.",
+    "sp-riland-loc": "Ecuador",
+    "sp-andres-title": "Andrés Tattoo Studio",
+    "sp-andres-cat": "Arte Corporal Profesional",
+    "sp-andres-desc": "Estudio profesional de tatuaje artístico con altos estándares de esterilización, diseño personalizado y trazos finos.",
+    "sp-andres-benefit": "1 Tatuaje artístico gratis como premio oficial para sorteo especial entre los asistentes.",
+    "sp-andres-loc": "Urcuquí, Imbabura",
+    "sp-coctiki-title": "Discoteca Coctiki",
+    "sp-coctiki-cat": "Entretenimiento & Vida Nocturna",
+    "sp-coctiki-desc": "El centro de diversión nocturna de referencia en Urcuquí, con sonido envolvente, luces inteligentes y barra de cócteles.",
+    "sp-coctiki-benefit": "Canasta con productos y cócteles exclusivos para premiación oficial y confraternidad del evento.",
+    "sp-coctiki-loc": "Urcuquí, Imbabura",
+    "sp-raices-title": "Raíces",
+    "sp-raices-cat": "Diseño Textil & Moda",
+    "sp-raices-desc": "Taller creativo de diseño de vestuario y confección textil que fusiona identidad andina, estética contemporánea y vanguardia.",
+    "sp-raices-benefit": "Diseños de vestuario exclusivos confeccionados para la Pasarela de Moda Científica de NANOBRIDGE YT.",
+    "sp-raices-loc": "Urcuquí / Imbabura",
+    "sp-patomar-title": "Pato Mar",
+    "sp-patomar-cat": "Bar, Gastronomía & Confraternidad",
+    "sp-patomar-desc": "Espacio acogedor de integración social, bebidas, coctelería y gastronomía casual para la comunidad universitaria.",
+    "sp-patomar-benefit": "Lugar de libre acceso y punto de encuentro oficial para la integración y celebración post-cumbre.",
+    "sp-patomar-loc": "Urcuquí, Imbabura",
+    "sp-nathaly-title": "Nathaly Buchely Beauty Studio",
+    "sp-nathaly-cat": "Belleza, Maquillaje & Estilismo",
+    "sp-nathaly-desc": "Estudio integral de imagen, maquillaje profesional de pasarela, estilismo y cuidado estético de alta definición.",
+    "sp-nathaly-benefit": "Backstage oficial: Maquillaje y peinado profesional gratuito para todas las modelos de la Pasarela Científica.",
+    "sp-nathaly-loc": "Urcuquí, Imbabura",
+    "sponsors-cta-title": "¿Deseas vincular tu empresa o marca a NANOBRIDGE YT?",
+    "sponsors-cta-desc": "Conéctate con más de 200 futuros científicos, investigadores internacionales y líderes de la industria tecnológica en Ecuador.",
+    "sponsors-cta-btn": "Contáctanos vía IEEE NTC"
   },
   "en": {
     "top-notice": "IEEE Nanotechnology Council · Distinguished Lecturer Program & Frontier Summit · Oct 26–27, 2026",
@@ -941,7 +997,63 @@ const I18N_DICTIONARY = {
     "footer-org-entities": "Organizing Entities",
     "footer-copy-1": "© 2026 IEEE Nanotechnology Council Yachay Tech Student Branch Chapter. All rights reserved.",
     "footer-copy-2": "Official scientific summit organized by the IEEE Nanotechnology Council Yachay Tech Student Branch.",
-    "modal-eyebrow": "Official Conference Abstract"
+    "modal-eyebrow": "Official Conference Abstract",
+    "nav-sponsors": "Sponsors",
+    "footer-nav-sponsors": "Official Sponsors",
+    "sponsors-eyebrow": "IEEE NTC · Partnerships & Sponsors",
+    "sponsors-title": "Official Summit Sponsors",
+    "sponsors-lead": "Local businesses, ventures, and community partners powering science, culture, and innovation at NANOBRIDGE YT 2026. We thank them for their outstanding support to the scientific and student community.",
+    "sponsors-back-home": "← Back to Home",
+    "sponsors-badge-local": "Local Partner",
+    "sponsors-badge-benefit": "Summit Support & Giveaways",
+    "sp-epocas-title": "Épocas Liquor Store & Bar",
+    "sp-epocas-cat": "Cocktails & Nightlife",
+    "sp-epocas-desc": "Signature cocktail lounge, curated spirits, and vibrant social venue in Urcuquí.",
+    "sp-epocas-benefit": "Official hydration and exclusive beverages for the Scientific Fashion Runway and summit toast.",
+    "sp-epocas-loc": "Urcuquí · WhatsApp: 0984526603",
+    "sp-isabella-title": "Pizza's Isabella",
+    "sp-isabella-cat": "Artisan Gastronomy",
+    "sp-isabella-desc": "Traditional pizzeria featuring artisan thin crust, fresh ingredients, and gourmet specialty recipes.",
+    "sp-isabella-benefit": "1 Small pizza (flavor of choice) as an official raffle giveaway for attendees.",
+    "sp-isabella-loc": "Urcuquí, Imbabura",
+    "sp-ragnarok-title": "Ragnarok Restobar",
+    "sp-ragnarok-cat": "Restobar & Dining",
+    "sp-ragnarok-desc": "Themed culinary venue with gourmet burgers, craft beers, and casual dining.",
+    "sp-ragnarok-benefit": "1 Dining voucher at the venue as an official award for outstanding summit participants.",
+    "sp-ragnarok-loc": "Urcuquí, Imbabura",
+    "sp-riland-title": "Cacao Riland",
+    "sp-riland-cat": "Ancestral Chocolate & Agroindustry",
+    "sp-riland-desc": "Crafting fine-flavor ancestral pure chocolate, championing wellness, sustainability, and cocoa heritage.",
+    "sp-riland-benefit": "Official tasting booth during the summit + 20 bars of healthy ancestral chocolate for attendees.",
+    "sp-riland-loc": "Ecuador",
+    "sp-andres-title": "Andrés Tattoo Studio",
+    "sp-andres-cat": "Professional Body Art",
+    "sp-andres-desc": "Professional artistic tattoo studio with strict sterilization protocols, custom designs, and fine-line mastery.",
+    "sp-andres-benefit": "1 Free artistic tattoo as an official raffle prize for registered attendees.",
+    "sp-andres-loc": "Urcuquí, Imbabura",
+    "sp-coctiki-title": "Discoteca Coctiki",
+    "sp-coctiki-cat": "Nightclub & Entertainment",
+    "sp-coctiki-desc": "The premier nightlife venue in Urcuquí, equipped with immersive sound, dynamic lighting, and signature cocktail bar.",
+    "sp-coctiki-benefit": "Gift basket with premium products and signature cocktails for summit awards & networking.",
+    "sp-coctiki-loc": "Urcuquí, Imbabura",
+    "sp-raices-title": "Raíces",
+    "sp-raices-cat": "Fashion & Textile Design",
+    "sp-raices-desc": "Creative apparel and textile workshop fusing Andean cultural identity with contemporary avant-garde aesthetics.",
+    "sp-raices-benefit": "Exclusive apparel and costume designs created for the NANOBRIDGE YT Scientific Fashion Runway.",
+    "sp-raices-loc": "Urcuquí / Imbabura",
+    "sp-patomar-title": "Pato Mar",
+    "sp-patomar-cat": "Bar, Dining & Networking",
+    "sp-patomar-desc": "Welcoming social lounge, craft drinks, and casual dining for university students and visitors.",
+    "sp-patomar-benefit": "Free admission venue and official gathering point for post-summit networking and celebration.",
+    "sp-patomar-loc": "Urcuquí, Imbabura",
+    "sp-nathaly-title": "Nathaly Buchely Beauty Studio",
+    "sp-nathaly-cat": "Beauty, Makeup & Styling",
+    "sp-nathaly-desc": "Comprehensive image studio specializing in professional runway makeup, hair design, and high-definition aesthetics.",
+    "sp-nathaly-benefit": "Official backstage: Free professional makeup and styling for all Scientific Fashion Runway models.",
+    "sp-nathaly-loc": "Urcuquí, Imbabura",
+    "sponsors-cta-title": "Would you like to partner your brand with NANOBRIDGE YT?",
+    "sponsors-cta-desc": "Connect with over 200 future engineers, international scientists, and tech leaders in Ecuador.",
+    "sponsors-cta-btn": "Contact Us via IEEE NTC"
   }
 };
 
@@ -1321,5 +1433,77 @@ function initAbstractModal() {
     document.body.style.overflow = '';
   }
 }
+
+/* ==========================================================================
+   7. RESPONSIVE MOBILE NAVIGATION DRAWER
+   ========================================================================== */
+function initMobileMenu() {
+  const hamburger = document.getElementById('mobile-hamburger');
+  const drawer = document.getElementById('mobile-nav-drawer');
+
+  if (!hamburger || !drawer) return;
+
+  hamburger.addEventListener('click', () => {
+    drawer.classList.toggle('open');
+    const isOpen = drawer.classList.contains('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  drawer.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      drawer.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+/* ==========================================================================
+   8. CALENDAR SYNC (.ics DOWNLOAD & GOOGLE CALENDAR)
+   ========================================================================== */
+function initCalendarSync() {
+  const gcalBtn = document.getElementById('btn-gcal-sync');
+  const icsBtn = document.getElementById('btn-ics-sync');
+
+  if (gcalBtn) {
+    gcalBtn.addEventListener('click', () => {
+      const gcalUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=NANOBRIDGE+YT+2026+-+IEEE+Nanotechnology+Council+Frontier+Summit&dates=20261026T140000Z/20261028T000000Z&details=NANOBRIDGE+YT+2026%3A+De+la+Nanociencia+a+Implantes+Biom%C3%A9dicos+y+Sociedades+de+IA.+IEEE+NTC+Student+Branch+Chapter+Yachay+Tech.&location=Universidad+Yachay+Tech%2C+Urcuqu%C3%AD%2C+Imbabura%2C+Ecuador';
+      window.open(gcalUrl, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  if (icsBtn) {
+    icsBtn.addEventListener('click', () => {
+      const icsData = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//IEEE NTC Yachay Tech//NANOBRIDGE YT 2026//EN',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:nanobridge-yt-2026@yachaytech.edu.ec',
+        'DTSTAMP:20261020T000000Z',
+        'DTSTART:20261026T140000Z',
+        'DTEND:20261028T000000Z',
+        'SUMMARY:NANOBRIDGE YT 2026 - IEEE Nanotechnology Council Summit',
+        'DESCRIPTION:De la Nanociencia a Implantes Biomédicos y Sociedades de IA. Sede Presencial: Universidad Yachay Tech.',
+        'LOCATION:Universidad Yachay Tech, Urcuquí, Imbabura, Ecuador',
+        'STATUS:CONFIRMED',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+
+      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'NANOBRIDGE-YT-2026.ics';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  }
+}
+
 
 
