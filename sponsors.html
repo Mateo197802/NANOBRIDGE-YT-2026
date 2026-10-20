@@ -13,7 +13,353 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2.2">
+  <link rel="stylesheet" href="styles.css?v=2.3">
+
+  <!-- Embedded Critical Styles for Instant, Cache-Proof Rendering -->
+  <style>
+    /* Sticky Top Header */
+    .main-header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(7, 11, 20, 0.95) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.15) !important;
+      z-index: 100 !important;
+      color: #ffffff !important;
+    }
+    .nav-wrapper, .header-inner {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      height: 78px !important;
+      flex-wrap: nowrap !important;
+    }
+    .brand-group {
+      display: flex !important;
+      align-items: center !important;
+      gap: 16px !important;
+      flex-shrink: 0 !important;
+    }
+    .nav-menu {
+      display: flex !important;
+      align-items: center !important;
+      list-style: none !important;
+      gap: clamp(8px, 1.3vw, 20px) !important;
+      flex-wrap: nowrap !important;
+      white-space: nowrap !important;
+    }
+    .nav-link {
+      color: #94a3b8 !important;
+      transition: color 0.2s ease !important;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #ffffff !important;
+    }
+    .nav-link.active::after {
+      width: 100% !important;
+    }
+    .nav-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* Hero Head Section */
+    .hero-section,
+    .sponsors-hero-section {
+      position: relative !important;
+      background-color: #070d18 !important;
+      background-image: 
+        radial-gradient(at 80% 20%, rgba(14, 165, 233, 0.18) 0px, transparent 55%),
+        radial-gradient(at 20% 80%, rgba(79, 70, 229, 0.14) 0px, transparent 55%) !important;
+      color: #ffffff !important;
+      padding: clamp(2.5rem, 4vw, 4rem) 0 clamp(2rem, 3.5vw, 3.5rem) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      overflow: hidden !important;
+    }
+    .hero-eyebrow-wrapper {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.15em !important;
+      text-transform: uppercase !important;
+      color: #38bdf8 !important;
+      margin-bottom: 14px !important;
+    }
+    .eyebrow-pill {
+      width: 7px !important;
+      height: 7px !important;
+      background-color: #38bdf8 !important;
+      border-radius: 50% !important;
+      box-shadow: 0 0 10px #38bdf8 !important;
+    }
+    .hero-main-title {
+      color: #ffffff !important;
+      font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem) !important;
+      font-weight: 800 !important;
+      line-height: 1.1 !important;
+      margin-bottom: 12px !important;
+    }
+    .hero-main-title .highlight-accent {
+      display: block;
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 6px;
+    }
+    .hero-tagline {
+      color: #cbd5e1 !important;
+      font-size: clamp(0.95rem, 1.2vw, 1.12rem) !important;
+      line-height: 1.55 !important;
+    }
+
+    /* Grid Section */
+    .sponsors-grid-section {
+      padding: clamp(3.5rem, 5vw, 5rem) 0 !important;
+      background-color: #f8fafc !important;
+      position: relative !important;
+      z-index: 10 !important;
+    }
+    .sponsors-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)) !important;
+      gap: 28px !important;
+      margin-top: 32px !important;
+    }
+    .sponsor-card {
+      background-color: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 16px !important;
+      padding: 24px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      transition: all 0.28s ease !important;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05) !important;
+    }
+    .sponsor-card:hover {
+      transform: translateY(-5px) !important;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12) !important;
+      border-color: #38bdf8 !important;
+    }
+    .sponsor-card-header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      margin-bottom: 16px !important;
+    }
+    .sponsor-cat-badge {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: #0284c7 !important;
+      background: #eff6ff !important;
+      border: 1px solid #dbeafe !important;
+      padding: 4px 10px !important;
+      border-radius: 9999px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.03em !important;
+    }
+    .sponsor-local-badge {
+      font-size: 10.5px !important;
+      font-weight: 600 !important;
+      color: #475569 !important;
+      background: #f1f5f9 !important;
+      padding: 3px 8px !important;
+      border-radius: 4px !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+    }
+    .sponsor-logo-box {
+      width: 100% !important;
+      height: 160px !important;
+      background: #ffffff !important;
+      border: 1px solid #f1f5f9 !important;
+      border-radius: 12px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px !important;
+      margin-bottom: 20px !important;
+      box-shadow: inset 0 0 10px rgba(15, 23, 42, 0.02) !important;
+      transition: background 0.2s ease !important;
+    }
+    .sponsor-logo-box.logo-dark-bg {
+      background: #0b1322 !important;
+      border-color: #1e293b !important;
+      box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.5) !important;
+    }
+    .sponsor-logo-img {
+      max-width: 100% !important;
+      max-height: 122px !important;
+      object-fit: contain !important;
+      display: block !important;
+      transition: transform 0.28s ease !important;
+    }
+    .sponsor-card:hover .sponsor-logo-img {
+      transform: scale(1.05) !important;
+    }
+    .sponsor-name {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 19px !important;
+      font-weight: 700 !important;
+      color: #0f172a !important;
+      margin-bottom: 8px !important;
+    }
+    .sponsor-desc {
+      font-size: 13.5px !important;
+      line-height: 1.6 !important;
+      color: #64748b !important;
+      margin-bottom: 18px !important;
+    }
+    .sponsor-benefit-box {
+      background: #f0fdf4 !important;
+      border: 1px solid #bbf7d0 !important;
+      border-radius: 10px !important;
+      padding: 12px 14px !important;
+      margin-top: auto !important;
+      margin-bottom: 16px !important;
+    }
+    .sponsor-benefit-header {
+      display: flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: #15803d !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.05em !important;
+      margin-bottom: 4px !important;
+    }
+    .sponsor-benefit-text {
+      font-size: 12.5px !important;
+      line-height: 1.5 !important;
+      color: #166534 !important;
+      font-weight: 500 !important;
+    }
+    .sponsor-card-footer {
+      padding-top: 14px !important;
+      border-top: 1px solid #f1f5f9 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      font-size: 12px !important;
+      color: #64748b !important;
+    }
+
+    /* Partnership CTA Banner */
+    .sponsor-cta-banner {
+      background: linear-gradient(135deg, #070d18 0%, #0f172a 100%) !important;
+      border: 1px solid rgba(56, 189, 248, 0.25) !important;
+      border-radius: 18px !important;
+      padding: clamp(2rem, 4vw, 3rem) !important;
+      margin-top: 48px !important;
+      color: #ffffff !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 24px !important;
+      flex-wrap: wrap !important;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25) !important;
+    }
+    .sponsor-cta-text h3 {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: clamp(1.3rem, 2vw, 1.7rem) !important;
+      font-weight: 700 !important;
+      margin-bottom: 6px !important;
+      color: #ffffff !important;
+    }
+    .sponsor-cta-text p {
+      font-size: 14px !important;
+      color: #94a3b8 !important;
+      max-width: 600px !important;
+    }
+
+    /* Footer Final Section */
+    .main-footer {
+      position: relative !important;
+      z-index: 50 !important;
+      background-color: #04070e !important;
+      color: #94a3b8 !important;
+      padding: 60px 0 40px !important;
+      border-top: 1px solid rgba(56, 189, 248, 0.12) !important;
+    }
+    .footer-grid {
+      display: grid !important;
+      grid-template-columns: 1.5fr 1fr 1fr !important;
+      gap: 40px !important;
+      margin-bottom: 40px !important;
+    }
+    .footer-brand-title {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 20px !important;
+      font-weight: 800 !important;
+      color: #ffffff !important;
+      margin-bottom: 12px !important;
+    }
+    .footer-brand-desc {
+      color: #94a3b8 !important;
+      line-height: 1.6 !important;
+      max-width: 380px !important;
+      margin-bottom: 18px !important;
+    }
+    .footer-heading {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      margin-bottom: 16px !important;
+    }
+    .footer-links-list {
+      list-style: none !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+    .footer-links-list a {
+      color: #94a3b8 !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+    .footer-links-list a:hover {
+      color: #38bdf8 !important;
+    }
+    .footer-links-list span {
+      color: #cbd5e1 !important;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding-top: 24px !important;
+      color: #64748b !important;
+      font-size: 12px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+    }
+
+    @media (max-width: 1120px) {
+      .nav-menu { gap: 10px !important; }
+      .nav-link { font-size: 12px !important; }
+      .btn-header-cta { padding: 8px 14px !important; font-size: 12px !important; }
+    }
+    @media (max-width: 890px) {
+      .nav-menu, .btn-header-cta { display: none !important; }
+      .mobile-hamburger { display: flex !important; }
+      .mobile-nav-drawer { top: 78px !important; }
+      .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -291,7 +637,7 @@
               </span>
             </div>
 
-            <div class="sponsor-logo-box">
+            <div class="sponsor-logo-box logo-dark-bg">
               <img src="assets/sponsors/andres_tattoo.png" alt="Andrés Tattoo Studio" class="sponsor-logo-img" loading="lazy">
             </div>
 
@@ -423,7 +769,7 @@
               </span>
             </div>
 
-            <div class="sponsor-logo-box">
+            <div class="sponsor-logo-box logo-dark-bg">
               <img src="assets/sponsors/nathaly_buchely.png" alt="Nathaly Buchely Beauty Studio" class="sponsor-logo-img" loading="lazy">
             </div>
 
@@ -515,6 +861,6 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script src="main.js?v=2.2"></script>
+  <script src="main.js?v=2.3"></script>
 </body>
 </html>
