@@ -210,11 +210,13 @@ button {
   transition: all var(--transition-normal);
 }
 
-.nav-wrapper {
+.nav-wrapper,
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 78px;
+  flex-wrap: nowrap;
 }
 
 .brand-group {
@@ -281,7 +283,9 @@ button {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 24px;
+  gap: clamp(8px, 1.3vw, 20px);
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -2042,13 +2046,32 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
+  .nav-menu {
+    gap: 10px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+  .btn-header-cta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 890px) {
   .nav-menu, .btn-header-cta {
     display: none;
   }
   .mobile-hamburger {
     display: flex;
   }
+  .mobile-nav-drawer {
+    top: 78px;
+  }
+}
+
+@media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
