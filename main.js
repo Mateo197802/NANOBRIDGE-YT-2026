@@ -765,8 +765,17 @@ const SPEAKERS_DATA = {
       abstract: 'Panorama estratégico sobre la convergencia de dispositivos biomédicos, sensores nanotecnológicos y sistemas de salud pública en el contexto ecuatoriano y latinoamericano.'
     }
   },
+  'jorge-torres': {
+    name: 'Dr. Jorge Torres',
+    affiliation: 'Investigador Postdoctoral de Yachay Tech (Alemania)',
+    talk1: {
+      day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
+      title: 'Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia',
+      abstract: 'Técnicas avanzadas de caracterización a escala nanométrica en centros de investigación europeos y su articulación con proyectos experimentales de la región andina.'
+    }
+  },
   'jose-torres': {
-    name: 'Dr. José Torres',
+    name: 'Dr. Jorge Torres',
     affiliation: 'Investigador Postdoctoral de Yachay Tech (Alemania)',
     talk1: {
       day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
