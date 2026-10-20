@@ -767,7 +767,7 @@ const SPEAKERS_DATA = {
   },
   'jose-torres': {
     name: 'Dr. José Torres',
-    affiliation: 'Investigador Postdoctoral en Nanotecnología Aplicada (Alemania)',
+    affiliation: 'Investigador Postdoctoral de Yachay Tech (Alemania)',
     talk1: {
       day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
       title: 'Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia',
@@ -785,7 +785,7 @@ const SPEAKERS_DATA = {
   },
   'edwin-chimborazo': {
     name: 'Dr. Edwin Chimborazo',
-    affiliation: 'Investigador en Nanociencia y Fabricación',
+    affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
       day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
       title: 'Desarrollo de Nanotecnología y Aplicaciones Regionales',
@@ -812,7 +812,7 @@ const SPEAKERS_DATA = {
   },
   'benjamin-pusay': {
     name: 'Ing. Benjamín Pusay',
-    affiliation: 'Investigador en Materiales Avanzados, Yachay Tech',
+    affiliation: 'Investigador en Nanotecnología, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
       day: 'Día 2 (27 Oct) · 17:00 - 18:00 (Presencial)',
       title: 'Innovación en Materiales Nanoestructurados para Aplicaciones Energéticas',
