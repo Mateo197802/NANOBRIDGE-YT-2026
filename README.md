@@ -21,7 +21,7 @@ Todos los ponentes cuentan con tarjetas homogéneas, insignias de rol y modalida
 1. **Dr. José Miguel García-Martín** (CSIC, España · Nanostine S.L. · IEEE NTC Distinguished Lecturer)
 2. **Simon Heilles** (MIT Critical Data, Cambridge MA · Lead AI Architect en DENEM Labs)
 3. **Dr. Edwin Valarezo Añazco** (Presidente de IEEE EMBS - Sección Ecuador · Virtual)
-4. **Dr. Jorge Torres** (Investigador en Nanotecnología Aplicada, Alemania · Yachay Tech · Virtual)
+4. **Dr. Jorge Torres Gómez** (Senior Researcher en Telecommunication Networks, TU Berlin - Alemania · Virtual)
 5. **Prof. Carlos Reinoso** (Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech · Presencial)
 6. **Dr. Jhonny Chimborazo** (Docente-Investigador en Nanociencia y Fabricación, Yachay Tech · Presencial)
 7. **Prof. Andrey Mereshchenko** (Docente-Investigador en Fotoquímica y Fotofísica, Yachay Tech · Presencial)
@@ -45,7 +45,7 @@ Todos los ponentes cuentan con tarjetas homogéneas, insignias de rol y modalida
   - 09:45: Apertura del Día 2
   - 10:00: **Plenaria Traslacional (90 min) — Dr. José Miguel García-Martín** (Nanostine)
   - 11:30: **Intermedio Artístico — Recital de Piano en Vivo (Pianista Invitado)**
-  - 12:00: Conferencia Virtual (60 min) — Dr. Jorge Torres (Alemania)
+  - 12:00: Conferencia Virtual (60 min) — Dr. Jorge Torres Gómez (TU Berlin, Alemania)
   - 13:00: Coffee Break & Almuerzo / Networking
   - 14:00: **Plenaria AI (90 min) — Simon Heilles** (MIT Critical Data)
   - 15:30: Conferencia Magistral (60 min) — Prof. Andrey Mereshchenko (Yachay Tech)
