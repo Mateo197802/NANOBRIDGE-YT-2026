@@ -783,8 +783,17 @@ const SPEAKERS_DATA = {
       abstract: 'Desarrollo de capacidades experimentales en Yachay Tech, líneas estratégicas de síntesis de nanomateriales y soluciones diseñadas para las problemáticas industriales y ambientales del Ecuador.'
     }
   },
+  'jhonny-chimborazo': {
+    name: 'Dr. Jhonny Chimborazo',
+    affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
+    talk1: {
+      day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
+      title: 'Desarrollo de Nanotecnología y Aplicaciones Regionales',
+      abstract: 'Experiencias de modelado y aplicación práctica de nanotecnología en el sector productivo y académico regional.'
+    }
+  },
   'edwin-chimborazo': {
-    name: 'Dr. Edwin Chimborazo',
+    name: 'Dr. Jhonny Chimborazo',
     affiliation: 'Docente-Investigador, Escuela de Ciencias Físicas y Nanotecnología, Yachay Tech',
     talk1: {
       day: 'Día 2 (27 Oct) · 14:30 - 15:30 (Presencial)',
