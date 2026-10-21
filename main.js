@@ -475,7 +475,7 @@ const I18N_DICTIONARY = {
     "sp-affil-1": "IEEE NTC Distinguished Lecturer",
     "sp-bio-1": "Investigador Científico en el Instituto de Micro y Nanotecnología (IMN-CNM, CSIC, Madrid). Co-fundador de Nanostine S.L. Pionero en recubrimientos nanoestructurados columnares de titanio con propiedades antibacterianas pasivas.",
     "sp-talk-day-1-1": "Día 1 (26 Oct) · 09:00 - 10:30",
-    "sp-talk-title-1-1": "Nanostructured Columnar Thin Films & Antibacterial Surfaces",
+    "sp-talk-title-1-1": "Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices",
     "sp-talk-day-1-2": "Día 2 (27 Oct) · 09:00 - 10:30",
     "sp-talk-title-1-2": "From the Academic Laboratory to Deep-Tech Spin-Offs: Nanostine",
     "sp-role-2": "DENEM Labs",
@@ -494,7 +494,7 @@ const I18N_DICTIONARY = {
     "sp-affil-4": "TU Berlin · Telecommunication Networks (Alemania)",
     "sp-bio-4": "Senior Researcher en el grupo de Telecommunication Networks (TKN) de la Technische Universität Berlin (TU Berlin, Alemania). Especialista internacional en comunicaciones moleculares, Internet de las Bio-Nano-Cosas (IoBNT), localización de nanosensores y modelado de redes nano-biomédicas.",
     "sp-talk-day-4-1": "Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)",
-    "sp-talk-title-4-1": "Avances Internacionales en Caracterización y Métodos en Nanociencia",
+    "sp-talk-title-4-1": "Programmability in the Chemical Domain using the Metabolic Network of Cells",
     "sp-role-5": "Nanomateriales & Fabricación",
     "sp-affil-5": "Yachay Tech · Ciencias Físicas y Nanotecnología",
     "sp-bio-5": "Docente-Investigador en la Escuela de Ciencias Físicas y Nanotecnología de Yachay Tech. Responsable de líneas estratégicas en desarrollo de nanomateriales y prototipado local.",
@@ -556,12 +556,12 @@ const I18N_DICTIONARY = {
     "timeline-btn-workshop": "Inscribirse al Workshop",
     "sched-d1-i1-title": "Acreditación, Registro & Bienvenida Institucional",
     "sched-d1-i1-sub": "Capítulo Estudiantil IEEE NTC & Autoridades de la Universidad Yachay Tech",
-    "sched-d1-i2-title": "Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants",
+    "sched-d1-i2-title": "Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices",
     "sched-d1-i2-sub": "Dr. José Miguel García-Martín · Instituto de Micro y Nanotecnología (CSIC, Madrid)",
-    "sched-d1-i2-abs": "Fundamentos físicos de magnetron sputtering bajo ángulo oblicuo (OAD/GLAD) para el crecimiento de películas columnares. Análisis de propiedades antibacterianas pasivas en titanio de grado médico para implantes ortopédicos, evitando infecciones sin antibióticos.",
-    "sched-d1-i3-title": "Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia",
+    "sched-d1-i2-abs": "Demostración de la deposición en ángulo rasante mediante magnetron sputtering como vía accesible y escalable para fabricar películas delgadas nanocolumnares (NCTF) de metales y óxidos metálicos en grandes áreas en un solo paso. Análisis de aplicaciones funcionales en energía y medio ambiente (nanopilares magnéticos, superficies auto-limpiantes, celdas de perovskita), biomedicina (recubrimientos antibacterianos en implantes ortopédicos, bioelectrodos, detección SERS y electroquímica) y aeroespacial (mitigación del efecto multipactor).",
+    "sched-d1-i3-title": "Programmability in the Chemical Domain using the Metabolic Network of Cells",
     "sched-d1-i3-sub": "Dr. Jorge Torres Gómez · Senior Researcher en TU Berlin (Alemania)",
-    "sched-d1-i3-abs": "Metodologías avanzadas en caracterización fisicoquímica, difracción y análisis a escala atómica para la síntesis de nuevas estructuras funcionales en centros de investigación europeos.",
+    "sched-d1-i3-abs": "Investigación inspirada en los mecanismos biológicos para ensamblar bloques de procesamiento de señales a partir de reacciones existentes en la red metabólica de la célula. Se presenta un pipeline que mapea motivos de redes de reacciones químicas abstractas sobre modelos metabólicos celulares, junto con un algoritmo que optimiza concentraciones enzimáticas para retardos y ganancias factibles. Aplicación directa en medicina de precisión para estimar distancias entre células tumorales e inmunitarias.",
     "sched-d1-i4-title": "Presentación Especial del Club de Danza Yachay Tech",
     "sched-d1-i4-sub": "Club de Danza Universitaria · Expresión coreográfica tradicional andina y contemporánea",
     "sched-d1-i5-title": "Coffee Break de la Mañana & Estación de Café",
@@ -793,7 +793,7 @@ const I18N_DICTIONARY = {
     "sp-affil-1": "IEEE NTC Distinguished Lecturer",
     "sp-bio-1": "Scientific Researcher at the Institute of Micro and Nanotechnology (IMN-CNM, CSIC, Madrid). Co-founder of Nanostine S.L. Pioneer in columnar nanostructured titanium coatings with passive antibacterial properties.",
     "sp-talk-day-1-1": "Day 1 (Oct 26) · 09:00 - 10:30",
-    "sp-talk-title-1-1": "Nanostructured Columnar Thin Films & Antibacterial Surfaces",
+    "sp-talk-title-1-1": "Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices",
     "sp-talk-day-1-2": "Day 2 (Oct 27) · 09:00 - 10:30",
     "sp-talk-title-1-2": "From the Academic Laboratory to Deep-Tech Spin-Offs: Nanostine",
     "sp-role-2": "DENEM Labs",
@@ -812,7 +812,7 @@ const I18N_DICTIONARY = {
     "sp-affil-4": "TU Berlin · Telecommunication Networks (Germany)",
     "sp-bio-4": "Senior Researcher in the Telecommunication Networks (TKN) group at Technische Universität Berlin (TU Berlin, Germany). International specialist in molecular communications, Internet of Bio-Nano-Things (IoBNT), nanosensor localization, and nano-biomedical networks.",
     "sp-talk-day-4-1": "Day 1 (Oct 26) · 10:30 - 11:00 (Virtual)",
-    "sp-talk-title-4-1": "International Advances in Characterization and Methods in Nanoscience",
+    "sp-talk-title-4-1": "Programmability in the Chemical Domain using the Metabolic Network of Cells",
     "sp-role-5": "Nanomaterials & Fabrication",
     "sp-affil-5": "Yachay Tech · Physical Sciences & Nanotechnology",
     "sp-bio-5": "Faculty Researcher in the School of Physical Sciences and Nanotechnology at Yachay Tech. Leading strategic initiatives in nanomaterials formulation and local prototype fabrication.",
@@ -874,12 +874,12 @@ const I18N_DICTIONARY = {
     "timeline-btn-workshop": "Register for Workshop",
     "sched-d1-i1-title": "Accreditation, Registration & Institutional Welcome",
     "sched-d1-i1-sub": "IEEE NTC Student Branch Chapter & Yachay Tech University Leadership",
-    "sched-d1-i2-title": "Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants",
+    "sched-d1-i2-title": "Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices",
     "sched-d1-i2-sub": "Dr. José Miguel García-Martín · Institute of Micro and Nanotechnology (CSIC, Madrid)",
-    "sched-d1-i2-abs": "Physical fundamentals of oblique angle deposition magnetron sputtering (OAD/GLAD) for columnar thin film growth. Passive antibacterial properties on medical-grade titanium for orthopedic implants to prevent infections without antibiotics.",
-    "sched-d1-i3-title": "International Advances in Characterization and Advanced Methods in Nanoscience",
+    "sched-d1-i2-abs": "Glancing angle deposition with magnetron sputtering as a user-friendly, single-step route to fabricate nanocolumnar thin films (NCTFs) of metals and metal-oxides in large areas. Functional devices described across energy and environment (magnetic nanopillars, photo-induced self-cleaning, perovskite solar cells), biomedicine (antibacterial orthopedic coatings, bioelectrodes, SERS chemical sensing), and aerospace (multipactor effect mitigation).",
+    "sched-d1-i3-title": "Programmability in the Chemical Domain using the Metabolic Network of Cells",
     "sched-d1-i3-sub": "Dr. Jorge Torres Gómez · Senior Researcher at TU Berlin (Germany)",
-    "sched-d1-i3-abs": "Advanced methodologies in physicochemical characterization, diffraction, and atomic-scale analysis for synthesizing novel functional structures at European research centers.",
+    "sched-d1-i3-abs": "Motivated by living cells' information processing, this research explores assembling signal-processing blocks from reactions in the cell metabolic network. A pipeline mapping abstract reaction network motifs onto metabolic models is presented, along with an algorithm optimizing enzyme concentrations for feasible delays and gains, illustrated in a precision medicine scenario to estimate tumor-immune cell distances.",
     "sched-d1-i4-title": "Special Performance by the Yachay Tech Dance Club",
     "sched-d1-i4-sub": "University Dance Club · Traditional Andean and contemporary choreographic expression",
     "sched-d1-i5-title": "Morning Coffee Break & Networking Station",
@@ -1199,10 +1199,10 @@ const SPEAKERS_DATA = {
     talk1: {
       day: 'Día 1 (26 Oct) · 09:00 - 10:30',
       day_en: 'Day 1 (Oct 26) · 09:00 - 10:30',
-      title: 'Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants',
-      title_en: 'Nanostructured Columnar Thin Films and Antibacterial Surfaces: From Sputtering Physics to Biomedical Implants',
-      abstract: 'Revisión exhaustiva de los fundamentos de síntesis de películas delgadas columnares nanoestructuradas mediante pulverización catódica (magnetron sputtering) en incidencia oblicua (OAD/GLAD). Se analizan sus propiedades mecánicas, ópticas y su capacidad antibacteriana pasiva: reducción crítica de adhesión bacteriana y prevención de biopelículas en implantes de titanio grado médico sin uso de agentes químicos antibióticos.',
-      abstract_en: 'Comprehensive review of the fundamental synthesis of nanostructured columnar thin films using oblique angle deposition (OAD/GLAD) magnetron sputtering. Mechanical and optical properties are analyzed alongside passive antibacterial performance: critical reduction of bacterial adhesion and biofilm prevention on medical-grade titanium implants without antibiotic agents.'
+      title: 'Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices',
+      title_en: 'Nanostructured columnar thin films by magnetron sputtering: From fundamentals to devices',
+      abstract: 'En la primera parte de esta charla se demostrará que la deposición en ángulo rasante mediante magnetron sputtering es una vía accesible para fabricar películas delgadas nanocolumnares (NCTF) de metales y óxidos metálicos en grandes áreas de varios centímetros cuadrados y superiores (siendo viable su escalado) en un proceso de un solo paso, en claro contraste con las técnicas de nanolitografía. El desarrollo de la morfología nanocolumnar es resultado del sombreado atómico, difusión atómica y relajación superficial. En la segunda parte se describirán diversas aplicaciones donde las NCTF son relevantes, debatiendo cómo y por qué estos nanomateriales pueden utilizarse en dispositivos funcionales: para energía y medio ambiente (nanopilares magnéticos con propiedades a medida, superficies auto-limpiantes foto-inducidas, capas para celdas solares de perovskita y recubrimientos de metal negro en el rango visible); para biomedicina (recubrimientos antibacterianos en implantes ortopédicos, bioelectrodos para estimulación eléctrica, plantillas para detección química por SERS y electrodos de trabajo en detección electroquímica); y para la industria aeroespacial (recubrimientos nanoestructurados que mitigan el efecto multipactor).',
+      abstract_en: 'In the first part of this talk, it will be shown that glancing angle deposition with magnetron sputtering is a user-friendly route to fabricate nanocolumnar thin films (NCTFs) of metals and metal-oxides in large areas of several square centimeters and above (scaling-up is feasible) in a single-step process. This is in clear contrast to nanolithography techniques. The development of the nanocolumnar morphology is the result of atomic shadowing, atomic diffusion, and surface relaxation. In the second part of the talk, several applications where NCTFs are of relevance will be described, discussing how and why these nanostructured materials can be used in functional devices. For energy and environment: as magnetic nanopillars with tailored properties, as nanostructured surfaces with photo-induced self-cleaning properties, as nanostructured layers to improve perovskite solar cells, and as black metal coatings in the visible range. For biomedicine: as antibacterial coatings in orthopedic implants, as bioelectrodes for electrical stimulation, as templates for chemical sensing by surface enhanced Raman spectroscopy, and as working electrodes in the electrochemical detection of molecules. Finally, for the aerospace industry: as nanostructured coatings that mitigate the undesirable multipactor effect (which can prevent the correct performance of radio-frequency devices or even damage them).'
     },
     talk2: {
       day: 'Día 2 (27 Oct) · 09:00 - 10:30',
@@ -1254,10 +1254,10 @@ const SPEAKERS_DATA = {
     talk1: {
       day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
       day_en: 'Day 1 (Oct 26) · 10:30 - 11:00 (Virtual)',
-      title: 'Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia',
-      title_en: 'International Advances in Characterization and Advanced Methods in Nanoscience',
-      abstract: 'Técnicas avanzadas de caracterización a escala nanométrica en centros de investigación europeos y su articulación con proyectos experimentales de la región andina.',
-      abstract_en: 'Advanced nanoscale characterization techniques deployed across European research centers and their integration with collaborative experimental projects in the Andean region.'
+      title: 'Programmability in the Chemical Domain using the Metabolic Network of Cells',
+      title_en: 'Programmability in the Chemical Domain using the Metabolic Network of Cells',
+      abstract: 'Motivados por los mecanismos mediante los cuales las células vivas procesan información, investigamos si los bloques de procesamiento de señales pueden ensamblarse a partir de reacciones que ya existen en la red metabólica de la célula. Siguiendo esta idea, presentamos un pipeline que mapea motivos abstractos de redes de reacciones químicas sobre reacciones de un modelo metabólico celular. Introducimos un algoritmo que selecciona concentraciones enzimáticas para satisfacer retardos y ganancias por reacción bajo una abundancia enzimática factible. Ilustramos la aplicación de esta solución en un escenario de medicina de precisión, donde se requiere estimar distancias entre células tumorales e inmunitarias.',
+      abstract_en: 'Motivated by the living cells mechanisms to process information, we research whether signal-processing blocks can be assembled from reactions that already exist in the metabolic network of the cell. Following this idea, we present a pipeline that maps abstract chemical reaction network motifs onto reactions of a cell metabolic model. We introduce an algorithm then selects enzyme concentrations to meet delays and gains per reaction under feasible enzyme abundance. We illustrate the application of this solution in medicine precision scenario, where distances between tumor and immune cells needs to be estimated.'
     }
   },
   'jose-torres': {
@@ -1267,10 +1267,10 @@ const SPEAKERS_DATA = {
     talk1: {
       day: 'Día 1 (26 Oct) · 10:30 - 11:00 (Virtual)',
       day_en: 'Day 1 (Oct 26) · 10:30 - 11:00 (Virtual)',
-      title: 'Avances Internacionales en Caracterización y Métodos Avanzados en Nanociencia',
-      title_en: 'International Advances in Characterization and Advanced Methods in Nanoscience',
-      abstract: 'Técnicas avanzadas de caracterización a escala nanométrica en centros de investigación europeos y su articulación con proyectos experimentales de la región andina.',
-      abstract_en: 'Advanced nanoscale characterization techniques deployed across European research centers and their integration with collaborative experimental projects in the Andean region.'
+      title: 'Programmability in the Chemical Domain using the Metabolic Network of Cells',
+      title_en: 'Programmability in the Chemical Domain using the Metabolic Network of Cells',
+      abstract: 'Motivados por los mecanismos mediante los cuales las células vivas procesan información, investigamos si los bloques de procesamiento de señales pueden ensamblarse a partir de reacciones que ya existen en la red metabólica de la célula. Siguiendo esta idea, presentamos un pipeline que mapea motivos abstractos de redes de reacciones químicas sobre reacciones de un modelo metabólico celular. Introducimos un algoritmo que selecciona concentraciones enzimáticas para satisfacer retardos y ganancias por reacción bajo una abundancia enzimática factible. Ilustramos la aplicación de esta solución en un escenario de medicina de precisión, donde se requiere estimar distancias entre células tumorales e inmunitarias.',
+      abstract_en: 'Motivated by the living cells mechanisms to process information, we research whether signal-processing blocks can be assembled from reactions that already exist in the metabolic network of the cell. Following this idea, we present a pipeline that maps abstract chemical reaction network motifs onto reactions of a cell metabolic model. We introduce an algorithm then selects enzyme concentrations to meet delays and gains per reaction under feasible enzyme abundance. We illustrate the application of this solution in medicine precision scenario, where distances between tumor and immune cells needs to be estimated.'
     }
   },
   'carlos-reinoso': {
