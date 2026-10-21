@@ -18,7 +18,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/ieee-ntc-official-trimmed.svg">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2.5">
+  <link rel="stylesheet" href="styles.css?v=2.6">
 </head>
 <body>
 
@@ -1187,220 +1187,216 @@
           <table class="lodging-table">
             <thead>
               <tr>
-                <th data-i18n="lodging-th-hotel">Hotel / Hostal</th>
+                <th data-i18n="lodging-th-option">Opción</th>
+                <th data-i18n="lodging-th-hotel">Establecimiento</th>
                 <th data-i18n="lodging-th-modality">Modalidad de Habitación</th>
-                <th data-i18n="lodging-th-rate">Tarifa / Noche</th>
-                <th data-i18n="lodging-th-cost-2">Estadía 2 Noches</th>
-                <th data-i18n="lodging-th-cost-3">Estadía 3 Noches</th>
-                <th data-i18n="lodging-th-status">Ubicación & Referencia</th>
+                <th data-i18n="lodging-th-1n-ieee">1 Noche · Miembro IEEE</th>
+                <th data-i18n="lodging-th-1n-gen">1 Noche · No Miembro</th>
+                <th data-i18n="lodging-th-2n-ieee">2 Noches · Miembro IEEE</th>
+                <th data-i18n="lodging-th-2n-gen">2 Noches · No Miembro</th>
+                <th data-i18n="lodging-th-location">Ubicación</th>
               </tr>
             </thead>
-                        <tbody>
+            <tbody>
+              <!-- Row 1: Eco Duo -->
               <tr>
+                <td><span class="lodging-opt-badge badge-duo">Eco Duo</span></td>
                 <td class="hotel-name-cell">Sueños de Primavera</td>
-                <td data-i18n="lodging-r1-mod"><strong>Económico Compartido:</strong> Matrimonial para 2 personas</td>
-                <td class="price-cell">$10 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$20 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$30 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td data-i18n="lodging-r1-mod"><strong>Matrimonial:</strong> 2 personas comparten UNA cama</td>
+                <td class="price-cell price-ieee">$17.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$19.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$27.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$29.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td>
-                  <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Hostal+Sue%C3%B1os+De+Primavera,+Urcuqu%C3%AD" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                      <span data-i18n="lodging-r1-badge">Urcuquí Centro · Tarifa Más Económica</span>
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                    <a href="https://wa.me/593998326802?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" class="lodging-contact-badge" title="Contactar por WhatsApp">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <span data-i18n="lodging-r1-contact">Contacto / WhatsApp: 099 832 6802</span>
-                    </a>
-                  </div>
+                  <a href="https://maps.app.goo.gl/BrnmbFnTsyA8m8939" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-suenos">Urcuquí Centro</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
                 </td>
               </tr>
+              <!-- Row 2: Eco K Matrimonial -->
               <tr>
+                <td><span class="lodging-opt-badge badge-k">Eco K Matrimonial</span></td>
                 <td class="hotel-name-cell">Kampak Wasi</td>
-                <td data-i18n="lodging-r2-mod"><strong>Estándar Delegación:</strong> Plaza indiv. en hab. compartida</td>
-                <td class="price-cell">$12 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$24 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$36 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td data-i18n="lodging-r2-mod"><strong>Matrimonial:</strong> 2 personas comparten UNA cama</td>
+                <td class="price-cell price-ieee">$19.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$21.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$31.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$33.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td>
-                  <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Kampak+Wasi,+Urcuqu%C3%AD" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                      <span data-i18n="lodging-r2-badge">Urcuquí Centro · Ideal Delegaciones</span>
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                    <a href="https://wa.me/593968347785?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" class="lodging-contact-badge" title="Contactar por WhatsApp">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <span data-i18n="lodging-r2-contact">Contacto / WhatsApp: 096 834 7785</span>
-                    </a>
-                  </div>
+                  <a href="https://maps.app.goo.gl/zLCxvZnbH382QFn46" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-kampak">Urcuquí Centro</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
                 </td>
               </tr>
+              <!-- Row 3: Eco K Grupal -->
               <tr>
+                <td><span class="lodging-opt-badge badge-k">Eco K Grupal</span></td>
+                <td class="hotel-name-cell">Kampak Wasi</td>
+                <td data-i18n="lodging-r3-mod"><strong>Grupal Compartido:</strong> Cama individual propia; habitación compartida</td>
+                <td class="price-cell price-ieee">$19.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$21.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$31.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$33.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td>
+                  <a href="https://maps.app.goo.gl/zLCxvZnbH382QFn46" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-kampak">Urcuquí Centro</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 4: Eco S Grupal -->
+              <tr>
+                <td><span class="lodging-opt-badge badge-s">Eco S Grupal</span></td>
                 <td class="hotel-name-cell">Sueños de Primavera</td>
-                <td data-i18n="lodging-r3-mod"><strong>Estándar Individual:</strong> Cama 1½ plaza / Matrimonial individual</td>
-                <td class="price-cell">$12 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$24 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$36 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td data-i18n="lodging-r4-mod"><strong>Grupal Compartido:</strong> Cama 1½ propia; habitación compartida</td>
+                <td class="price-cell price-ieee">$19.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$21.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$31.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$33.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td>
-                  <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Hostal+Sue%C3%B1os+De+Primavera,+Urcuqu%C3%AD" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                      <span data-i18n="lodging-r3-badge">Urcuquí Centro · Mayor Disponibilidad</span>
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                    <a href="https://wa.me/593998326802?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" class="lodging-contact-badge" title="Contactar por WhatsApp">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <span data-i18n="lodging-r3-contact">Contacto / WhatsApp: 099 832 6802</span>
-                    </a>
-                  </div>
+                  <a href="https://maps.app.goo.gl/BrnmbFnTsyA8m8939" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-suenos">Urcuquí Centro</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
                 </td>
               </tr>
+              <!-- Row 5: Eco S Privado -->
               <tr>
-                <td class="hotel-name-cell">Strega</td>
-                <td data-i18n="lodging-r4-mod"><strong>Superior Grupal:</strong> Suite, doble y triple campestre</td>
-                <td class="price-cell">$15 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$30 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
-                <td class="price-cell">$45 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td><span class="lodging-opt-badge badge-s">Eco S Privado</span></td>
+                <td class="hotel-name-cell">Sueños de Primavera</td>
+                <td data-i18n="lodging-r5-mod"><strong>Individual Privado:</strong> Cama 1½ propia; habitación privada</td>
+                <td class="price-cell price-ieee">$19.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$21.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$31.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$33.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
                 <td>
-                  <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Strega+Hotel+%26+Restaurante,+Urcuqu%C3%AD" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                      <span data-i18n="lodging-r4-badge">Zona Campestre · Entorno Natural</span>
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                    <a href="https://wa.me/593990519593?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" class="lodging-contact-badge" title="Contactar por WhatsApp">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <span data-i18n="lodging-r4-contact">Contacto / WhatsApp: 099 051 9593</span>
-                    </a>
-                  </div>
+                  <a href="https://maps.app.goo.gl/BrnmbFnTsyA8m8939" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-suenos">Urcuquí Centro</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 6: Vip Strega Grupo -->
+              <tr>
+                <td><span class="lodging-opt-badge badge-vip">Vip Strega Grupo</span></td>
+                <td class="hotel-name-cell">Strega</td>
+                <td data-i18n="lodging-r6-mod"><strong>Cuarto Compartido:</strong> Cuarto compartido; cama por confirmar</td>
+                <td class="price-cell price-ieee">$22.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$24.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td class="price-cell price-ieee">$37.00 <small style="font-size: 11px; font-weight: normal; color: #0284c7;">USD/pers.</small></td>
+                <td class="price-cell">$39.00 <small style="font-size: 11px; font-weight: normal; color: #64748b;">USD/pers.</small></td>
+                <td>
+                  <a href="https://maps.app.goo.gl/Jj7kZ3TQkS1rCRYw6" target="_blank" rel="noopener" class="lodging-info-badge" title="Ver ubicación en Google Maps">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span data-i18n="lodging-loc-strega">Zona Campestre</span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- Reference Package Cards -->
+        <div style="margin-top: 14px; margin-bottom: 28px; padding: 12px 18px; background: rgba(2, 132, 199, 0.06); border: 1px solid rgba(2, 132, 199, 0.2); border-radius: var(--radius-md); display: flex; align-items: center; gap: 10px; font-size: 13px; color: #0369a1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span data-i18n="lodging-rates-note"><strong>Tarifas con Kit Oficial Incluido:</strong> Todos los precios son por persona e incluyen hospedaje y Kit Oficial NanoBridge YT 2026. Las tarifas IEEE aplican presentando membresía activa al registrarse.</span>
+        </div>
+
+        <!-- Info Cards Grid: Fechas, Beneficios, Instrucciones -->
         <div class="packages-grid">
-          <!-- Package 1: Economic -->
+          <!-- Card 1: Fechas Disponibles -->
           <article class="package-card">
             <div>
-              <p class="package-tier-label" data-i18n="pkg-1-label">Paquete Económico</p>
-              <h3 class="package-name">Sueños de Primavera</h3>
-              <div class="package-price-row">
-                <span class="package-cost">$10</span>
-                <span class="package-unit" data-i18n="pkg-unit-night">USD / persona / noche</span>
-              </div>
-              <p style="font-size: 13px; color: #475569;" data-i18n="pkg-1-desc">Modalidad matrimonial compartida (2 personas por cama, $20/pareja/noche).</p>
+              <p class="package-tier-label" data-i18n="lodging-card1-label">Calendario de Estadía</p>
+              <h3 class="package-name" data-i18n="lodging-card1-title">Fechas Disponibles</h3>
+              <p style="font-size: 13px; color: #475569; margin-bottom: 12px;" data-i18n="lodging-card1-desc">Opciones de alojamiento flexibles para participantes y delegaciones:</p>
             </div>
             <div>
-              <div class="package-notes" data-i18n="pkg-1-notes">
-                <strong>Estadía 2 noches:</strong> $20 USD / persona<br>
-                <strong>Estadía 3 noches:</strong> $30 USD / persona
-              </div>
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-                <a href="https://www.google.com/maps/search/?api=1&query=Hostal+Sue%C3%B1os+De+Primavera,+Urcuqu%C3%AD" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #0284c7; text-decoration: none;">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  <span>Google Maps</span>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <a href="https://wa.me/593998326802?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #16a34a; text-decoration: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>099 832 6802</span>
-                </a>
+              <div class="package-notes" style="border-top: none; padding-top: 0;" data-i18n="lodging-card1-content">
+                <div style="margin-bottom: 10px;">
+                  <strong style="color: #0f172a; display: block;">Modalidad 1 Noche:</strong>
+                  <span style="display: block; color: #475569;">• Ingreso: 25 de octubre | Salida: 26 de octubre</span>
+                  <span style="display: block; color: #475569;">• Ingreso: 26 de octubre | Salida: 27 de octubre</span>
+                </div>
+                <div>
+                  <strong style="color: #0f172a; display: block;">Modalidad 2 Noches:</strong>
+                  <span style="display: block; color: #475569;">• Ingreso: 25 de octubre | Salida: 27 de octubre</span>
+                </div>
               </div>
             </div>
           </article>
 
-          <!-- Package 2: Standard A -->
+          <!-- Card 2: Beneficios Incluidos -->
           <article class="package-card">
             <div>
-              <p class="package-tier-label" data-i18n="pkg-2-label">Paquete Estándar A</p>
-              <h3 class="package-name">Kampak Wasi</h3>
-              <div class="package-price-row">
-                <span class="package-cost">$12</span>
-                <span class="package-unit" data-i18n="pkg-unit-night">USD / persona / noche</span>
-              </div>
-              <p style="font-size: 13px; color: #475569;" data-i18n="pkg-2-desc">Plaza individual por persona según distribución oficial de habitaciones (101-202).</p>
+              <p class="package-tier-label" data-i18n="lodging-card2-label">Paquete Integrado</p>
+              <h3 class="package-name" data-i18n="lodging-card2-title">Beneficios Incluidos</h3>
+              <p style="font-size: 13px; color: #475569; margin-bottom: 12px;" data-i18n="lodging-card2-desc">Todo participante con reserva a través del comité organizador recibe:</p>
             </div>
             <div>
-              <div class="package-notes" data-i18n="pkg-2-notes">
-                <strong>Estadía 2 noches:</strong> $24 USD / persona<br>
-                <strong>Estadía 3 noches:</strong> $36 USD / persona
-              </div>
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-                <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Kampak+Wasi,+Urcuqu%C3%AD" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #0284c7; text-decoration: none;">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  <span>Google Maps</span>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <a href="https://wa.me/593968347785?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #16a34a; text-decoration: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>096 834 7785</span>
-                </a>
+              <div class="package-notes" style="border-top: none; padding-top: 0;" data-i18n="lodging-card2-content">
+                <div style="margin-bottom: 8px;">
+                  <strong style="color: #0f172a; display: block;">🏨 Hospedaje Garantizado:</strong>
+                  <span style="color: #475569;">Alojamiento según la modalidad y establecimiento seleccionado en Urcuquí.</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <strong style="color: #0f172a; display: block;">🎁 Kit Oficial NanoBridge YT 2026:</strong>
+                  <span style="color: #475569;">Credencial oficial, material técnico de la cumbre y merchandising exclusivo.</span>
+                </div>
+                <div>
+                  <strong style="color: #0f172a; display: block;">🤝 Coordinación de Delegaciones:</strong>
+                  <span style="color: #475569;">Asignación de habitaciones y apoyo logístico por el comité organizador IEEE NTC.</span>
+                </div>
               </div>
             </div>
           </article>
 
-          <!-- Package 3: Standard B -->
+          <!-- Card 3: Instrucciones & Registro -->
           <article class="package-card">
             <div>
-              <p class="package-tier-label" data-i18n="pkg-3-label">Paquete Estándar B</p>
-              <h3 class="package-name">Sueños de Primavera</h3>
-              <div class="package-price-row">
-                <span class="package-cost">$12</span>
-                <span class="package-unit" data-i18n="pkg-unit-night">USD / persona / noche</span>
-              </div>
-              <p style="font-size: 13px; color: #475569;" data-i18n="pkg-3-desc">Cama individual (1½ plaza) o cama matrimonial usada individualmente por $12.</p>
+              <p class="package-tier-label" data-i18n="lodging-card3-label">Paso a Paso</p>
+              <h3 class="package-name" data-i18n="lodging-card3-title">Instrucciones de Reserva</h3>
+              <p style="font-size: 13px; color: #475569; margin-bottom: 12px;" data-i18n="lodging-card3-desc">Proceso oficial para asegurar tu habitación:</p>
             </div>
             <div>
-              <div class="package-notes" data-i18n="pkg-3-notes">
-                <strong>Estadía 2 noches:</strong> $24 USD / persona<br>
-                <strong>Estadía 3 noches:</strong> $36 USD / persona
-              </div>
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-                <a href="https://www.google.com/maps/search/?api=1&query=Hostal+Sue%C3%B1os+De+Primavera,+Urcuqu%C3%AD" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #0284c7; text-decoration: none;">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  <span>Google Maps</span>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <a href="https://wa.me/593998326802?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #16a34a; text-decoration: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>099 832 6802</span>
-                </a>
+              <div class="package-notes" style="border-top: none; padding-top: 0; font-size: 12.5px;" data-i18n="lodging-card3-content">
+                <span style="display: block; margin-bottom: 6px; color: #475569;"><strong>1. Formulario:</strong> Llena tus datos de contacto y condición de membresía IEEE.</span>
+                <span style="display: block; margin-bottom: 6px; color: #475569;"><strong>2. Modalidad:</strong> Selecciona tu opción de hospedaje y número de noches (1 o 2).</span>
+                <span style="display: block; margin-bottom: 6px; color: #475569;"><strong>3. Delegación:</strong> Si compartes habitación con compañeros, indica sus nombres.</span>
+                <span style="display: block; margin-bottom: 6px; color: #475569;"><strong>4. Pago:</strong> Adjunta tu comprobante de transferencia bancaria en el formulario.</span>
+                <span style="display: block; color: #0284c7; font-weight: 600;">⚠️ Cupos limitados: asignación por orden de confirmación de pago.</span>
               </div>
             </div>
           </article>
+        </div>
 
-          <!-- Package 4: Superior por precio -->
-          <article class="package-card">
-            <div>
-              <p class="package-tier-label" data-i18n="pkg-4-label">Superior por Precio</p>
-              <h3 class="package-name">Strega</h3>
-              <div class="package-price-row">
-                <span class="package-cost">$15</span>
-                <span class="package-unit" data-i18n="pkg-unit-night">USD / persona / noche</span>
-              </div>
-              <p style="font-size: 13px; color: #475569;" data-i18n="pkg-4-desc">Tarifa grupal de hotel completo para 15 adultos con suite, habitaciones dobles (hasta 4 pers.) y triple (hasta 6 pers.) en entorno campestre.</p>
-            </div>
-            <div>
-              <div class="package-notes" data-i18n="pkg-4-notes">
-                <strong>Estadía 2 noches:</strong> $30 USD / persona<br>
-                <strong>Estadía 3 noches:</strong> $45 USD / persona
-              </div>
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-                <a href="https://www.google.com/maps/search/?api=1&query=Strega+Hotel+%26+Restaurante,+Urcuqu%C3%AD" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #0284c7; text-decoration: none;">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  <span>Google Maps</span>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <a href="https://wa.me/593990519593?text=Hola,%20solicito%20informaci%C3%B3n%20de%20hospedaje%20para%20NANOBRIDGE%20YT%202026" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: #16a34a; text-decoration: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>099 051 9593</span>
-                </a>
-              </div>
-            </div>
-          </article>
+        <!-- Centralized CTA Banner -->
+        <div style="margin-top: 28px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid #334155; border-radius: var(--radius-xl); padding: 32px 28px; color: #ffffff; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+          <div style="max-width: 680px;">
+            <span style="display: inline-block; padding: 4px 12px; background: rgba(2, 132, 199, 0.2); border: 1px solid rgba(2, 132, 199, 0.4); border-radius: 9999px; font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px;" data-i18n="lodging-cta-badge">Gestión Centralizada</span>
+            <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 10px;" data-i18n="lodging-cta-title">¿Listo para asegurar tu hospedaje en Urcuquí?</h3>
+            <p style="font-size: 14px; color: #94a3b8; line-height: 1.6; margin: 0;" data-i18n="lodging-cta-desc">
+              Las reservas se gestionan exclusivamente mediante el formulario oficial del Comité Organizador IEEE NTC para garantizar tarifas institucionales de convenio, el kit oficial del evento y la asignación por delegaciones.
+            </p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd28agRv-M452gmw4JRptk5kLt02wM7NAw8F2FUgxB5PeHC-g/viewform" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 12px 26px; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span data-i18n="lodging-btn-form">Reservar Hospedaje (Formulario Oficial)</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <a href="https://chat.whatsapp.com/EB79mRIcLiMJvzFJxLTMEp?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" style="background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.35); color: #4ade80; padding: 12px 24px; border-radius: var(--radius-md); font-family: var(--font-heading); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all var(--transition-fast);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.89 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              <span data-i18n="lodging-btn-ws">Grupo Oficial de WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1619,6 +1615,6 @@
   </div>
 
   <!-- Main JavaScript File -->
-  <script src="main.js?v=2.5"></script>
+  <script src="main.js?v=2.6"></script>
 </body>
 </html>

@@ -1426,12 +1426,45 @@ button {
   transition: all var(--transition-fast);
 }
 
-.lodging-contact-badge:hover {
-  background: #dcfce7;
-  border-color: #86efac;
-  color: #166534;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.15);
+.lodging-table .price-ieee {
+  color: #0284c7 !important;
+  font-weight: 800;
+  background-color: rgba(2, 132, 199, 0.04);
+}
+
+.lodging-opt-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.lodging-opt-badge.badge-duo {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.lodging-opt-badge.badge-k {
+  background: #eff6ff;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
+.lodging-opt-badge.badge-s {
+  background: #fdf4ff;
+  color: #a21caf;
+  border: 1px solid #f5d0fe;
+}
+
+.lodging-opt-badge.badge-vip {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
 }
 
 /* Reference Packages Cards Grid */
